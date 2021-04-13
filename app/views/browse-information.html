@@ -1,0 +1,282 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse types of standard
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <!-- Change the page title here -->
+      <h1>
+        Browse information standards
+      </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum, assumenda temporibus, autem aperiam suscipit non, eum voluptatum reiciendis sequi libero sint unde exercitationem delectus esse eligendi maxime asperiores accusamus.</p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      <h2 class="nhsuk-heading-m">Filters</h2>
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="example">
+          Search
+        </label>
+        <input class="nhsuk-input" id="example" name="example" type="text">
+      </div>
+      <div class="nhsuk-form-group">
+        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+          <label class="nhsuk-label" for="example">
+            Filter one
+          </label>
+          <div class="nhsuk-checkboxes">
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                Option 1
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                Option 2
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                Option 3
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      
+      </div>
+      <div class="nhsuk-form-group">
+        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+          <label class="nhsuk-label" for="example">
+            Filter two
+          </label>
+          <div class="nhsuk-checkboxes">
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                Option 1
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                Option 2
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                Option 3
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      
+      </div>
+
+    </div>
+    <div class="nhsuk-grid-column-three-quarters">
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="standard-example">E-discharge</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Emergency care discharge</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Mental health inpatient discharge</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Outpatient letters</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Clinical referral standard</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Digital care and support plan</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">About Me information standard </a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Ambulance handover </a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Care homes view of shared care records</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Community Pharmacy Standard</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Core information standard</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Crisis care standard</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Digital mediciation information assurance</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Document Naming Standard</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Healthy Child Record</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Hospital Referral for assessment for community care and support</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Information Provided by local authroities in shared care records</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Maternity record  standard</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Social Care Assessments (ADW</a>
+            <p>
+            <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+            <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+            </p>
+            
+          )</li>
+        <li class="table-list-item">
+          <a href="standard-example">Urgent referral from care home to hospital</a>
+          <p>
+          <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+          
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3; 
+    }
+  </style>
+{% endblock %}

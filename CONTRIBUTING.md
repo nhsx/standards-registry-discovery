@@ -1,42 +1,23 @@
-First off, thank you for considering contributing to NHSX.
+# Contribution guidelines
 
-Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
+Thank you for your interest in contributing to NHS.UK prototype kit, we really appreciate it. There are a number of ways that you can contribute – reporting bugs, fixing bugs, suggesting new features or writing documentation.
 
-<a id="what-to-contribute"> </a>
+## Contributing
 
-## What to Contribute
+If you’ve got an idea or suggestion you can:
 
-This is an open source NHSX project and we love to receive contributions from our community — you! There are many ways to contribute, from writing tutorials or blog posts, improving the documentation, submitting bug reports and feature requests.
+* email [service-manual@nhs.net](mailto:service-manual@nhs.net)
+* get in touch on the [NHS digital service manual Slack workspace](https://nhs-service-manual.slack.com/messages/CFYL2GDGW)
+* [create a GitHub issue](https://github.com/nhsuk/nhsuk-prototype-kit/issues/new)   
 
-<a id="ground-rules"> </a>
+## Raising bugs
 
-## Ground Rules
+When raising bugs please explain the issue in good detail and provide a guide to how to replicate it.
 
-### Responsibilities
-* Ensure cross-platform compatibility for every change that's accepted. Windows, Mac, Debian & Ubuntu Linux.
-* Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
-* Don't add any classes to the codebase unless absolutely needed. Err on the side of using functions.
-* Keep feature versions as small as possible, preferably one new feature per version.
-* Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. See the [Contributor Covenant Code of Conduct](/CODE_OF_CONDUCT.md).
+[Raise a bug](https://github.com/nhsuk/nhsuk-prototype-kit/issues/new?template=BUG_REPORT.md) 
 
-Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
+## Suggesting features
 
-<a id="getting-started"> </a>
+Please raise feature requests as issues before contributing any code.
 
-## Getting started
-
-### How to submit a Contribution.
-
-1. Create your own fork of the code
-2. Do the changes in your fork
-3. If you like the change and think the project could use it:
-    * Be sure you have followed the code style for the project.
-    * Send a pull request.
-
-## How to report a bug
-
-If you find a security vulnerability, do NOT open an issue. Email [opensource@nhsx.nhs.uk](mailto:opensource@nhsx.nhs.uk) instead.
-
-## Code review process
-
-NHSX will endevor to look at Pull Requests on a regular basis but we cannot guarantee prompt implementation of Pull Requests.
+This ensures they are discussed properly before any time is spent on them.
