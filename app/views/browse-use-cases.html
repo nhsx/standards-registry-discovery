@@ -12,12 +12,20 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Join up IT systems in health and social care
+  Browse use cases
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Use cases</li>
+    </ol>
+  </div>
+</nav>
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -30,40 +38,50 @@
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-
       <!-- Change the page title here -->
       <h1>
         Browse use cases
       </h1>
-
-      <!-- Add your content here -->
-      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
-
-      <!-- <p class="nhsuk-lede-text">
-        Blurb about what this website is about
-      </p> -->
-
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, iusto ducimus exercitationem dolorum temporibus distinctio commodi, esse et earum illo perferendis eaque. Sed fuga facilis fugiat quod voluptatibus magnam temporibus!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum, assumenda temporibus, autem aperiam suscipit non, eum voluptatum reiciendis sequi libero sint unde exercitationem delectus esse eligendi maxime asperiores accusamus.</p>
     </div>
   </div>
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-      <h2 class="nhsuk-heading-s"><a href="browse-terminology">Terminologies and codes</a></h2>
-      <p class="nhsuk-body-s">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
     </div>
-    <div class="nhsuk-grid-column-one-third">
-      <h2 class="nhsuk-heading-s"><a href="browse-technical">Technical specifications</a></h2>
-      <p class="nhsuk-body-s">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="nhsuk-grid-column-one-third">
-      <h2 class="nhsuk-heading-s"><a href="browse-services">Services and tools</a></h2>
-      <p class="nhsuk-body-s">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="nhsuk-grid-column-three-quarters">
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="standard-example">Supporting people across several settings to care for someone </a>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Discharging someone from hospital to another care setting</a>
+        </li>
+        <li class="table-list-item">
+          <a href="usecase-mental-health">Discharging someone from mental health services to another care setting</a>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Receiving alerts from other care settings, for example about safeguarding issues or people with specific conditions or needs.</a>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Ordering tests for someone at another healthcare facility </a>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-example">Etc...</a>
+        </li>
+        
+        
+      </ul>
     </div>
   </div>
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-      <h2 class="nhsuk-heading-s"><a href="browse-information">Information standards</a></h2>
-      <p class="nhsuk-body-s">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-  </div>
+  
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3; 
+    }
+  </style>
 {% endblock %}

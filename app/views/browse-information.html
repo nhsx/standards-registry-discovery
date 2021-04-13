@@ -12,12 +12,21 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Browse types of standard
+  Browse information standards
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-sections">Standards and formats</a></li>
+      <li class="nhsuk-breadcrumb__item">Information standards</li>
+    </ol>
+  </div>
+</nav>
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -39,75 +48,12 @@
   </div>
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-one-quarter">
-      <h2 class="nhsuk-heading-m">Filters</h2>
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="example">
-          Search
-        </label>
-        <input class="nhsuk-input" id="example" name="example" type="text">
-      </div>
-      <div class="nhsuk-form-group">
-        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-          <label class="nhsuk-label" for="example">
-            Filter one
-          </label>
-          <div class="nhsuk-checkboxes">
-            <div class="nhsuk-checkboxes__item">
-              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                Option 1
-              </label>
-            </div>
-            <div class="nhsuk-checkboxes__item">
-              <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-                Option 2
-              </label>
-            </div>
-            <div class="nhsuk-checkboxes__item">
-              <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-                Option 3
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      
-      </div>
-      <div class="nhsuk-form-group">
-        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-          <label class="nhsuk-label" for="example">
-            Filter two
-          </label>
-          <div class="nhsuk-checkboxes">
-            <div class="nhsuk-checkboxes__item">
-              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                Option 1
-              </label>
-            </div>
-            <div class="nhsuk-checkboxes__item">
-              <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-                Option 2
-              </label>
-            </div>
-            <div class="nhsuk-checkboxes__item">
-              <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-                Option 3
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      
-      </div>
-
+      {% include "includes/filters.html" %}
     </div>
     <div class="nhsuk-grid-column-three-quarters">
       <ul class="nhsuk-list table-list">
         <li class="table-list-item">
-          <a href="standard-example">E-discharge</a>
+          <a href="standard-mental-health">E-discharge</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -115,7 +61,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Emergency care discharge</a>
+          <a href="standard-mental-health">Emergency care discharge</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -123,7 +69,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Mental health inpatient discharge</a>
+          <a href="standard-mental-health">Mental health inpatient discharge</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -131,7 +77,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Outpatient letters</a>
+          <a href="standard-mental-health">Outpatient letters</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -139,7 +85,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Clinical referral standard</a>
+          <a href="standard-mental-health">Clinical referral standard</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -147,7 +93,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Digital care and support plan</a>
+          <a href="standard-mental-health">Digital care and support plan</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -155,7 +101,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">About Me information standard </a>
+          <a href="standard-mental-health">About Me information standard </a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -163,7 +109,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Ambulance handover </a>
+          <a href="standard-mental-health">Ambulance handover </a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -171,7 +117,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Care homes view of shared care records</a>
+          <a href="standard-mental-health">Care homes view of shared care records</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -179,7 +125,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Community Pharmacy Standard</a>
+          <a href="standard-mental-health">Community Pharmacy Standard</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -187,7 +133,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Core information standard</a>
+          <a href="standard-mental-health">Core information standard</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -195,7 +141,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Crisis care standard</a>
+          <a href="standard-mental-health">Crisis care standard</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -203,7 +149,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Digital mediciation information assurance</a>
+          <a href="standard-mental-health">Digital mediciation information assurance</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -211,7 +157,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Document Naming Standard</a>
+          <a href="standard-mental-health">Document Naming Standard</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -219,7 +165,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Healthy Child Record</a>
+          <a href="standard-mental-health">Healthy Child Record</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -227,7 +173,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Hospital Referral for assessment for community care and support</a>
+          <a href="standard-mental-health">Hospital Referral for assessment for community care and support</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -235,7 +181,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Information Provided by local authroities in shared care records</a>
+          <a href="standard-mental-health">Information Provided by local authroities in shared care records</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -243,7 +189,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Maternity record  standard</a>
+          <a href="standard-mental-health">Maternity record  standard</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -251,7 +197,7 @@
           
         </li>
         <li class="table-list-item">
-          <a href="standard-example">Social Care Assessments (ADW</a>
+          <a href="standard-mental-health">Social Care Assessments (ADW</a>
             <p>
             <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
             <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
@@ -259,7 +205,7 @@
             
           )</li>
         <li class="table-list-item">
-          <a href="standard-example">Urgent referral from care home to hospital</a>
+          <a href="standard-mental-health">Urgent referral from care home to hospital</a>
           <p>
           <span class="nhsuk-body">Description Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><br>
           <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
