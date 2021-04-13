@@ -18,6 +18,16 @@
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-sections">Standards and formats</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-information">Information standards</a></li>
+      <li class="nhsuk-breadcrumb__item">Mental health inpatient discharge</li>
+    </ol>
+  </div>
+</nav>
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -109,7 +119,7 @@
       </ul>
       Terminologies and codes:
       <ul class="nhsuk-list-bullet">
-        <li><a href="#">SNOMED clinical terminologies</a></li>
+        <li><a href="standard-snomed">SNOMED clinical terminologies</a></li>
         <li><a href="#">Dictionary of Medicines and Devices</a></li>
         <li><a href="#">ICD-10</a></li>
       </ul>
