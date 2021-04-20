@@ -108,13 +108,16 @@
                 <h1 class="nhsuk-u-margin-bottom-4">Join up IT systems in health and social care</h1>
                 <p class="nhsuk-body-l nhsuk-u-margin-bottom-1">Find and share open standards and tools to support joined up systems in the NHS.</p>
                 <br>
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                  Search
-                </label>
-                <input class="nhsuk-input" id="example" name="example" type="text">
-                <button style="height: 40px; background-color: black;display: inline-block;position: absolute; border: solid 3px black;"><span class="hod-search side-space icon-small" style="color: white;">Search</span></button>
-              </div>
+                <form action="search-results" method="POST">
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                      Search standards, APIs, NHS services and case studies
+                    </label>
+                    <input class="nhsuk-input" id="search-term" name="search-term" type="text" placeholder="Search">
+                    <button style="height: 40px; background-color: black;display: inline-block;position: absolute; border: solid 3px black; cursor: pointer;"><span class="hod-search side-space icon-small" style="color: white;">Search</span></button>
+                  </div>
+                </form>
             </div>
           </div>
         </div>
