@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Browse services and tools
+  Browse services
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -23,7 +23,7 @@
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2/home">Home</a></li>
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-sections">Browse tools</a></li>
-      <li class="nhsuk-breadcrumb__item">Services and tools</li>
+      <li class="nhsuk-breadcrumb__item">Services</li>
     </ol>
   </div>
 </nav>
@@ -41,18 +41,18 @@
     <div class="nhsuk-grid-column-two-thirds">
       <!-- Change the page title here -->
       <h1>
-        Browse services and tools
+        Browse services
       </h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum, assumenda temporibus, autem aperiam suscipit non, eum voluptatum reiciendis sequi libero sint unde exercitationem delectus esse eligendi maxime asperiores accusamus.</p>
     </div>
   </div>
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-one-quarter">
       {% include "includes/filters.html" %}
-{% include "includes/filters-search.html" %}
-{% include "includes/filters-business.html" %}
+      {% include "includes/filters-search.html" %}
+      {% include "includes/filters-business.html" %}
     </div>
     <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">Showing 25 services</h3>
       <ul class="nhsuk-list table-list">
         <li class="table-list-item">
           <a href="standard-pds">Interoperability Toolkit (ITK)</a>
