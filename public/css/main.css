@@ -6106,3 +6106,58 @@ dd {
 
 .table-list li:first-child {
   border-top: 1px solid #bfc1c3; }
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__item {
+  min-height: 0;
+  margin-bottom: 0;
+  padding-left: 34px;
+  float: left; }
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__input {
+  left: -10px;
+  padding: 6px 15px 5px 1px; }
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__label::before {
+  top: 8px;
+  width: 24px;
+  height: 24px; }
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__label::after {
+  top: 15px;
+  left: 6px;
+  width: 9px;
+  height: 3.5px;
+  border-width: 0 0 3px 3px; }
+
+.nhsuk-checkboxes--small .nhsuk-checkboxes__item:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+
+.options-container--hod {
+  max-height: 200px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 10px; }
+
+.taxonomy-tag {
+  font-size: small;
+  color: #666;
+  padding: .33em .5em;
+  border-radius: .3em;
+  background-color: #d8dde0;
+  white-space: nowrap; }
+
+.taxonomy-tag.blue {
+  color: #FFFFFF;
+  background-color: #005eb8; }
