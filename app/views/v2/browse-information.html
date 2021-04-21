@@ -1,0 +1,253 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse information standards
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v2/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-sections">Browse tools</a></li>
+      <li class="nhsuk-breadcrumb__item">Information standards</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <!-- Change the page title here -->
+      <h1>
+        Browse information standards
+      </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum, assumenda temporibus, autem aperiam suscipit non, eum voluptatum reiciendis sequi libero sint unde exercitationem delectus esse eligendi maxime asperiores accusamus.</p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+{% include "includes/filters-search.html" %}
+{% include "includes/filters-business.html" %}
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Filter by standard status
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <div class="nhsuk-form-group">
+            <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+              <label class="nhsuk-label" for="example">
+                Status
+              </label>
+              <div class="nhsuk-checkboxes">
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                    Draft
+                  </label>
+                </div>
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                    Active
+                  </label>
+                </div>
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                    Mandated
+                  </label>
+                </div>
+                <div class="nhsuk-checkboxes__item">
+                  <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                    Retired
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </details>
+    </div>
+    <div class="nhsuk-grid-column-three-quarters">
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="standard-mental-health">About Me information standard</a>
+          <p>
+          <span class="nhsuk-body">Part of a suite of social care standards, About Me information is the most important details that a person wants to share with professionals in health and social care.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Ambulance handover to emergency care Standard</a>
+          <p>
+          <span class="nhsuk-body">A standard for the information that is shared when care is transferred from ambulances to emergency departments.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Care homes view of shared care records</a>
+          <p>
+          <span class="nhsuk-body">Part of a suite of social care standards, The care homes view is the information that care home staff can see in a shared care record.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Community pharmacy standard</a>
+          <p>
+          <span class="nhsuk-caption-m">The community pharmacy standard supports information sharing between community pharmacists and GP practices.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Clinical referral information standard</a>
+          <p>
+          <span class="nhsuk-body">A standard to improve the exchange of referral information from GPs to hospital consultants and other health care professionals providing outpatient services.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Mandated</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Crisis care standard</a>
+          <p>
+          <span class="nhsuk-body">Supporting better coordination of treatment in primary, acute and community care, as well as hospices, care homes, and social services.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Mandated</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Core information standard</a>
+          <p>
+          <span class="nhsuk-caption-m">The core information standard defines a set of information that can potentially be shared between systems in different sites and settings, among professionals and people using services.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Digital care and support plan</a>
+          <p>
+          <span class="nhsuk-body">A standard to allow the sharing of care plans between patients, carers and all the health and care professionals involved in that person's care.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag nhsuk-tag--grey">Draft</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Digital medicines</a>
+          <p>
+          <span class="nhsuk-body">PRSB/NHS Digital guidance that sets out how to communicate medication dose and timings digitally between systems in all care settings without any change or loss of accuracy or meaning.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Document naming standard</a>
+          <p>
+          <span class="nhsuk-caption-m">The document naming standard will make sure that records are properly named and indexed, so they can be retrieved in order to provide ongoing care.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">EDischarge summary standard</a>
+          <p>
+          <span class="nhsuk-caption-m">The eDischarge Summary Standard enables hospitals to safely transfer standardised clinical information which can be extracted directly into GP IT systems, when a patient is discharged from hospital care.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Emergency care standard</a>
+          <p>
+          <span class="nhsuk-body">Sharing discharge information between Emergency Care and GP practices is essential for ensuring patient safety and good ongoing treatment.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Healthy child record</a>
+          <p>
+          <span class="nhsuk-body">Standards to support the Healthy Child Programme. The standard outlines what information on screening tests, immunisations and developmental milestones should be accessible to make sure that children receive appropriate care.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Hospital referral for assessment for community care and support</a>
+          <p>
+          <span class="nhsuk-body">Part of a suite of social care standards, This is the information required in respect of a person being referred for ongoing community assessment for social care and support after a hospital stay.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Information provided by local authorities in shared care records</a>
+          <p>
+          <span class="nhsuk-body">Part of a suite of social care standards, this is the important details that the local authority holds about people that would be useful for health and care professionals in providing care and support in hospital, at home or in a care home.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Maternity record standard</a>
+          <p>
+          <span class="nhsuk-body">A standard that ensures that information from a record can be understood by all IT systems in use across the country, enabling the seamless exchange of information regardless of local maternity system boundary.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Mental health inpatient discharge</a>
+          <p>
+          <span class="nhsuk-body">Standardising information shared so professionals can provide continuity of care when an adult is discharged from mental health services. Includes information on patient history, medications, as well as current and previous diagnoses.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Outpatient letter standard</a>
+          <p>
+          <span class="nhsuk-body">Standards for digital outpatient letters allow clinical information to be recorded, exchanged and accessed consistently across care settings. Best practice for most outpatient letters is writing directly to patients.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Social care assessment (ADW)</a>
+          <p>
+          <span class="nhsuk-body">PRSB assured standards for assessment, discharge and withdrawal notices, so that this information can be shared safely and securely between systems.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Urgent referral from care home to hospital</a>
+          <p>
+          <span class="nhsuk-body">Part of a suite of social care standards, This is the information required for the care and support of a person when they are admitted to hospital from a care home in an emergency.</span><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Status: <strong class="nhsuk-tag">Active</strong> &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3; 
+    }
+  </style>
+{% endblock %}

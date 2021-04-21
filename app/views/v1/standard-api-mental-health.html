@@ -12,7 +12,7 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  The Personal Demographics Service (PDS) 
+Transfer of Care Mental Health Discharge - FHIR API
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -21,10 +21,10 @@
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/home">Home</a></li>
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-sections">Browse tools</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-information">Services</a></li>
-      <li class="nhsuk-breadcrumb__item">The Personal Demographics Service (PDS) </li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-information">Technology standards</a></li>
+      <li class="nhsuk-breadcrumb__item">Transfer of Care Mental Health Discharge - FHIR API</li>
     </ol>
   </div>
 </nav>
@@ -43,10 +43,10 @@
 
       <!-- Change the page title here -->
       <span class="nhsuk-caption-l">
-        Service
+        Technology standard
       </span>
       <h1>
-        The Personal Demographics Service (PDS) 
+        Transfer of Care Mental Health Discharge - FHIR API
       </h1>
     </div>
   </div>
@@ -57,14 +57,22 @@
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
       <h2 class="nhsuk-heading-m">Description</h2>
-      <p>The Personal Demographics Service (PDS) is the national electronic database of NHS patient details such as name, address, date of birth and NHS Number (known as demographic information).</p>
+      <p>Use this API to create and transmit documents containing Transfer of Care information supporting a mental health discharge.</p>
+
+      <p>An Inpatient and Day Case Discharge Summary (Mental Health) Document (also known as an ITK3 Mental Health Discharge) is an ITK3 FHIR document containing Transfer of Care information supporting a mental health adult discharge summary to a GP practice.</p>
+      
+      <p>For example, following an apparent overdose, a patient is admitted to a psychiatric ward for evaluation and treatment which is successful. He is discharged and the consultant sends a copy of the Mental Health Discharge to his GP.</p>
+      
+      <p>For more details see the <a href="">Transfer of Care FHIR API</a>.</p>
+      
+      <p>Before you begin any development work using this API, contact us to discuss your best options.</p>
 
       <h2 class="nhsuk-heading-m">Use cases</h2>
       <ul class="nhsuk-list nhsuk-list--bullet">
         <li><a href="usecase-mental-health">Discharging someone from mental health services to another care setting</a></li>
       </ul>
 
-      <a href="https://digital.nhs.uk/services/demographics" class="nhsuk-button">View service on source website</a>
+      <a href="https://developer.nhs.uk/apis/itk3tocmentalhealthedischarge-2-8-0/index.html" class="nhsuk-button">View standard on source website</a>
       
       
       <h2 class="nhsuk-heading-l">Latest version – 2.8.0-live</h2>

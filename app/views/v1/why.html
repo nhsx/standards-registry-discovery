@@ -1,0 +1,122 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Why join up
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v1/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Why join up</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Why join up systems
+      </h1>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempora soluta provident dolore quam iure! Nostrum deleniti sunt omnis recusandae dolore culpa quae molestias ut, tempora reiciendis expedita impedit ad.</p> -->
+      <p>Most data in health and social care is held within organisations. This doesn’t support how care is provided, with people often needing help from several professionals. Find out how joining up systems can make it easier to care for people. </p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <h3 class="nhsuk-heading-s">Contents</h3>
+      <ul class="nhsuk-list-bullet">
+        <li><a href="#what">What is interoperability</a></li>
+        <li><a href="#why">Why interoperability matters</a></li>
+        <li><a href="#benefits">Benefits to health and social care workplaces
+        <li><a href="#challenges">Common challenges</a></li>
+      </ul>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2 id="what" class="nhsuk-heading-m">What is interoperability</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis saepe illo, iusto eveniet ex iste voluptas adipisci sint voluptatem eius recusandae dolores qui cum autem unde maxime mollitia explicabo temporibus?</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, numquam distinctio illum non cum et ex neque sit aspernatur porro eaque soluta accusantium quae ab dolorem? Enim beatae doloribus exercitationem.</p>
+      <!-- <p>[Insert definition] </p>
+
+      <p>We see this in many different sectors. You can transfer money from your bank to someone else’s bank easily, for example. That’s only possible because banks use open standards that define:</p>
+      <ul class="nhsuk-list-bullet">
+        <li>a consistent format for capturing bank details</li>
+        <li>unique codes that can identify each bank</li>
+        <li>structures that ensure the data is displayed correctly at the receiver’s end </li>
+      </ul> -->
+
+      <h2 id="why" class="nhsuk-heading-m">Why interoperability matters</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, recusandae quod assumenda distinctio molestiae vel, sequi ex minima voluptatibus nam vitae dolor. Facilis veniam veritatis dicta perferendis minus sed enim!</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates facilis maiores ducimus non error vel expedita veritatis voluptatibus esse! Deserunt quos corporis laudantium. Reiciendis quaerat deleniti ab iure molestias voluptatem.</p>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi repellat, perspiciatis quasi sit a perferendis maiores modi aperiam voluptas rem magnam exercitationem quas saepe? Illum veniam qui cumque nemo?</p>
+<!-- 
+      <p>Information about our health is some of the most sensitive data anyone can know about us. It’s important that information is held securely and only shared in ways we are comfortable with. </p>
+
+      <p>However, done right, data-sharing between hospitals, GPs and social care has the potential to bring real benefits:</p>
+      <ul class="nhsuk-list-bullet">
+        <li>It reduces the burden on people needing to share details about their health or treatment every time they receive some form of care. This is hard for all of us, but can be particularly hard for those with conditions that affect their memory.</li>
+        <li>It gives professionals the most up to date, accurate information about the person they’re caring for. This makes it more likely treatment or care will be the most effective for that individual.</li>
+        <li>It frees up professionals time to be with the people they’re caring for, rather than needing to spend lots of time filling in paperwork. More time with people means more time to spot the signs that something’s not right, ask a thoughtful question or give reassurance.</li>
+      </ul>
+      <p>The recent pandemic - where we had to quickly move patients to wherever there was space to treat them - showed us how important it is to join up IT systems to make care provision easier. </p> -->
+
+      <h2 id="benefits" class="nhsuk-heading-m">Benefits to health and social care workplaces </h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque porro id laborum adipisci veritatis voluptatum unde quos quasi fugiat. Perspiciatis eum cumque tempore ut voluptatibus deleniti ullam fugit voluptate voluptates.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum optio cumque facere voluptates praesentium modi. Voluptatem tempora perferendis harum ipsam hic quo dignissimos minus adipisci ratione, facilis ipsum earum.</p>
+<!-- 
+      <p>Getting to the point where professionals can access real-time information from different IT systems is going to take time. But all organisations - from hospitals and GPs to residential care, social care and health charities - should see clear benefits once interoperability starts to become a reality. These could include:</p>
+
+      <p>Being able to call up someone’s health record or a snapshot of their record instantly without having to ask anyone to share it </p>
+      <p>Being able to book an appointment on behalf of someone at their GP?</p>
+      <p>Cost-savings...£13 to 65p per attendance</p>  -->
+
+      <h2 id="challenges" class="nhsuk-heading-m">Common challenges </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum earum, aliquid accusantium, neque fugiat necessitatibus officia doloribus similique, dolor illum consequuntur veniam inventore magni deserunt esse tempore eligendi voluptas porro.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugiat officia quo vitae possimus, enim corrupti adipisci eaque maxime cum repellat excepturi animi quam laboriosam laborum neque porro est ex.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ratione repudiandae alias? Fugiat neque provident ducimus doloribus quos similique ipsa laboriosam est sint ipsum hic numquam voluptatibus, laborum quidem. Eos.</p>
+<!-- 
+      <p>Some common problems people find when attempting to join up IT systems:</p>
+      <ul class="nhsuk-list-bullet">
+        <li>Existing technology choices can mean organisations face challenges accessing and sharing their data. This can happen when information is held within a product or application itself instead of in a separate layer which is owned by the customer. What this means for individual organisations may vary depending on the supplier, but customers can be charged high fees or required to wait a long time to be able to access their own information.</li>
+        <li>IT systems and services don’t meet users’ needs. There is a culture change required to make this happen. This can be harder if systems don’t work in the way staff need them to, they’re confusing and hard to use, or it’s not easy for everyone to access them. Staff may prefer their existing, known ways of working. There is lots of advice on how to design simple, clear, easy-to-use digital systems and services around the users. </li>
+        <li>Cross-organisational working</li>
+        <li>You gotta agree on x,y,z </li>
+      </ul>
+      <p>Rapid change. This isn’t something that you do once and then forget. This is an area in which resources can go out of date and so they need to be maintained and kept up to date. Teams need to be set up to be able to deal flexibility with these changes.</p> -->
+
+    </div>
+  </div>
+  
+{% endblock %}
