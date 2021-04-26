@@ -1,0 +1,148 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-home-v3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Join up IT systems in health and social care
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Directory</h2>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="browse-sections">Browse directory</a></span>
+          <p class="nhsuk-u-font-size-16">Explore all standards, APIs and services</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="question-setting">Browse by use case</a></span>
+          <p class="nhsuk-u-font-size-16">Find resources for your service or product</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="browse-use-cases">Common use cases</a></span>
+          <p class="nhsuk-u-font-size-16">Find resources for common needs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Guidance</h2>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="what">What is interoperability</a></span>
+          <p class="nhsuk-u-font-size-16">Definition and benefits</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="get-started-business">Get started</a></span>
+          <p class="nhsuk-u-font-size-16">Managing interoperability programmes</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="get-started-technology">Get started: technical</a></span>
+          <p class="nhsuk-u-font-size-16">Using standards and integrating with other systems</p>
+        </div>
+      </div>
+    </div> -->
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="browse-case-studies">Case studies</a></span>
+          <p class="nhsuk-u-font-size-16">Tools and approaches used by others </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Contribute</h2>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="#">Share case study</a></span>
+          <p class="nhsuk-u-font-size-16">Share your experience to help others</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="#">Share standard or API</a></span>
+          <p class="nhsuk-u-font-size-16">Share your work to help others</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="#">Identify a gap</a></span>
+          <p class="nhsuk-u-font-size-16">Request a standard for your use case</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="#">Join community</a></span>
+          <p class="nhsuk-u-font-size-16">Connect with others in this space</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
