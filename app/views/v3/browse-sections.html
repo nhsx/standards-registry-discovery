@@ -31,40 +31,7 @@
 <!-- For adding a back link -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
 {% block outerContent %}
-
-<style>
-  .nhsuk-phase-banner__text {
-    display: table-cell;
-    vertical-align: baseline;
-}
-
-.nhsuk-phase-banner__content {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.25;
-}
-.nhsuk-phase-banner__content {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    font-size: 14px;
-    font-size: .875rem;
-    line-height: 1.14286;
-    display: table;
-    margin: 0;
-}
-
-</style>
-<div class="nhsuk-phase-banner">
-  <p class="nhsuk-phase-banner__content">
-    <strong class="nhsuk-tag nhsuk-phase-banner__content__tag">
-      PROTOTYPE
-    </strong>
-    <span class="nhsuk-phase-banner__text">
-      This is a new service – your <a class="nhsuk-link" href="#">feedback</a> will help us to improve it.
-    </span>
-  </p>
-</div>
+  {% include "includes/prototype-banner.html" %}
 {% endblock %}
 
 <!-- For adding page content -->
