@@ -1,0 +1,722 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse technical standards
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/browse-sections">Browse directory</a></li>
+      <li class="nhsuk-breadcrumb__item">Browse technical standards</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <!-- Change the page title here -->
+      <h1>
+        Browse technical standards
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      {% include "includes/filters-search.html" %}
+      {% include "includes/filters-topic.html" %}
+      {% include "includes/filters-setting.html" %}
+      {% include "includes/filters-api.html" %}
+      
+    </div>
+    <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">Showing 81 technical standards</h3>
+      <ul class="nhsuk-list table-list">
+                
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Alerts - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send an alert to a Privacy Officer so they can audit whether access to a patient’s data was appropriate.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 25 May 2017</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Ambulance Analytics - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Submit ambulance analytics data to our Data Processing Service (DPS) for analysis and review by NHS England and ambulance trusts.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 12 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Ambulance Messaging - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Ambulance Messaging supports the Ambulance Service Summary Patient Report containing a summary of care events and care data.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag  nhsuk-tag--grey">In development</strong>&emsp;&emsp;Last updated: 24 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Assessment Discharge and Withdrawal - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Support transfer of care from hospital to social services for patients with care and support needs.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 27 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Bowel Cancer Screening - EDIFACT API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send bowel cancer screening test results from the screening system to GP practices.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 December 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Care Connect FHIR API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards using FHIR STU3 to create a unified approach to interoperability across England.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 4 January 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Child Protection - Information Sharing - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access child protection information from Child Protection - Information Sharing (CP-IS) using our HL7 V3 API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 22 February 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Clinical Decision Support API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards to support the triage and onward referral of patients who are interacting with Urgent and Emergency Care services, such as NHS 111.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 20 March 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Cyber Alerts - REST API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access a feed of alerts issued by our cyber security centre.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag  nhsuk-tag--grey">In development</strong>&emsp;&emsp;Last updated: 24 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Data Registers Service - REST API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access a wide range of live lists of lookup data with our Data Registers Service.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Demographics Batch Service API</a>
+          <p>
+            <span class="nhsuk-caption-m">Submit a file of patient information to the Spine for tracing against the Personal Demographics Service (PDS).</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 12 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Digital Child Health - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Share information about a child's health between healthcare professionals.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag  nhsuk-tag--grey">In development</strong>&emsp;&emsp;Last updated: 24 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Digital Maternity API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards to enable sharing and updating of digital maternity records.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag  nhsuk-tag--grey">In development</strong>&emsp;&emsp;Last updated: 24 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Digital Medicine - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Notify a patient's registered GP practice of care services provided by a pharmacy, such as immunisation.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Directory of Services - REST API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access information on a wide range of health and care services across England using our Directory of Services REST API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 19 July 2019</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Directory of Services - SOAP API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access information on a wide range of health and care services across England using our Directory of Services SOAP API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 15 January 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Discharge - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send a discharge report following transfer of responsibility for a patient.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 4 February 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Dose Syntax API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards to provide a structured way to record dosage instructions&nbsp;between primary and secondary care settings.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 April 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Electronic Prescribing and Medicines Administration API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">Use these API standards to share medication requests between ePMA systems and hospital pharmacy or stock control systems.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 25 June 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Electronic Prescription Service Directory of Services API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access information about dispensing services, including searching for dispensers who can provide dispensing services for a patient with a given location and urgency, using our Electronic Prescription Service (EPS) Directory of Services (DoS) API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 16 October 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Electronic Prescription Service - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access the Electronic Prescription Service (EPS) - the national service used to send electronic prescriptions from GP surgeries to pharmacies.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 23 November 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Electronic Prescription Service - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access the Electronic Prescription Service (EPS) to send prescriptions from prescribers such as GPs to dispensers such as pharmacies using our HL7 V3 API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 March 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Electronic Prescription Service Tracker - REST API</a>
+          <p>
+            <span class="nhsuk-caption-m">Track a patient’s prescriptions within the Electronic Prescription Service (EPS).</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 7 June 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Electronic Transmission of Prescriptions Web Services - SOAP API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access the NHS UK Web Services&nbsp;to retrieve dispensaries information for a patient</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 6 August 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Emergency Department - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send an emergency department report following discharge or transfer of responsibility for a patient.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 16 August 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">End of Life API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards to enable sharing and updating of digital end of life care (EoLC) records.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 19 November 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">e-Referral Service - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Create paperless referrals from primary to secondary care using the e-Referral Service (e-RS) FHIR API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 14 December 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">e-Referral Service - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Create paperless referrals or manage appointment slots in secondary care using the e-Referral Service (e-RS) HL7 V3 API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 December 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Female Genital Mutilation - Information Sharing - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Share female genital mutilation (FGM) information for children under 18 with relevant NHS professionals across England using our Female Genital Mutilation (FGM) Information Sharing FHIR API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 25 May 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">FHIR UK Core API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards using FHIR release 4 to create a unified approach to interoperability across England, Scotland, Wales and Northern Ireland.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 12 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Gazetteer Service - SOAP API</a>
+          <p>
+            <span class="nhsuk-caption-m">Validate and retrieve UK-based postal addresses.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 27 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">General Practice Extraction Service - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send anonymised or patient-identifiable data from GP clinical systems for planning and research.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 December 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP2GP - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Transfer patients' electronic health records, securely and quickly, between their old and new practices when they change GPs.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 4 January 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Access Document - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Retrieve unstructured documents from a patient’s GP practice record.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 22 February 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Access Record HTML - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">View a patient's GP practice record, with read-only access.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 20 March 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Access Record Structured - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Retrieve structured information from a patient’s GP practice record.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Appointment Management - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Manage&nbsp;GP practice appointments between different systems.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 12 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Send Document - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send a PDF consultation summary to a registered GP practice.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Hello World API</a>
+          <p>
+            <span class="nhsuk-caption-m">Teach yourself how to connect to our RESTful APIs.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 19 July 2019</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Immunisation History - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access a patient’s coronavirus (COVID-19) immunisation history.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 15 January 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Interoperability Toolkit 3 Messaging Distribution FHIR API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards for a set of generic messaging components using FHIR STU3 to create a unified approach to NHS message and document flows across England.&nbsp;</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 4 February 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Legitimate Relationship Service - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access patients' Legitimate Relationships (LR) using our HL7 V3 API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 April 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Message Exchange for Social Care and Health (MESH) API</a>
+          <p>
+            <span class="nhsuk-caption-m">The Message Exchange for Social Care and Health (MESH) is the main secure large file transfer service used across health and social care organisations.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 25 June 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Data Opt-out - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Capture patients' preferences and control sharing of their data by healthcare organisations for planning and research purposes with our National Data Opt-out (NDOP) FHIR API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 16 October 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Early Warning Score 2 API standards</a>
+          <p>
+            <span class="nhsuk-caption-m">API standards to enable sharing of patients' vital signs and NEWS2 scores between systems and across care boundaries, for example, between two hospitals.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 23 November 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Event Management Service - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Publish and subscribe to patient-centric event messages with the National Events Management Service (NEMS).</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 March 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Health Application and Infrastructure Services - NHAIS GP Links API</a>
+          <p>
+            <span class="nhsuk-caption-m">Manage GP registrations and other patient data in NHAIS.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 7 June 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Population Failsafe Management - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Raise failsafe alerts about children with the National Population Failsafe Management (NPFM) FHIR API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 6 August 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Record Locator - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Locate and access patient information shared by other healthcare organisations using the National Record Locator (NRL) FHIR API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 16 August 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">NHS 111 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Share information between NHS 111 and other organisations, such as GPs and ambulance services, and query the Repeat Caller Service.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 19 November 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">NHS App API</a>
+          <p>
+            <span class="nhsuk-caption-m">Engage with users of the NHS App.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 14 December 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">NHS Booking - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Search for free slots and book appointments with this API formerly known as FHIR NHS Scheduling API</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 December 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">NHS Identity API</a>
+          <p>
+            <span class="nhsuk-caption-m">Verify the identity of health and care professionals in England, such as NHS staff, when they access national clinical information systems.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 25 May 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">NHS login API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access multiple digital health and social care services with a single login for patients and the public, including authentication for returning users.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 12 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">NHS Syndicated Content - REST APIs</a>
+          <p>
+            <span class="nhsuk-caption-m">Pull content  from the NHS.UK website about health conditions, health news, medicines A-Z and more, using our free NHS Syndicated Content APIs and widgets.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 27 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Organisation Data Service - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access details of health and social care organisations using our Organisation Data Service (ODS) FHIR API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 December 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Organisation Data Service - ORD API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access details of health and social care organisations using our Organisation Data Service (ODS) ORD API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 4 January 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Outpatients - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access an outpatient report.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 25 May 2017 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Pathology Messaging - EDIFACT API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send pathology test results from laboratories to GP practices.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 12 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Pathology Messaging - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Share pathology results in NHS primary and secondary care settings.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 27 September 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Pathology Messaging - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Request laboratory tests and send the results back to the requester, usually the patient's&nbsp;GP or consultant.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 December 2017</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Personal Demographics Service - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access patients' personal information, such as name, address, date of birth, related people and NHS number using our FHIR version of the Personal Demographics Service (PDS) API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 4 January 20188</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Personal Demographics Service - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access patients' personal information, such as name, address, date of birth, related people and NHS number using our HL7 V3 version of the Personal Demographics Service (PDS) API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 22 February 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Personal Demographics Service Notifications - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Receive notifications about changes to a patient's demographic details, including birth, death, change of address and change of GP.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 20 March 201820</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Personal Demographics Service - SMSP API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access patients' personal information, such as name, address, date of birth, related people and NHS number using our SMSP API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 October 20180</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Query Accredited System Information - SOAP API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access details of accredited systems in the Spine Directory Service (SDS) using this SOAP API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 12 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Reasonable Adjustment Flag - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access the&nbsp;Reasonable Adjustment Flag - a national record which indicates that a patient requires reasonable adjustments and includes relevant details.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 October 2018</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Signing Service API</a>
+          <p>
+            <span class="nhsuk-caption-m">Generate an electronic signature using your smartcard.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 19 July 2019020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Spine Directory Service - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access details of organisations, people and systems registered in the Spine Directory Service (SDS) using our FHIR-conformant API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 15 January 20200</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Spine Directory Service - LDAP API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access details of organisations, people and systems registered in the Spine Directory Service (SDS) using our LDAP API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 4 February 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Spine Security Broker API</a>
+          <p>
+            <span class="nhsuk-caption-m">Provide single sign-on for Spine users.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 April 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Summary Care Record - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access patient's Summary Care Record (SCR), an electronic record of important patient information, using our FHIR API.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 25 June 20201</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Summary Care Record - HL7 V3 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Access a patient's&nbsp;Summary Care Record (SCR) using our HL7 V3 API. Also previously known as PSIS query and GP summary.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 16 October 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Terminology Server - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Retrieve terminologies and classifications from the NHS Digital Terminology Server.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 23 November 2020</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Transfer of Care Emergency Care Discharge - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Create and transmit documents containing Transfer of Care information supporting an emergency care discharge.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 8 March 20212021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Transfer of Care Inpatient Discharge - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Create and transmit documents containing Transfer of Care information supporting an inpatient discharge.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 7 June 2021 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Transfer of Care Mental Health Discharge - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Create and transmit documents containing Transfer of Care information supporting a mental health discharge.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 6 August 20211</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Transfer of Care Outpatient Clinic Letter - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Create and transmit documents containing Transfer of Care information following an outpatient consultation in a clinic.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 16 August 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Vaccination Adverse Reactions COVID-19 API</a>
+          <p>
+            <span class="nhsuk-caption-m">Provide information to NHS Digital on adverse reactions relating to coronavirus (COVID-19) vaccinations.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 19 November 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Vaccination APIs</a>
+          <p>
+            <span class="nhsuk-caption-m">Provide information to NHS Digital relating to coronavirus (COVID-19) and seasonal flu 2020-21 vaccinations.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 14 December 2021</span>
+            
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Vaccination Events - FHIR API</a>
+          <p>
+            <span class="nhsuk-caption-m">Send and receive messages about changes to a patient's vaccination details.</span><br>
+            <span class="nhsuk-body-s"><strong class="nhsuk-tag">Live</strong>&emsp;&emsp;Last updated: 24 December 2021</span>
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3; 
+    }
+  </style>
+{% endblock %}

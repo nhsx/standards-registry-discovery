@@ -1,0 +1,185 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  The Personal Demographics Service (PDS) 
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/browse-sections">Browse directory</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-information">Services</a></li>
+      <li class="nhsuk-breadcrumb__item">The Personal Demographics Service (PDS) </li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <span class="nhsuk-caption-l">
+        Service
+      </span>
+      <h1>
+        The Personal Demographics Service (PDS) 
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <h2 class="nhsuk-heading-m">Description</h2>
+      <p>The Personal Demographics Service (PDS) is the national electronic database of NHS patient details such as name, address, date of birth and NHS Number (known as demographic information).</p>
+
+      <h2 class="nhsuk-heading-m">Use cases</h2>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="usecase-mental-health">Discharging someone from mental health services to another care setting</a></li>
+      </ul>
+
+      <a href="https://digital.nhs.uk/services/demographics" class="nhsuk-button">View service on source website</a>
+      
+      
+      <h2 class="nhsuk-heading-l">Latest version – 2.8.0-live</h2>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Release notes
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+      
+          <ul class="nhsuk-list-bullet">
+            <li>Updated to 2.8.0-live.</li>
+          </ul>
+        </details>
+      <p>
+        <dl>
+          <dt>Status</dt>
+          <dd><strong class="nhsuk-tag">live</strong></dd>
+          <dt>Date published</dt>
+          <dd>29 March 2021</dd>
+          <dt>Standard owner</dt>
+          <dd><a href="#">NHS digital</a></dd>
+          <dt>Suppprt contact</dt>
+          <dd>For general enquires please send an email to the NHS Digital Interoperability Team Inbox at <a href="#">interoperabilityteam@nhs.net.</a></dd>
+        </dl>
+      </p>
+<!--       
+      <a href="https://theprsb.org/wp-content/uploads/2021/02/Mental-health-inpatient-discharge-summary-v2.1-01.02.21.xlsx" class="nhsuk-button">Download standard</a>
+      
+      <h3 class="nhsuk-heading-xs">Key documents</h3>
+      <ul class="nhsuk-list-bullet">
+        <li></li>
+      </ul> -->
+      
+      <h3 class="nhsuk-heading-xs">Dependencies</h3>
+      Information standards:
+      <ul class="nhsuk-list-bullet">
+        <li><a href="standard-mental-health">Mental health inpatient discharge</a></li>
+      </ul>
+      Terminology standards:
+      <ul class="nhsuk-list-bullet">
+        <li><a href="standard-snomed">SNOMED clinical terminologies</a></li>
+        <li><a href="standard-snomed">Dictionary of Medicines and Devices</a></li>
+      </ul>
+      Technical standards:
+      <ul class="nhsuk-list-bullet">
+        <li><a href="https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/transfer-of-care-specification-versions">Transfer of Care - FHIR API</a></li>
+      </ul>
+      Services and tools:
+      <ul class="nhsuk-list-bullet">
+        <li><a href="standard-service">Patient Demographics service (PDS)</a></li>
+        <li><a href="standard-service">Patient administration service (PAS)</a></li>
+        <li><a href="standard-service">NHS data dictionary</a></li>
+        <li><a href="standard-service">NHS Number</a></li>
+        <li><a href="standard-service">Organisation data service (ODS)</a></li>
+        <li><a href="standard-service">SPINE Directory service</a></li>
+      </ul>
+            
+      <h2 class="nhsuk-heading-l">Previous versions</h2>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version – 2.0.0
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          COLLECTION OF DATA FOR THIS VERSION
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version – 1.8.0
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          COLLECTION OF DATA FOR THIS VERSION
+        </div>
+      </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version – 1.0.0
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          COLLECTION OF DATA FOR THIS VERSION
+        </div>
+      </details>
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <p>
+        <h3 class="nhsuk-heading-xs">Care settings</h3>
+        <ul class="nhsuk-list-bullet">
+            <li>GP practices</li>
+            <li>social care</li>
+            <li>hospital trust</li>
+            <li>mental health</li>
+          </ul>
+
+          <h3 class="nhsuk-heading-xs">Topic</h3>
+
+            <ul class="nhsuk-list-bullet">
+              <li>Continuity of care</li>
+              <li>Access to records</li>
+            </ul>
+
+    </div>
+  </div>
+
+  
+{% endblock %}

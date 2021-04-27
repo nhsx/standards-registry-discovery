@@ -1,0 +1,95 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Join up IT systems in health and social care
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Browse case studies</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Browse case studies
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <!-- <p class="nhsuk-lede-text">
+        Blurb about what this website is about
+      </p> -->
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, iusto ducimus exercitationem dolorum temporibus distinctio commodi, esse et earum illo perferendis eaque. Sed fuga facilis fugiat quod voluptatibus magnam temporibus!</p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      {% include "includes/filters-search.html" %}
+      {% include "includes/filters-topic.html" %}
+      {% include "includes/filters-region.html" %}
+      {% include "includes/filters-technology.html" %}
+    </div>
+    <div class="nhsuk-grid-column-three-quarters">
+      <ul class="nhsuk-list table-list">
+                
+        <li class="table-list-item">
+          <a href="case-study-bristol">Creating a read-only shared care record: Bristol</a>
+  
+            <span class="nhsuk-caption-m">Supporting health and social care staff across the region to have access to up-to-date information about the people using their services.</span><br>
+            <!-- <span class="nhsuk-body-s">Metadata: XXXX</span> -->
+        </li>     
+        <li class="table-list-item">
+          <a href="case-study-bristol">Creating a single patient record: Bradford</a>
+  
+            <span class="nhsuk-caption-m">Creating a single patient record for GPs, hospitals, adult social care teams and other local services.</span><br>
+            <!-- <span class="nhsuk-body-s">Metadata: XXXX</span> -->
+        </li>     
+        <li class="table-list-item">
+          <a href="case-study-bristol">Implementing an Electronic Patient Record: Rotherham</a>
+  
+            <span class="nhsuk-caption-m">Implementing an Electronic Patient Record with SNOMED CT</span><br>
+            <!-- <span class="nhsuk-body-s">Metadata: XXXX</span> -->
+        </li>     
+        <li class="table-list-item">
+          <a href="case-study-bristol">Accurately describing the needs of disabled children: Sunderland</a>
+  
+            <span class="nhsuk-caption-m">Using a new SNOMED CT Disabilities Terminology Set (DTS) to accurately describe the needs of disabled children.</span><br>
+            <!-- <span class="nhsuk-body-s">Metadata: XXXX</span> -->
+        </li>
+      </ul>
+    </div>
+{% endblock %}

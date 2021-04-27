@@ -1,0 +1,148 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse services
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/browse-sections">Browse directory</a></li>
+      <li class="nhsuk-breadcrumb__item">Services</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <!-- Change the page title here -->
+      <h1>
+        Browse services
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      {% include "includes/filters-search.html" %}
+      {% include "includes/filters-topic.html" %}
+    </div>
+    <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">Showing 25 services</h3>
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="standard-pds">Interoperability Toolkit (ITK)</a>
+          <p>
+          <span class="nhsuk-body">The Interoperability Toolkit (ITK) is a set of common specifications, frameworks and implementation guides. It supports interoperability within local organisations and across local health and social care communities.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">Data Security and Protection Toolkit</a>
+          <p>
+          <span class="nhsuk-body">For organisations to complete an annual self-assessment of data security processes  - required as per NHS Standard Contract and to gain access to NHSmail</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">National events management service (NEMS)</a>
+          <p>
+          <span class="nhsuk-body">Allow healthcare professionals to subscribe to notifications about: births, address changes, GP changes, deaths, new born hearing, new born bloodspots, new born infant physical examination, immunisations, professional contact</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">National record locator (NRL)</a>
+          <p>
+          <span class="nhsuk-body">Allow authorised healthcare professionals to be directed to patient records held by different organisations in the NHS</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">Personal demographics service (PDS)</a>
+          <p>
+          <span class="nhsuk-body">The national database of NHS patients. Allow healthcare professionals to identify patients, match them to their health records and get in touch with them.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">Spine</a>
+          <p>
+          <span class="nhsuk-body">National infrastructure that allows information to be shared securely through national services such as the Electronic Prescription Service.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">NHS Identity</a>
+          <p>
+          <span class="nhsuk-body">Verify the identity of healthcare professionals so they can access national clinical information systems</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">NHS login</a>
+          <p>
+          <span class="nhsuk-body">a new, secure authentication service used by health and care professionals in England to access national clinical information systems.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">NHS email</a>
+          <p>
+          <span class="nhsuk-body">secure email service</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">NHS wifi</a>
+          <p>
+          <span class="nhsuk-body">provides a secure, stable, and reliable WiFi capability</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-pds">Organisation data service</a>
+          <p>
+          <span class="nhsuk-body"> publishes codes that identify organisations and individuals across health and social care.</span><br>
+          <span class="nhsuk-body">Metadata 1: Example &ensp; Metadata 2: Example</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3; 
+    }
+  </style>
+{% endblock %}

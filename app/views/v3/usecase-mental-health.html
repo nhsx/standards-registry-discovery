@@ -1,0 +1,120 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Discharging someone from mental health services to another care setting
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/browse-use-cases">Use cases</a></li>
+      <li class="nhsuk-breadcrumb__item">Discharging someone from mental health services to another care setting</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <span class="nhsuk-caption-l">
+        Use cases
+      </span>
+      <h1>
+        Discharging someone from mental health services to another care setting
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <h2 class="nhsuk-heading-m">Description</h2>
+      <!-- <p>
+        People with mental health problems need good, joined up physical and mental health care, both in hospital and the community.
+      </p>
+
+      <p>Successful joined up care depends on GPs, community and acute mental health care teams and social care professionals all having access to timely information about a persons care and treatment. The PRSB has developed the mental health discharge summary standard to ensure that relevant information is shared, so professionals can provide continuity of care when an adult is discharged from mental health services. It includes information on patient history and social context, medications, the details of their hospital admission, as well as current and previous diagnoses.</p> -->
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quae pariatur distinctio qui deleniti, vero, delectus at, rem libero aliquid accusantium quo fugit! Quasi architecto accusantium eius, facere vel assumenda.</p>
+
+      <h3 class="nhsuk-heading-s">Related standards and formats</h3>
+      Content standards:
+      <ul class="nhsuk-list-bullet">
+        <li><a href="standard-mental-health">Mental health inpatient discharge</a></li>
+        <li><a href="standard-snomed">SNOMED clinical terminologies</a></li>
+        <li><a href="standard-snomed">Dictionary of Medicines and Devices</a></li>
+      </ul>
+      Technical standards:
+      <ul class="nhsuk-list-bullet">
+        <li><a href="https://developer.nhs.uk/transfer-care-specification-versions/" target="_blank">Transfer of care FHIR specifications</a></li>
+        <li><a href="https://digital.nhs.uk/developer/api-catalogue/dose-syntax-standards">Dose Syntax Implementation FHIR specifications </a></li>
+        <li><a href="https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-ldap">Spine Directory Service - LDAP API</a></li>
+      </ul>
+      Services:
+      <ul class="nhsuk-list-bullet">
+        <li><a href="standard-service">Patient Demographics service (PDS)</a></li>
+        <li><a href="standard-service">Patient administration service (PAS)</a></li>
+        <li><a href="standard-service">NHS data dictionary</a></li>
+        <li><a href="standard-service">NHS Number</a></li>
+        <li><a href="standard-service">Organisation data service (ODS)</a></li>
+        <li><a href="standard-service">SPINE Directory service</a></li>
+      </ul>
+
+
+      <h3 class="nhsuk-heading-xs">Related case studies</h3>
+      <ul class="nhsuk-list-bullet">
+        <li>lorem ipsom</li>
+        <li>lorem ipsom</li>
+        <li>lorem ipsom</li>
+      </ul>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <h3 class="nhsuk-heading-xs">Care settings</h3>
+      <ul class="nhsuk-list-bullet">
+        <li>GP practices</li>
+        <li>social care</li>
+        <li>hospital trust</li>
+        <li>mental health</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Topic</h3>
+
+      <ul class="nhsuk-list-bullet">
+        <li>Continuity of care</li>
+        <li>Access to records</li>
+      </ul>
+
+    </div>
+  </div>
+
+  
+{% endblock %}

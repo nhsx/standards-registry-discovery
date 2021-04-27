@@ -6107,6 +6107,9 @@ dd {
 .table-list li:first-child {
   border-top: 1px solid #bfc1c3; }
 
+.font-bold {
+  font-weight: bold; }
+
 .nhsuk-checkboxes--small .nhsuk-checkboxes__item {
   min-height: 0;
   margin-bottom: 0;
@@ -6162,5 +6165,43 @@ dd {
   color: #FFFFFF;
   background-color: #005eb8; }
 
-.font-bold {
-  font-weight: bold; }
+.nhsuk-phase-banner__text {
+  display: table-cell;
+  vertical-align: baseline; }
+
+.nhsuk-phase-banner__content {
+  font-size: 1px;
+  font-size: 1rem;
+  line-height: 1.25; }
+
+.nhsuk-phase-banner__content {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 1.14286;
+  display: table;
+  margin: 0; }
+
+.nhsuk-phase-banner__content__tag {
+  margin-right: 10px;
+  background-color: #d53880;
+  border: none; }
+
+.nhsuk-tag {
+  font-size: 14px;
+  line-height: 1; }
+
+.nhsuk-phase-banner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b1b4b6; }
+
+.nhsuk-phase-banner.homepage {
+  border-bottom: none; }
+
+.homepage .nhsuk-phase-banner__content__tag {
+  margin-right: 10px;
+  background-color: #d53880;
+  border: 1px solid white; }

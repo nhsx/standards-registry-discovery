@@ -1,0 +1,226 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Join up IT systems in health and social care
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Browse by product type</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <form action="question-business" method="POST">
+        <div class="nhsuk-form-group">
+
+        <fieldset class="nhsuk-fieldset" aria-describedby="setting-hint">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h1 class="nhsuk-fieldset__heading">
+              Which care settings are you interested in?
+            </h1>
+          </legend>
+      
+          <div class="nhsuk-hint" id="setting-hint">
+            Select all that apply
+          </div>
+      
+          <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+      
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-1" name="setting" type="checkbox" value="Community" aria-controls="conditional-setting-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-1">
+                Community health
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-2" name="setting" type="checkbox" value="Dentistry" aria-controls="conditional-setting-2" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-2">
+                Dentistry
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-3" name="setting" type="checkbox" value="Hospital" aria-controls="conditional-setting-3" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-3">
+                Hospital
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-setting-3">
+
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-4" name="setting" type="checkbox" value="A" aria-controls="conditional-setting-4" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-4">
+                  A&E / Emergency Department
+                </label>
+              </div>
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-5" name="setting" type="checkbox" value="Inpatient" aria-controls="conditional-setting-5" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-5">
+                  Inpatient
+                </label>
+              </div>
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-6" name="setting" type="checkbox" value="Outpatient" aria-controls="conditional-setting-6" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-6">
+                  Outpatient
+                </label>
+              </div>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-7" name="setting" type="checkbox" value="Maternity" aria-controls="conditional-setting-7" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-7">
+                Maternity
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-8" name="setting" type="checkbox" value="Mental" aria-controls="conditional-setting-8" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-8">
+                Mental Health
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-9" name="setting" type="checkbox" value="Patient" aria-controls="conditional-setting-9" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-9">
+                Patient / Citizen
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-10" name="setting" type="checkbox" value="Pharmacy" aria-controls="conditional-setting-10" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-10">
+                Pharmacy
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-11" name="setting" type="checkbox" value="GP" aria-controls="conditional-setting-11" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-11">
+                GP / Primary Care
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-12" name="setting" type="checkbox" value="Transport" aria-controls="conditional-setting-12" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-12">
+                Transport / Infrastructure
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-14" name="setting" type="checkbox" value="social" aria-controls="conditional-setting-15" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-14">
+                Social care
+              </label>
+            </div>
+      
+            <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-setting-15">
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-16" name="setting" type="checkbox" value="chn" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-16">
+                  Care Home with Nursing
+                </label>
+              </div>    
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-17" name="setting" type="checkbox" value="chwn" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-17">
+                  Care Home without Nursing
+                </label>
+              </div>    
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-18" name="setting" type="checkbox" value="dc" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-18">
+                  Domiciliary Care
+                </label>
+              </div>    
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-19" name="setting" type="checkbox" value="sl" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-19">
+                  Supported Living
+                </label>
+              </div>    
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-20" name="setting" type="checkbox" value="ec" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-20">
+                  Extra Care
+                </label>
+              </div>    
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-21" name="setting" type="checkbox" value="shl" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-21">
+                  Shared Lives
+                </label>
+              </div>    
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-22" name="setting" type="checkbox" value="u" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-22">
+                  Unregulated
+                </label>
+              </div>    
+            </div>
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="setting-23" name="setting" type="checkbox" value="Urgent" aria-controls="conditional-setting-23" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-23">
+                Urgent And Emergency Care
+              </label>
+            </div>
+            <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-setting-23">
+
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-24" name="setting" type="checkbox" value="Ambulance" aria-controls="conditional-setting-24" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-24">
+                  Ambulance
+                </label>
+              </div>
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-25" name="setting" type="checkbox" value="NHS" aria-controls="conditional-setting-25" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-25">
+                  NHS 111
+                </label>
+              </div>
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-26" name="setting" type="checkbox" value="A" aria-controls="conditional-setting-26" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-26">
+                  A&E / Emergency Department
+                </label>
+              </div>
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="setting-27" name="setting" type="checkbox" value="OOH" aria-controls="conditional-setting-27" aria-expanded="false">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="setting-27">
+                  Out of hours GP
+                </label>
+              </div>
+            </div>
+      
+          </div>
+        </fieldset>
+        
+      </div>
+      <button class="nhsuk-button">Continue</button>
+    </form>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,181 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Case studies - Bradford
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/case-studies">Case studies</a></li>
+      <li class="nhsuk-breadcrumb__item">Creating a single patient record: Bradford</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <span class="nhsuk-caption-l">
+        Case studies 
+      </span>
+      <h1>
+        Creating a read-only shared care record: Bristol
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+
+      <h3 class="nhsuk-heading-xs">Care settings:</h3>
+
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li>GP practices</li>
+<li>adult social care teams</li>
+<li>acute hospital trust</li>
+<li>mental health trust</li>
+<li>drug and alcohol teams</li>
+
+      </ul>
+      
+      <h3 class="nhsuk-heading-xs">Population size: </h3>
+      <ul class="nhsuk-list nhsuk-body-s">
+        630,000 people 
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Region: </h3>
+      <ul class="nhsuk-list nhsuk-body-s">
+        South West
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Architecture model: </h3>
+      <ul class="nhsuk-list nhsuk-body-s">
+        Hub and spoke
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Products: </h3>
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li>Orion Health Technology - front-end web portal</li>
+        <li>Medical Interoperability Gateway (MIG) - middleware (GP)</li>
+        <li>Rhapsody Integration Engine - middleware (acute/social care)</li>
+        <li>XDS messaging solution - document exchange</li>
+        
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Resources:</h3>
+
+      Technical specifications:
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li><a href="#">HL7 V.3</a></li>
+        <li><a href="#">FHIR Core (planned for future development</a>)</li>
+      </ul>
+
+      Services and tools:
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li><a href="#">Interoperability toolkit</a></li>
+      </ul>
+
+
+      <h3 class="nhsuk-heading-xs">Download:</h3>
+      <ul class="nhsuk-list nhsuk-body-s">
+        <li><a href="#">Download as a PDF</a></li>
+      </ul>
+
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h3 class="nhsuk-heading-s">Problem to solve</h3>
+
+
+      <p>Support health and social care staff across the region to have access to up-to-date information about the people using their services. </p>
+
+      <h3 class="nhsuk-heading-s">Solution</h3>
+
+      <p>Chief Information Officers from Bristol City Council and 2 acute trusts set up a pilot project in 2013, funded by the participating care settings. Following a competitive procurement process they selected Orion Health Technology as their solution. The full programme to create a shared care record was rolled out in 2014. </p>
+
+      <h3 class="nhsuk-heading-s">Resourcing</h3>
+
+      <p>A team of 10 was recruited including:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>senior solutions architects</li>
+      <li>testers</li>
+      <li>project managers</li>
+      <li>information governance specialists</li>
+      </ul>
+
+      <p>Between 5 and 10 projects were ongoing at any one time as information for the record was pulled in from more places. </p>
+
+      <h3 class="nhsuk-heading-s">Technology</h3>
+
+      <p>Users request data through Orion Health Technology’s Connecting Care portal. This either pulls the data directly from the system via the MIG in the case of GPs, or from a central data store using the Rhapsody Integration Engine and Nextgate Master Patient Index in the case of acute/social care settings.</p>
+
+      <p>“If you’ve got 15 or 20 systems and you try to join them all up you’ll soon see it’s a massive mess. it’s just not sustainable to do that level of integration.” Project manager</p>
+
+      <h3 class="nhsuk-heading-s">Challenges</h3>
+
+      <p>Challenges included:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>getting funding and agreeing how to allocate costs - the team was constantly applying for funding from local and national sources</li>
+      <li>putting in place an effective support strategy that can cover 24 system interfaces, 8000 users and different IT support functions</li>
+      <li>creating a record that worked for social care as the data is very different. The team also surfaced data quality issues that needed fixing. </li>
+      <li>managing ongoing work around security and upgrades as versions go out of date</li>
+      </ul>
+      <h3 class="nhsuk-heading-s">Results</h3>
+
+      <p>Healthcare professionals can access care records populated by all care settings including adult and children’s social care, drug and alcohol services and out of hours GP. </p>
+
+      Feedback:
+
+      <p>“[This has] dramatically decreased the time it takes to undertake a triage.” Care of the Elderly Pharmacist</p>
+
+      <p>“It was amazing having this resource over the long weekend. I was able to access information about a patient’s usual insulin regime when she was severely unwell and not able to communicate with us”. Pharmacist, North Bristol Trust</p>
+
+      <p>“The great benefit...is access to medical history, contacts with GP and medication lists. Although it is possible to get these faxed from GPs, it is very time consuming and not available 24/7.” Bristol Community Health Service </p>
+
+
+      <h3 class="nhsuk-heading-s">Aspirations </h3>
+
+      <p>The team are exploring two-way integrations with patient-facing apps.</p>
+
+      <h3 class="nhsuk-heading-s">Contact </h3>
+
+      <p>Simon Barnswell, Programme Director, NHS North Bristol Trust</p>
+      <p>simon.barnswell@nhs.uk </p>
+
+      <h3 class="nhsuk-heading-s">Resources </h3>
+
+      <p>There’s a dedicated website explaining how people’s data will be used </p>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+
+    </div>
+  </div>
+  
+{% endblock %}

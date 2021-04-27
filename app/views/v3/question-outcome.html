@@ -1,0 +1,76 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Join up IT systems in health and social care
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Browse by product type</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1 class="nhsuk-heading-xl">You should consider these standards and formats for your service</h1>
+      
+      <h2 class="nhsuk-heading-m">Required standards</h2>
+      
+      <h3 class="nhsuk-heading-s"><a href="#">NHS Number</a></h3>
+      <p>The national identifier for people being cared for by the NHS. Required for use in all services that collect or share information about people using NHS services.</p>
+      <p><Strong>Status:</Strong> Ready to use</p>
+      <strong>Tags:</strong>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Mental health trust</li>
+        <li>Diagnostics</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s"><a href="#">Data security </a></h3>
+      <p>A set of data security standards to safeguard personal information held by the NHS. Required for all digital, data and technology services that access or allow access to NHS patient data and systems.</p>
+      <p><Strong>Status:</Strong> Ready to use</p>
+      <strong>Tags:</strong>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Mental health trust</li>
+        <li>Diagnostics</li>
+      </ul>
+
+      <h2 class="nhsuk-heading-m">Optional standards</h2>
+
+      <h3 class="nhsuk-heading-s"><a href="#">Mental health e-discharge</a></h3>
+      <p>An API to discharge someone from a mental health facility. </p>
+      <p><Strong>Status:</Strong> Experimental</p>
+      <strong>Tags:</strong>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Mental health trust</li>
+      </ul>
+
+    </div>
+  </div>
+{% endblock %}

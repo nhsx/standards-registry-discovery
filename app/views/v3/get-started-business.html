@@ -1,0 +1,109 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Get started
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Get started</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Get started 
+      </h1>
+      <p>
+        <!-- Supporting real-time information-sharing across care settings . Find out more about how to manage in -->
+      </p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <h3 class="nhsuk-heading-s">Contents</h3>
+      <ul class="nhsuk-list-bullet">
+        <li>
+          <a href="#types">Overview </a>
+        </li>
+        <li>
+          <a href="#types">Common challenges</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+      <p>Supporting real-time information-sharing across care settings . Find out more about how to manage in</p>
+      <h3 class="nhsuk-heading-xs">1. Identify opportunities to improve care provision through information-sharing.</h3>
+
+      <h3 class="nhsuk-heading-xs">2. Set up working group from all care settings and assign a lead programme manager</h3>
+      <p>You’ll want technical teams from all settings as well as people who can agree information governance etc.</p>
+
+      <h3 class="nhsuk-heading-xs">3. Agree engagement strategy and staff feedback channels </h3>
+      <p>This <a href="#">blog post from Peter Vowels on ten tips for leading organisational change</a></p>
+
+      <h3 class="nhsuk-heading-xs">4. Agree principles on data ownership, processing and storage</h3>
+
+      <h3 class="nhsuk-heading-xs">5. Check all systems are aligned to the appropriate standards</h3>
+      <p>Making your service interoperable means using common formats or standards to build software.</p>
+      
+      <h3 class="nhsuk-heading-xs">6. Set up pilot </h3>
+
+      <h3 class="nhsuk-heading-xs">7. Communicate new ways of working and benefits</h3>
+
+
+
+      <h2 class="nhsuk-heading-m">Common challenges</h2>
+
+      <p>Common problems people find when attempting to join up IT systems are:</p>
+
+      <h2 class="nhsuk-heading-s">Existing technology doesn’t support data-sharing</h2>
+
+      <p>Existing technology can mean organisations face challenges accessing and sharing their data. This can happen when information is held within a product or application itself instead of in a separate layer which is owned by the customer. </p>
+
+      <p>What this means for individual organisations may vary depending on the supplier, but customers can be charged high fees or required to wait a long time to be able to access their own information. If you’re having problems with your supplier contact the support team at <a href="mailto:helpme@interop.nhs.uk">helpme@interop.nhs.uk</a>. </p>
+
+      <h2 class="nhsuk-heading-s">Standards can change </h2>
+
+      <p>Standardisation is an organic, community-led process - it cannot be dictated by any one organisation. As such  because they understand. Some standards in health and social care are well established..This is an area in which resources can go out of date and so they need to be maintained and kept up to date. Teams or contracts need to be set up to be able to deal flexibly with these changes.</p>
+
+
+      <h2 class="nhsuk-heading-s">Staff don’t use new ways of working</h2>
+
+      <p>To realise the benefits...This can be harder if systems don’t work in the way staff need them to, they’re confusing and hard to use, or it’s not easy for everyone to access them. Staff may prefer their existing, known ways of working. There’s guidance on how to create clear, easy-to-use digital systems and services that meet people’s needs from the NHS Design System and GOV.UK Design System. ….</p>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+  
+{% endblock %}

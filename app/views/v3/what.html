@@ -1,0 +1,156 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  What is interoperability
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">What is interoperability</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        What is interoperability 
+      </h1>
+      <p>Most data in health and social care is held within organisations. This doesn’t support how care is provided with people often needing help from several specialists. Find out what interoperability is and how it makes care provision easier.
+      </p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <h3 class="nhsuk-heading-s">Contents</h3>
+      <ul class="nhsuk-list-bullet">
+        <li><a href="#what">What is interoperability</a></li>
+        <li><a href="#how">How to do interoperability</a></li>
+        <li><a href="#using">Using standards</a></li>
+        <li><a href="#benefits">Benefits of interoperability</a></li>
+      </ul>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2 id="what" class="nhsuk-heading-m">What is interoperability </h2>
+      
+      <p>Interoperability is when digital products can easily share or make use of information, even if they are built or owned by different organisations. These products could be computers, phones or smart devices. </p>
+      
+      <p>An example is a hospital nurse is given permission by a patient to check their GP records for the medication they’re taking. Interoperability means the nurse can access the patient’s records through the hospital’s own systems, instead of needing to log in to another system or request the records another way.</p>
+      
+      <h2 id="how" class="nhsuk-heading-m">How to do interoperability</h2>
+      
+      <p>Enabling access to real-time information from different systems is not easy. It requires:</p>
+      <ul class="nhsuk-list nhsuk-list--number">
+        <li>Everyone to use standardised formats - standards - to build their digital products or services. Without standardisation every organisation might structure their information differently, which would make it difficult to share.</li>
+        
+        <li>People in different healthcare settings to work together to join up systems. This requires technical specialists to check the information is flowing smoothly across settings as well as information governance specialists who can agree on the rules around who can see what.</li>
+        
+        <li>Care professionals to change their ways of working so that they use their IT systems to record and share information in standardised ways rather than using pen and paper or sending an email, for example. </li>
+
+      </ul>
+      
+      
+      
+      
+      
+      <h2 id="using" class="nhsuk-heading-m">Using standards </h2>
+      
+      <p>For interoperability to work, different types of standards need to be used together, and they need to be used in every system that wants to share or receive information.</p>
+      
+      <h3 class="nhsuk-heading-s">Content standards</h3>
+      
+      <p>Content standards ensure information is collected and formatted consistently. They ensure information:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>is grouped under the same headings - ‘Person’s details’ instead of ‘Patient’s details’, for example</li>
+        <li>uses the correct clinical codes - for example, recording someone’s medication using its dedicated code rather than just writing the name which can lead to errors</li>
+        <li>uses data models to format information consistently - for example, </li>
+      </ul>
+      <p><a href="browse-information">Browse content standards</a></p>
+      
+      <h3 class="nhsuk-heading-s">Messaging standards</h3>
+      
+      <p>Messaging standards ensure information is structured in code in a consistent way that can be easily shared with other systems. These are sometimes referred to as ‘specifications’. </p>
+      
+      <p><a href="browse-technical">Browse messaging standards</a></p>
+      
+      <h3 class="nhsuk-heading-s">Security standards</h3>
+      
+      <p>Security standards ensure only authorised systems are able to receive or process information. For example, they meet minimum requirements for cybersecurity and data protection.   </p>
+      
+      <p><a href="#">Browse security standards</a></p>
+      
+      <p>We can already see how standardisation has transformed people’s lives in other areas, like banking. Being able to quickly transfer money from an account held at one bank to an account held at another is only possible thanks to the consistent use of standards.</p>
+
+      <p>Standards won’t exist for everything services are trying to do in health and social care. What’s important is that where standards do exist and apply, they are used. If they don’t exist there’s an opportunity to contribute a standard to the community to support standardisation in that particular area. </p>
+
+      <h3 class="nhsuk-heading-s">Open versus closed standards </h3>
+      
+      <p>Some standards are ‘open standards’ whilst others are closed. </p>
+      <p>Open standards usually:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>give you permission to copy, distribute and use them freely or at low cost </li>
+        <li>are developed collaboratively with lots of interested parties rather then a single organisation</li>
+        <li>encourage feedback so standards can be continually developed</li>
+      </ul>
+      <p>Closed standards may still be appropriate for use in health and social care, but they could include fees and be harder to influence or change. </p>
+      
+
+
+      <h2 id="benefits" class="nhsuk-heading-m">Benefits of interoperability</h2>
+
+      <h3 class="nhsuk-heading-s">Benefits to people who receive care</h3>
+
+      <p>Information about our health is some of the most sensitive data anyone can know about us. It’s important that information is held securely and only shared in ways we agree to.</p>
+
+      <p>However, done right, data-sharing has the potential to:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>reduce the burden on people needing to share details about their health or treatment every time they receive some form of care. This can be hard for everyone, but especially for people with conditions that affect their memory.</li>
+        <li>allow people to be able to see their own health record, so they have more visibility and ownership of their data</li>
+        <li>give people more effective care by ensuring healthcare professionals make informed decisions based on their full history</li>
+        <li>another benefit</li>
+      </ul>
+      <h3 class="nhsuk-heading-s">Benefits to healthcare professionals</h3>
+
+      <p>Healthcare professionals need to have a valid reason to be able to see another organisation’s data as well as informed consent if they’re accessing someone’s health records. However the benefits they could see include: </p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>being able to call up someone’s health record or a snapshot of their record instantly without having to ask anyone to share it </li>
+        <li>being able to see richer details about the health and wellbeing of the person they’re caring for, which could influence the care they give</li>
+        <li>less time filling in paperwork</li>
+      </ul>
+      <p>The recent pandemic - where we had to quickly move patients to wherever there was space to treat them - showed us how important it is to join up IT systems to make care provision easier. </p>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+  
+{% endblock %}

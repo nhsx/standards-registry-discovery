@@ -1,0 +1,187 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  SNOMED clinical terminologies
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/browse-sections">Browse directory</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v3/browse-information">Content standards</a></li>
+      <li class="nhsuk-breadcrumb__item">SNOMED clinical terminologies</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <span class="nhsuk-caption-l">
+        Terminologies and codes
+      </span>
+      <h1>
+        SNOMED clinical terminologies
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+      <h2 class="nhsuk-heading-m">Description</h2>
+        <p>The policy document, <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/384650/NIB_Report.pdf">Personalised Health and Care 2020: A Framework for Action</a>,&nbsp;published by the National Information Board (NIB) in November 2014, identified SNOMED CT as the required terminology to support direct management of care.</p>
+        
+        <p>SNOMED CT was first published as an information standard by the Information Standards Board (ISB) in August 2011, the original documents remain on the <a href="https://webarchive.nationalarchives.gov.uk/+/http:/www.isb.nhs.uk/documents/isb-0034/amd-26-2006">ISB website</a>.</p>
+        
+        <!-- <p>This&nbsp;latest release&nbsp;seeks to ensure that its implementation is planned to coincide with national requirements in relation to electronic records. There are three elements to the change:</p>
+        
+        <ol>
+         <li>Confirmation of the timescales for the cessation of SNOMED CT releases in Release Format 1 (RF1) and the subsequent move to releases only being provided in Release Format 2 (RF2). All existing users (including any social care providers) will need to change to RF2.</li>
+         <li>Conversion of the current information standard to align with the requirements of the Health and Social Care Act 2012. This includes the provision of Implementation Guidance.</li>
+         <li>Confirmation of application of this standard in specified operational settings including implementation dates in alignment with national policy.</li>
+        </ol>
+        
+        <p>This information standard is published under section 250 of the Health and Social Care Act 2012. An Information Standards Notice (see below) provides an overview of scope and implementation timescales and the other listed documents provide further detail for those who have to implement the information standard.</p> -->
+
+        <h2 class="nhsuk-heading-m">Use cases</h2>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li class="table-list-item">
+            <a href="usecase-mental-health">Supporting people across several settings to care for someone </a>
+          </li>
+          <li class="table-list-item">
+            <a href="usecase-mental-health">Discharging someone from hospital to another care setting</a>
+          </li>
+          <li><a href="usecase-mental-health">Discharging someone from mental health services to another care setting</a>
+          <br>
+        </li>
+        <span class="nhsuk-u-font-size-14"><a href="#">Show all use cases</a></span>
+      </ul>
+
+        <h2 class="nhsuk-heading-l">Latest version</h2>
+        <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Release notes
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <h3 class="nhsuk-heading-s">Uplift of key and supporting documentation</h3>
+            <p>The requirement for all health and care systems to use SNOMED CT has not changed.</p>
+            
+            <p>The ability to flow patient data electronically and safely between health and care systems remains a high priority. Since December 2019, this objective has been achieved in General Practice. The requirement to enable SNOMED CT content in secondary, dentistry and optometry care systems in 2020 is still to be fully achieved; although it is known that many providers have SNOMED CT enabled EPR systems in place.</p>
+            
+            <p>Recognising this is the case, the Data Coordination Board has approved an application by NHS Digital, in conjunction with NHSX, to uplift the key and supporting documentation to enable further progress of SNOMED CT implementation across health and care systems.</p>
+            
+            <p>The information in the Requirements Specification, Change Specification, Implementation Guidance and User Guide has been refreshed to ensure links to current guidance and information are correct; clarifications have been made based on feedback from those systems that have adopted SNOMED CT; additional advice has been provided on the support available to help implementation. Note that there are no fundamental changes to the standard itself.</p>
+            
+            <p>The updated documents (marked as Version 2.0) are available in the Releases table on this page.</p>
+            
+            <p>It is expected that all secondary, dentistry and optometry service providers will have detailed plans in place with an associated implementation schedule for SNOMED CT by 31 December 2020.  These plans will be required by NHSX and NHS England and NHS Improvement as part of provider planning activity.</p>
+            
+            <p>If you have any queries about this, please contact NHS Digital at information.standards@nhs.net</p>
+          </div>
+        </details>
+        <p>
+          <dl>
+            <dt>Status</dt>
+            <dd><strong class="nhsuk-tag">Implementation</strong></dd>
+            <dt>Date published</dt>
+            <dd>17 May 2020</dd>
+            <dt>Standard owner</dt>
+            <dd><a href="#">NHS digital</a></dd>
+            <dt>Last review</dt>
+            <dd>30 April 2021</dd>
+          </dl>
+        </p>
+        
+        <p><a href="https://termbrowser.nhs.uk/?" class="nhsuk-button">Go to standard</a></p>
+      
+      <h3 class="nhsuk-heading-xs">Key documents</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/website-assets/isce/scci0034/0034352016spec-v2.pdf" >Requirements Specification (Amd 35/2016)&nbsp;Version 2.0</a></li>
+        <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/website-assets/isce/scci0034/0034352016change-spec-v2.pdf">Change Specification (Amd 35/2016)&nbsp;Version 2.0</a></li>
+        <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/website-assets/isce/scci0034/0034352016guidance-v2.pdf">Implementation Guidance (Amd 35/2016)&nbsp;Version 2.0</a></li>
+        <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/legacy/pdf/o/e/0034352016isn.pdf">Information Standards Notice (Amd 35/2016)</a></li>
+
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Dependencies</h3>
+      <p>No dependencies</p>
+
+
+      <h3 class="nhsuk-heading-xs">Assurance</h3>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>Information Standards Board (ISB) in August 2011</li>
+      </ul>
+            
+      <h2 class="nhsuk-heading-l">Previous versions</h2>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Updated - 18 January 2018 
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          COLLECTION OF DATA FOR THIS VERSION
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            First published - 2 November 2016
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          COLLECTION OF DATA FOR THIS VERSION
+        </div>
+      </details>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+    <div class="nhsuk-grid-column-one-third">
+      <p>
+        <h3 class="nhsuk-heading-xs">Care settings</h3>
+        <ul class="nhsuk-list-bullet">
+          <li>All care settings</li>
+        </ul>
+
+        <h3 class="nhsuk-heading-xs">Topic</h3>
+        <ul class="nhsuk-list-bullet">
+          <li>All topics</li>
+        </ul>
+
+    </div>
+  </div>
+
+  
+{% endblock %}
