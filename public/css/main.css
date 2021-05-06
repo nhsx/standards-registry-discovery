@@ -6081,6 +6081,9 @@ b {
       font-size: 14pt;
       line-height: 1.2; } }
 
+.secondary-text {
+  color: #4c6272; }
+
 dl {
   width: 100%;
   overflow: hidden;
