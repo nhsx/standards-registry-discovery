@@ -41,11 +41,7 @@
   <div class="nhsuk-grid-column-two-thirds">
     <!-- Change the page title here -->
     <h1>
-      Search results for: <br>
-      {% if data["search-term"] == undefined %}
-        Mental health
-      {% endif %}
-      {{data["search-term"]}}
+      Search results 
     </h1>
     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum, assumenda temporibus, autem aperiam suscipit non, eum voluptatum reiciendis sequi libero sint unde exercitationem delectus esse eligendi maxime asperiores accusamus.</p> -->
   </div>
@@ -59,11 +55,7 @@
   </div>
   <div class="nhsuk-grid-column-three-quarters">
     <h3 class="nhsuk-heading-s">
-      21 items related to:  
-      {% if data["search-term"] == undefined %}
-        'Mental health'
-      {% endif %}
-      '{{data["search-term"]}}'
+      21 items related to:  "{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}"
     
     </h3>
     <ul class="nhsuk-list table-list">
