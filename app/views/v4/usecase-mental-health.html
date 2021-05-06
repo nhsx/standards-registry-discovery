@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-v4.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -61,29 +61,38 @@
 
       <p>Successful joined up care depends on GPs, community and acute mental health care teams and social care professionals all having access to timely information about a persons care and treatment. The PRSB has developed the mental health discharge summary standard to ensure that relevant information is shared, so professionals can provide continuity of care when an adult is discharged from mental health services. It includes information on patient history and social context, medications, the details of their hospital admission, as well as current and previous diagnoses.</p> -->
 
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quae pariatur distinctio qui deleniti, vero, delectus at, rem libero aliquid accusantium quo fugit! Quasi architecto accusantium eius, facere vel assumenda.</p>
+      <p>A person who has recieved mental health treatment is to be discharged. This standard ensures the infromation about the discharge is collected and sent consistently so that at a later date, if that same person goes for treatment in another care setting the care provider in that setting can easily access the information from that discharge. </p>
 
       <h3 class="nhsuk-heading-s">Related standards and formats</h3>
-      Content standards:
+      <p><a href="standard-mental-health">Mental health inpatient discharge</a><br>
+      Standardising information shared so professionals can provide continuity of care when an adult is discharged from mental health services. Includes information on patient history, medications, as well as current and previous diagnoses.</p>
+      <span>Requiring the technical standards:</span>
+      <span class="">
+        <ul class="nhsuk-list-bullet nhsuk-u-font-size-14">
+          <li><a href="https://developer.nhs.uk/transfer-care-specification-versions/" target="_blank">Transfer of care FHIR specifications</a> <span class="secondary-text"></span></li>
+          <li><a href="https://digital.nhs.uk/developer/api-catalogue/dose-syntax-standards">Dose Syntax Implementation FHIR specifications </a> <span class="secondary-text"></span></li>
+          <a href="#">See more...</a>
+        </ul>
+      </span>
+      Requiring the services:
       <ul class="nhsuk-list-bullet">
-        <li><a href="standard-mental-health">Mental health inpatient discharge</a></li>
-        <li><a href="standard-snomed">SNOMED clinical terminologies</a></li>
-        <li><a href="standard-snomed">Dictionary of Medicines and Devices</a></li>
+        <li><a href="standard-service">Organisation data service (ODS)</a> <span class="secondary-text"></span></li>
+        <li><a href="standard-service">NHS data dictionary</a> <span class="secondary-text"></span></li>
+        <li><a href="standard-service">Patient administration service (PAS)</a> <span class="secondary-text"></span></li>
+      </ul>
+      <ul class="nhsuk-list-bullet">
+        <li><a href="standard-snomed">SNOMED clinical terminologies</a> <span class="secondary-text">- Recommended</span></li>
+        <li><a href="standard-snomed">Dictionary of Medicines and Devices</a> <span class="secondary-text">- Recommended</span></li>
       </ul>
       Technical standards:
       <ul class="nhsuk-list-bullet">
-        <li><a href="https://developer.nhs.uk/transfer-care-specification-versions/" target="_blank">Transfer of care FHIR specifications</a></li>
-        <li><a href="https://digital.nhs.uk/developer/api-catalogue/dose-syntax-standards">Dose Syntax Implementation FHIR specifications </a></li>
-        <li><a href="https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-ldap">Spine Directory Service - LDAP API</a></li>
+        <li><a href="https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-ldap">Spine Directory Service - LDAP API</a> <span class="secondary-text">- Recommended</span></li>
       </ul>
       Services:
       <ul class="nhsuk-list-bullet">
-        <li><a href="standard-service">Patient Demographics service (PDS)</a></li>
-        <li><a href="standard-service">Patient administration service (PAS)</a></li>
-        <li><a href="standard-service">NHS data dictionary</a></li>
-        <li><a href="standard-service">NHS Number</a></li>
-        <li><a href="standard-service">Organisation data service (ODS)</a></li>
-        <li><a href="standard-service">SPINE Directory service</a></li>
+        <li><a href="standard-service">NHS Number</a> <span class="secondary-text">- Recommended</span></li>
+        <li><a href="standard-service">Patient Demographics service (PDS)</a> <span class="secondary-text">- Recommended</span></li>
+        <li><a href="standard-service">SPINE Directory service</a> <span class="secondary-text">- Recommended</span></li>
       </ul>
 
 

@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-v4.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -44,6 +44,7 @@
       <h1>
         Browse content standards
       </h1>
+      <p>Find clinical codes, content and data formats to collect and share information in health and social care settings in England.</p>
     </div>
   </div>
   <div class="nhsuk-grid-row">
@@ -51,6 +52,7 @@
       {% include "includes/filters.html" %}
       {% include "includes/filters-search.html" %}
       {% include "includes/filters-topic.html" %}
+      {% include "includes/filters-programme.html" %}
       {% include "includes/filters-setting.html" %}
       {% include "includes/filters-compliance.html" %}
       {% include "includes/filters-status.html" %}

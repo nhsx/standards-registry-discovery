@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-v4.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -58,7 +58,14 @@
     {% include "includes/filters-topic.html" %}
   </div>
   <div class="nhsuk-grid-column-three-quarters">
-    <h3 class="nhsuk-heading-s">Showing 6 results </h3>
+    <h3 class="nhsuk-heading-s">
+      21 items related to:  
+      {% if data["search-term"] == undefined %}
+        'Mental health'
+      {% endif %}
+      '{{data["search-term"]}}'
+    
+    </h3>
     <ul class="nhsuk-list table-list">
       <li class="table-list-item">
         <a href="usecase-mental-health">Mental health inpatient discharge</a>

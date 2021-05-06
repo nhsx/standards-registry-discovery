@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-v4.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -54,40 +54,44 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      <p>Use this care record to collect consistent information when discharging an adult patient from a mental health care setting - such as a hospital or community team - to their GP practice.</p>
-
-      <p><a href="https://theprsb.org/standards/mentalhealth/" target="_blank">View this standard on Professional Record Standards Body's website</a></p>
+      <p>Approved content format for collecting information about an adult transferring from mental health to GP services.</p>
 
       <table class="nhsuk-table ">
         <tbody class="nhsuk-table__body ">
           <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Category</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Content format</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Owner</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Professional Record Standards Body</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Reference</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">PRSB9784</td>
           </tr>
           <tr role="row" class="nhsuk-table__row">
             <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
             <td class="nhsuk-table__cell nhsuk-u-font-size-16"><span class="taxonomy-tag blue">Active</span></td>
           </tr>
           <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Compliance</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Recommended for use on relevant services</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Category</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Content format</td>
           </tr>
-          <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Unique identifier</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16">PRSB9784</td>
-          </tr>
-          <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Version</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2.1 (latest version)</td>
-          </tr>
-          <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date published</td>
+          <!-- </tbody>
+          </table>
+          <h2 class="nhsuk-heading-s">Latest version (2.1) </h2>
+          <table class="nhsuk-table ">
+            <tbody class="nhsuk-table__body "> -->
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Version</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">2.1 (latest version)</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+            
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Standard last updated</td>
             <td class="nhsuk-table__cell nhsuk-u-font-size-16">
               14 April 2020
               <details class="nhsuk-details">
                 <summary class="nhsuk-details__summary">
-                  <span class="nhsuk-details__summary-text">
-                    Release notes
+                  <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+                    Show release notes
                   </span>
                 </summary>
                 <div class="nhsuk-details__text">
@@ -99,12 +103,47 @@
                   </ul>
                 </div>
               </details>
-            
             </td>
           </tr>
-          
           <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Endorsers</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Care settings</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+                <li>GP practices</li>
+                <li>social care</li>
+                <li>hospital trust</li>
+                <li>mental health</li>
+              </ul>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Topic</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+                <li>Continuity of care</li>
+                <li>Access to records</li>
+              </ul>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Compliance</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              Required
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+                    Show basis for requirement
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p class=" nhsuk-u-font-size-16">This standard must be used in relevant products and services being sold through health and social care procurement frameworks and is required to meet the <a href="#">Digital Technology Assessment Criteria</a>. 
+                  </p>
+                </div>
+              </details>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Endorsed by</td>
             <td class="nhsuk-table__cell nhsuk-u-font-size-16">
               <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
                 <li>Royal College of Nursing</li>
@@ -114,28 +153,19 @@
                 <li>Royal College of Occupational Therapists</li>
                 <li>Royal Pharmaceutical Society</li>
                 <li>British Psychological Society</li>
-                <li>RCoA</li>
+                <li>Royal College of Anaesthatists </li>
                 <li>Institute of Health Records and Information Management</li>
                 <li>TechUK</li>
               </ul>
             </td>
           </tr>
           <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Last review</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2 April 2020</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Standard</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <a href="#">View standard on the Professional Record Standards Body’s website</a>
+            </td>
           </tr>
-          <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Next review</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2 April 2022</td>
-          </tr>
-          <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Owner</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Professional Record Standards Body</td>
-          </tr>
-          <tr role="row" class="nhsuk-table__row">
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact</td>
-            <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:support@prsb.co.uk">support@prsb.co.uk</a></td>
-          </tr>
+          
           <tr role="row" class="nhsuk-table__row">
             <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
             <td class="nhsuk-table__cell nhsuk-u-font-size-16">
@@ -148,29 +178,31 @@
               </ul>
             </td>
             <tr role="row" class="nhsuk-table__row">
-              <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Technical standard</td>
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Technical specifications</td>
               <td class="nhsuk-table__cell nhsuk-u-font-size-16">
                 <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
-                  <li><a href="standard-api-mental-health">ITK3 Mental Health eDischarge</a></li>
+                  <li><a href="standard-api-mental-health">Mental health inpatient discharge - FHIR</a></li>
+                  <li><a href="https://developer.nhs.uk/apis/dose-syntax-implementation/">Dose Syntax Implementation</a></li>
+                  <li><a href="https://developer.nhs.uk/apis/dose-syntax-implementation/">Spine Directory Service - LDAP API</a> - Optional</li>
                 </ul>
               </td>
             </tr>
             <tr role="row" class="nhsuk-table__row">
               <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
               <td class="nhsuk-table__cell nhsuk-u-font-size-16">
-                Content
+                This standard requires use of:
                 <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
-                  <li><a href="standard-snomed">SNOMED clinical terminologies</a></li>
-                  <li><a href="standard-snomed">Dictionary of Medicines and Devices</a></li>
+                  <li><a href="standard-service">Organisation data service (ODS)</a> <span class="secondary-text">Service</span></li>
+                  <li><a href="standard-service">NHS data dictionary</a> <span class="secondary-text">Service</span></li>
+                  <li><a href="standard-service">Patient administration service (PAS)</a> <span class="secondary-text">Service</span></li>
                 </ul>
-                Services
+                It is also recommended to use:
                 <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
-                  <li><a href="standard-service">Patient Demographics service (PDS)</a></li>
-                  <li><a href="standard-service">Patient administration service (PAS)</a></li>
-                  <li><a href="standard-service">NHS data dictionary</a></li>
-                  <li><a href="standard-service">NHS Number</a></li>
-                  <li><a href="standard-service">Organisation data service (ODS)</a></li>
-                  <li><a href="standard-service">SPINE Directory service</a></li>
+                  <li><a href="standard-snomed">SNOMED clinical terminologies</a> <span class="secondary-text">Content standard</span></li>
+                  <li><a href="standard-snomed">Dictionary of Medicines and Devices</a> <span class="secondary-text">Content standard</span></li>
+                  <li><a href="standard-service">NHS Number</a> <span class="secondary-text">Service</span></li>
+                  <li><a href="standard-service">Patient Demographics service (PDS)</a> <span class="secondary-text">Service</span></li>
+                  <li><a href="standard-service">SPINE Directory service</a> <span class="secondary-text">Service</span></li>
                 </ul>
               </td>
               
@@ -191,6 +223,14 @@
                 </td>
               </tr>
             </tr>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Next review</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2 April 2022</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:support@prsb.co.uk">support@prsb.co.uk</a></td>
           </tr>
         </tbody>
       </table>
@@ -287,16 +327,20 @@
           </table>
         </div>
       </details>
+      
+    </div>
+    
+    <div class="nhsuk-grid-column-one-third">
       <details class="nhsuk-details">
         <summary class="nhsuk-details__summary ">
-          <span class="nhsuk-details__summary-text ">
-            Get email updates for this standard
+          <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+            Get updates for this standard
           </span>
         </summary>
-        <div class="nhsuk-details__text " >
-          <p>Enter you email to get notified when this standard gets updated</p>
+        <div class="nhsuk-details__text  nhsuk-u-font-size-16" >
+          <p class="nhsuk-u-font-size-16">Enter you email to get notified when this standard gets updated</p>
           <div class="nhsuk-form-group">
-            <label class="nhsuk-label" for="example">
+            <label class="nhsuk-label nhsuk-u-font-size-16" for="example">
              <strong>Email address</strong>
             </label>
             <input class="nhsuk-input" id="example" name="example" type="text">
@@ -304,31 +348,13 @@
           <button class="nhsuk-button">Submit</button>
         </div>
       </details>
-
-    </div>
-
-    <div class="nhsuk-grid-column-one-third">
-      <span class="nhsuk-u-font-size-16"><strong>Care settings</strong></span>
-      <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-        <li>GP practices</li>
-        <li>social care</li>
-        <li>hospital trust</li>
-        <li>mental health</li>
-      </ul>
-      <span class="nhsuk-u-font-size-16"><strong>Topic</strong></span>
-      <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-        <li>Continuity of care</li>
-        <li>Access to records</li>
-      </ul>
-      
-        
+      {% include "includes/was-this-page-useful.html" %}
     </div>
   </div>
 
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-      {% include "includes/was-this-page-useful.html" %}
 
     </div>
   </div>

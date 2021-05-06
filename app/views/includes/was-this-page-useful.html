@@ -1,12 +1,10 @@
+
 <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible">
-<span class="nhsuk-u-font-size-16 secondary-text">This page was last updated: 1 April 2021</span><br>
-<span class="nhsuk-u-font-size-16 secondary-text">This page will next be reviewed: 1 April 2022</span>
-<br>
-<br>
+
 <details class="nhsuk-details">
   <summary class="nhsuk-details__summary">
-    <span class="nhsuk-details__summary-text">
-      Was this page useful?
+    <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+      Give feedback about this standard
     </span>
   </summary>
   <div class="nhsuk-details__text">
@@ -14,14 +12,25 @@
 
       <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
     
-        <div class="nhsuk-radios nhsuk-radios--conditional">
-    
+        <div class="nhsuk-radios nhsuk-radios--conditional nhsuk-u-font-size-16">
+          <label class="nhsuk-label" for="phone">
+            Would you recommend this standard?
+          </label>
           <div class="nhsuk-radios__item">
             <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
             <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
               Yes
             </label>
           </div>
+          <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="phone">
+                Suggestions for improvement:
+              </label>
+              <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
+            </div>    
+          </div>
+
     
           <div class="nhsuk-radios__item">
             <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
@@ -47,3 +56,6 @@
     <button class="nhsuk-button">Submit</button>
   </div>
 </details>
+<hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible">
+<span class="nhsuk-u-font-size-16 secondary-text">Page last updated: 1 April 2021</span><br>
+<span class="nhsuk-u-font-size-16 secondary-text">Next review on: 1 April 2022</span>
