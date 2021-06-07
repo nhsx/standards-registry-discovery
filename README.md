@@ -1,26 +1,55 @@
-# NHS.UK prototype kit
+# NHSX Standards Registry Discovery and Alpha
 
-Visit the <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs">NHS.UK prototype kit site</a> to download the latest version and read the documentation.
+## Hypothesis
+Creating a central repository of interoperability standards, use cases, exemplars and other resources will make it easier for people to find and use standards. This will drive adoption.
 
-## About the NHS.UK prototype kit
+## What we did
+Over a total of **7** weeks we reviewed multiple sources of information to gain a deep understanding of the  interoperability landscape, standards, definitions and other complexities in this space.
 
-The NHS.UK prototype kit enables you to make interactive prototypes that will look like pages on NHS.UK. The prototypes you make are a great way to show ideas to others and for conducting user research.
+We conducted **2700** minutes of research over **45** sessions with users. These included:
+* 24 semi-structured interviews, **3** focus groups & **1** journey mapping session in discovery
+* **1** ideation workshop and **17** prototype testing sessions in alpha
 
-## Security
+We spoke to health care providers, developers and information specialists, IT suppliers and central teams who oversee digital procurement and technology assurance.
 
-If you publish your prototypes online, they must be protected by a <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/how-tos/heroku">username and password</a>. This is to prevent members of the public finding prototypes and thinking they are real services.
+We designed **3** prototypes for a standards directory and tested 2 of them with real users. We identified a technical solution for building the service and developed a beta specification for how to take this work forward.
 
-You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like NHS.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.
+## Key findings
+Our research validated that people can’t find standards easily. Standards are produced by multiple sources with no central directory where everything can be found. Expert users had learnt where to go but it’s a confusing landscape for newcomers.
 
-## Installation instructions
+However we also identified other problems, which means a central directory will not in itself drive adoption. In total we identified **60** unmet user needs across **50** users.
 
-- <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/simple">Install guide (non technical)</a>
-- <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/advanced">Developer friendly install guide (technical)</a>
+Their pain points included:
+* standards not being developed quickly enough
+* standards not being mandated and enforced
+* low levels of understanding about interoperability and the correct use of standards 
+* there’s a lack of support and users have competing priorities
+## Prototypes
+We developed our strongest concepts into a series of prototypes we could show users to gather feedback.
+## Prototype 1 - testing
+Our objective was to explore:
+* if the way the information was structured was logical for expert and novice users
+* if the content worked for technical and non-technical users
+* if the navigation options worked for users who knew what they wanted as well as those who didn’t
+* if the broad headings and sections of the guidance pages made sense
 
-## Contribute
+[Link to first prototype](https://nhs-standards-registry.herokuapp.com/v1/home) (username: nhsx password: test)
 
-If you want to contribute to the NHS.UK prototype kit, by reporting bugs, fixing bugs, suggesting new features or writing documentation, then read our [contributing guidelines](CONTRIBUTING.md).
+## Prototype 2 - testing
+Our objective was to explore:
+* if the new descriptions were an improvement 
+* if the simpler language for filters and statuses were understood by users whilst still accurately reflecting meaning
+* if the improved layout of the detailed standard page helped users find what they needed
+* if more developed guidance was clear and useful to users new to interoperability
 
-## Support
+[Link to prototype 2](https://nhs-standards-registry.herokuapp.com/v2/home) (username: nhsx password: test)
+[Link to prototype 2 including minor content tweaks following first 4 users](https://nhs-standards-registry.herokuapp.com/v3/home) (same username and password)
 
-The NHS.UK prototype kit is maintained by NHS Digital. [Email us](mailto:service-manual@nhs.net), open a [Github issue](https://github.com/nhsuk/nhsuk-prototype-kit/issues/new) or get in touch on the [NHS digital service manual Slack workspace](https://join.slack.com/t/nhs-service-manual/shared_invite/enQtNTIyOTEyNjU3NDkyLTk4NDQ3YzkwYzk1Njk5YjAxYTI5YTVkZmUxMGQ0ZjA3NjMyM2ZkNjBlMWMxODVjZjYzNzg1ZmU4MWY1NmE2YzE).
+## Prototype 3
+We made a few final changes including:
+* removing security standards to focus the scope on interoperability standards, APIs and * services which support interoperability
+* re-structuring how we display related standards
+* tweaking feedback mechanisms for more clarity
+
+[Link to prototype 3](https://nhs-standards-registry.herokuapp.com/v4/home) (username: nhsx password: test)
+[Changelog for all prototypes](https://nhs-standards-registry.herokuapp.com/) (same username and password)
