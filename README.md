@@ -1,4 +1,4 @@
-# NHSX Standards Registry Discovery and Alpha
+# NHSX Standards Catalogue / Directory Discovery and Alpha
 
 ## Hypothesis
 Creating a central repository of interoperability standards, use cases, exemplars and other resources will make it easier for people to find and use standards. This will drive adoption.
@@ -12,7 +12,7 @@ We conducted **2700** minutes of research over **45** sessions with users. These
 
 We spoke to health care providers, developers and information specialists, IT suppliers and central teams who oversee digital procurement and technology assurance.
 
-We designed **3** prototypes for a standards directory and tested 2 of them with real users. We identified a technical solution for building the service and developed a beta specification for how to take this work forward.
+We designed **3** prototypes for a standards directory and tested 2 of them with real users. We identified a technical solution for building the service and developed a beta specification for how to take this work forward. [Link to latest prototype](https://nhs-standards-registry.herokuapp.com/v4/home) (username: nhsx password: test)
 
 ## Key findings
 Our research validated that people can’t find standards easily. Standards are produced by multiple sources with no central directory where everything can be found. Expert users had learnt where to go but it’s a confusing landscape for newcomers.
