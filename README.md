@@ -22,8 +22,14 @@ However we also identified other problems, which means a central directory will 
 Their pain points included:
 * standards not being developed quickly enough
 * standards not being mandated and enforced
-* low levels of understanding about interoperability and the correct use of standards 
+* low levels of understanding about interoperability and the correct use of standards
 * there’s a lack of support and users have competing priorities
+
+We also identified that:
+* users want to know which versions of standards are supported and what is in progress
+* users would value access to, and the ability to contribute to, use cases and supporting information
+* users want to find all the standards relevant to their use case and needs and browse by function
+* we need to make sure the directory is kept up to date to build consistency and trust
 ## Prototypes
 We developed our strongest concepts into a series of prototypes we could show users to gather feedback.
 ## Prototype 1 - testing
