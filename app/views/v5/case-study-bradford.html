@@ -1,0 +1,144 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Case studies - Bradford
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/case-studies">Case studies</a></li>
+      <li class="nhsuk-breadcrumb__item">Creating a single patient record: Bradford</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <span class="nhsuk-caption-l">
+        Case studies
+      </span>
+      <h1>
+        Creating a single patient record: Bradford
+      </h1>
+      <p class="nhsuk-lede">Creating a single patient record for GPs, hospitals, adult social care teams and other local services. </p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+
+      <h3 class="nhsuk-heading-xs">Care settings:</h3>
+
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li>85 GP practices</li>
+        <li>18 adult social care teams</li>
+        <li>1 acute hospital trust</li>
+        <li>1 mental health trust</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Population size: </h3>
+      <ul class="nhsuk-list nhsuk-body-s">
+        630,000 people
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Region: </h3>
+      <ul class="nhsuk-list nhsuk-body-s">
+        North East and Yorkshire
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Products: </h3>
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li>Cerner Millennium </li>
+        <li>SystmOne</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-xs">Standards and formats:</h3>
+      Terminologies and codes:
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li><a href="#">SNOMED clinical terminologies</a></li>
+        <li><a href="#">Dictionary of Medicines and Devices</a></li>
+        <li><a href="#">READ</a></li>
+      </ul>
+
+      Technical specifications:
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li><a href="#">HL7 V.3</a></li>
+        <li><a href="#">FHIR Core (planned for future development</a>)</li>
+      </ul>
+
+      Services and tools:
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li><a href="#">Interoperability toolkit</a></li>
+      </ul>
+
+
+      <h3 class="nhsuk-heading-xs">Download:</h3>
+      <ul class="nhsuk-list nhsuk-body-s">
+        <li><a href="#">Download as a PDF</a></li>
+      </ul>
+
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h3 class="nhsuk-heading-s">Background</h3>
+      <p>We first started thinking about how to join up care across our local area in 2008. We’d won some funding from a government scheme to support innovation in healthcare technology and we put it towards a pilot project connecting the GP services and community care. </p>
+
+      <h3 class="nhsuk-heading-s">Problems to solve</h3>
+      <p>Not being able to access up to date records for people using health and care services was causing a lot of headaches for staff. Staff were afraid about missing crucial details about someone’s background that meant they didn’t provide the right treatment or service. </p>
+
+      <h3 class="nhsuk-heading-s">Challenges</h3>
+      <p>One of the biggest challenges has been around people being able to use the technology. I’d recommend choosing IT products where there’s a big emphasis on how easy they are to use and where they’ve actually tested the products with real people. What we’ve found is if the system isn’t really simple and intuitive people tend not to want to use it or they need training, which can be hard to organise in busy healthcare settings. </p>
+
+      <h3 class="nhsuk-heading-s">Benefits</h3>
+      <p>We’ve seen the following benefits:</p>
+      <ul class="nhsuk-list-bullet nhsuk-body-s">
+        <li>Benefit 1</li>
+        <li>Benefit 2</li>
+        <li>Benefit 3</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">Aspirations </h3>
+      <p>We have a lot of people who need to get care from organisations outside of our local area. For example, people needing cancer treatment are treated at a specialist service in London. We’re really keen to build on our work so far to start to connect more systems</p>
+
+      <h3 class="nhsuk-heading-s">Contact </h3>
+      <p>Programme Director: Simon Barnswell, NHS Airedale Foundation Trust, <a href="mailto:simon.barnswell@anhst.nhs.uk">simon.barnswell@anhst.nhs.uk</a> </p>
+
+
+      <h3 class="nhsuk-heading-s">Submit your own case study </h3>
+      <p>Fill out our short form to submit your own case study of how you implemented interoperability in your service.</p>
+      <p><a href="#">Submit case study</a></p>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Contribution guidance
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/community-join">Join the community</a></li>
+      <li class="nhsuk-breadcrumb__item">Contribution guidance</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <ul class="nhsuk-list">
+        <li><a href="community-contribution">Contribution guidance </a></li>
+        <li><a href="community-share">Share something</a></li>
+        <li><a href="community-roadmap">Roadmap</a></li>
+      </ul>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>Contribution guidance</h1>
+
+      <p>Follow this guidance to help share a new standard or identify gaps in our standards development.</p>
+      <p>The contents of the Standards directory must be of a high quality and meet user needs. To guarantee this, the directory has a working group to check that all standards meet certain criteria.</p>
+
+      <h2 id="what" class="nhsuk-heading-m">Criteria for proposing or sharing a new standard</h2>
+
+      <p>[define process]</p>
+
+      <h2 id="what" class="nhsuk-heading-m">Criteria for developing a standard</h2>
+
+      <p>[define process]</p>
+
+      <h2 id="what" class="nhsuk-heading-m">Criteria for sharing a case study</h2>
+
+      <p>[define process]</p>
+
+<p>The working group uses these criteria to decide if the standards and its related dependencies are ready to publish.</p>
+
+    </div>
+  </div>
+
+{% endblock %}

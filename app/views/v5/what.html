@@ -1,0 +1,189 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+ Building for interoperability
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">What is interoperability</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+       Building for interoperability
+      </h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam vel deserunt consequatur omnis quidem vitae expedita eligendi, eaque mollitia harum voluptatum ducimus! Soluta aliquid, quidem fugit eaque facilis voluptatibus error?</p>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <h3 class="nhsuk-heading-s">Contents</h3>
+      <ul class="nhsuk-list-bullet">
+        <li><a href="#what">Using standards to build interoperable services </a></li>
+        <li><a href="#how">Why use standards</a></li>
+        <li><a href="#using">How to use standards</a></li>
+        <li><a href="#benefits">Contributing to standards development</a></li>
+        <li><a href="#benefits">Links to further guidance </a></li>
+      </ul>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h2 id="what" class="nhsuk-heading-m">Using standards to build interoperable services</h2>
+
+      <p>All digital products and services should use approved standardised formats - standards - for collecting, structuring and exchanging health and social care data in England. </p>
+
+      <p>Using these standards consistently allows IT systems and products to communicate across care settings, and for permitted staff to be able to directly access or share certain information with those settings. This is known as interoperability. </p>
+
+      <p>There are two types of standard that form the main building blocks of interoperable digital products and services.</p>
+
+      <h3 class="nhsuk-heading-s">Content standards</h3>
+
+      <p>Content standards ensure information is collected and formatted consistently. They ensure information:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>is grouped under the same headings - ‘Person’s details’ instead of ‘Patient’s details’, for example</li>
+        <li>uses the correct clinical codes - for example, recording someone’s medication using its dedicated code rather than just writing the name which can lead to errors</li>
+        <li>uses data models to format information consistently - for example, </li>
+      </ul>
+      <p><a href="browse-information">Browse content standards</a></p>
+
+      <h3 class="nhsuk-heading-s">Technical standards</h3>
+
+      <p>Technical or messaging standards ensure information is structured in code in a consistent way that can be easily shared with other systems. These are often built into APIs to make them easier to implement. </p>
+
+      <p><a href="browse-technical">Browse technical standards</a></p>
+
+      <h3 class="nhsuk-heading-s">Services</h3>
+
+      <p>There are also national services that allow you to access central datasets as well as use resources such as NHS Email and Wifi. Access to some of these is essential to build interoperable technology in health and social care. </p>
+
+      <p><a href="browse-services">Browse services</a></p>
+
+
+      <h2 id="how" class="nhsuk-heading-m">Why use standards</h2>
+
+      <p>The use of standards and the development of interoperable services is important for the safety of people receiving care. This is because:</p>
+
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>it reduces the risk of errors  - for example, if a staff member writes down the name of someone’s medication without including the correct code it could be misread by a colleague </li>
+        <li>it gives permitted health and social care professionals instant access to someone’s records - in an emergency situation this could save someone’s life</li>
+      </ul>
+      <p>This is why some standards are mandatory for use in all circumstances where they apply. </p>
+
+      <p>There are also major benefits for people who give and receive care.</p>
+
+      <h3 class="nhsuk-heading-s">Benefits to people who receive care</h3>
+
+      <p>Benefits include:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>reducing the burden on people needing to share details about their health or treatment every time they receive some form of care. This can be hard for everyone, but especially for people with conditions that affect their memory.</li>
+        <li>allowing people to be able to see their own health record, so they have more visibility and ownership of their data</li>
+        <li>giving people more effective care by ensuring healthcare professionals make informed decisions based on their full history</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">Benefits to health and social care professionals</h3>
+
+      <p>Benefits include:</p>
+
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>being able to call up someone’s health record or a snapshot of their record instantly without having to ask anyone to share it </li>
+        <li>being able to see richer details about the health and wellbeing of the person they’re caring for to better tailor treatment or services</li>
+        <li>less time filling in paperwork</li>
+      </ul>
+
+      <p>The recent pandemic - where we had to quickly move patients to wherever there was space to treat them - showed us how important it is to join up IT systems to make care provision easier. </p>
+
+      <p>You can see some of the real benefits people have experienced thanks to interoperable technology in case studies for Manchester and Swindon. </p>
+
+      <h2 class="nhsuk-heading-m">How to use standards</h2>
+
+      <p>For health and social care systems to benefit from exchanging information you need to:</p>
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>use standards correctly</li>
+        <li>follow rules on data security</li>
+        <li>agree rules on information governance</li>
+        <li>ensure staff use new ways of working </li>
+      </ul>
+
+
+      <h3 class="nhsuk-heading-s">Using standards correctly</h3>
+
+      <p>To ensure data is correctly exchanged, you must use content and technical standards in every system that wants to share or receive information. </p>
+
+      <p>If the correct standards aren’t used, the data will not be exchanged or it will not render correctly at the receiving end. For example, to correctly exchange information when discharging someone from a mental health to a GP service you need: </p>
+
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>the content standard for mental health discharge to ensure the systems sending and receiving the information format it in the same way</li>
+        <li>the technical standard for mental health discharge to ensure the data is structured in a way that can be exchanged</li>
+      </ul>
+
+      <p>However simply exchanging the information isn’t enough. There are also other important issues to consider. </p>
+
+      <h3 class="nhsuk-heading-s">Following data security rules</h3>
+
+      <p>Every organisation or supplier that has access to patient data and systems must meet minimum requirements for cyber security and data protection. These are:</p>
+
+      <ul class="nhsuk-list nhsuk-list--bullet">
+        <li>the Data Security and Protection Toolkit - this is an online self-assessment for organisations to measure their performance against 10 core data security principles</li>
+        <li>Something else?</li>
+        <li>Something else?</li>
+      </ul>
+
+      <h3 class="nhsuk-heading-s">Agreeing rules on information governance </h3>
+
+      <p>Before exchanging information, care settings need to agree rules around information governance. This includes deciding who will be able to see what data and agreeing a process for recording patients’ and service users’ consent. </p>
+
+      <h3 class="nhsuk-heading-s">Changes to ways of working</h3>
+
+      <p>For staff to be able to see information across organisational boundaries, data needs to be recorded using digital systems. If staff continue to record and share information using paper, email or fax the benefits of interoperability won’t be felt by them or the people they’re caring for. </p>
+
+      <p>You can see how care settings in Bristol, Leeds and London engaged with their staff to change ways of working - and the benefits their staff reported once the new systems were in place. </p>
+
+
+      <h2 class="nhsuk-heading-m">Contributing to standards development</h2>
+
+      <p>Standards don’t exist for everything services are trying to do in health and social care. In some cases content standards might exist but corresponding technical standards might not. </p>
+
+      <p>What’s important is that where standards and APIs do exist and apply, they are used. If they don’t exist there’s an opportunity to contribute a standard or API to the community to support standardisation in that particular area.</p>
+
+      <h2 class="nhsuk-heading-m">Links to guidance</h2>
+
+      <p>There’s guidance on procuring and implementing interoperable solutions in NHS England’s interoperability handbook. </p>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}
