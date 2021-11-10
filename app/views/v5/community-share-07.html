@@ -1,0 +1,211 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Contribute to the directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/community-join">Join the community</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/community-share">Contribute to the directory</a></li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+      <!-- Change the page title here -->
+<form class="form" action="community-share-08" method="post">
+  <h1>
+    Check your answers
+  </h1>
+  <h2>
+    Contribution details
+  </h2>
+      <dl class="nhsuk-summary-list">
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Contribution type
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Share information for others to see
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#">
+              Change<span class="nhsuk-u-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            What is being shared
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            A standard
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#">
+              Change<span class="nhsuk-u-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Standard name
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            Care connect - allergy intolerance
+          </dd>
+
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#">
+              Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+
+
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Description
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>Record risks of harmful or undesirable physiological responses.</p>
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#">
+              Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            URL
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p><a href="https://nhsconnect.github.io/CareConnectAPI/api_clinical_allergyintolerance.html">https://nhsconnect.github.io/CareConnectAPI/api_clinical_allergyintolerance.html</a></p>
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#">
+              Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Approved code
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>Not yet</p>
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#">
+              Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+        </dl>
+<!--  -->
+<h2>
+  Contact details
+</h2>
+<dl class="nhsuk-summary-list">
+
+<div class="nhsuk-summary-list__row">
+  <dt class="nhsuk-summary-list__key">
+    Name
+  </dt>
+  <dd class="nhsuk-summary-list__value">
+    <p>Francis Bell</p>
+  </dd>
+  <dd class="nhsuk-summary-list__actions">
+    <a href="#">
+      Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+    </a>
+  </dd>
+</div>
+
+<div class="nhsuk-summary-list__row">
+  <dt class="nhsuk-summary-list__key">
+    Email address
+  </dt>
+  <dd class="nhsuk-summary-list__value">
+    <p>fbell@interopen.com</p>
+  </dd>
+  <dd class="nhsuk-summary-list__actions">
+    <a href="#">
+      Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+    </a>
+  </dd>
+</div>
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Organisation
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            InterOpen
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+            <a href="#">
+              Change<span class="nhsuk-u-visually-hidden"> contact information</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+<!--  -->
+
+
+      <br>
+        <button class="nhsuk-button" type="submit" >
+        Submit
+      </button>
+      <!--  -->
+</form>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

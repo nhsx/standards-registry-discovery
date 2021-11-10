@@ -1,0 +1,360 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Join up IT systems in health and social care
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/browse-sections">Browse directory</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/browse-information">Content standards</a></li>
+      <li class="nhsuk-breadcrumb__item">Mental health inpatient discharge</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <span class="nhsuk-caption-l">
+        <span class="taxonomy-tag blue">Active</span> Content format
+      </span>
+      <h1>
+        Mental health inpatient discharge
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <p>Use this care record to collect consistent information when discharging an adult patient from a mental health care setting - such as a hospital or community team - to their GP practice.</p>
+
+      <p><a href="https://theprsb.org/standards/mentalhealth/" target="_blank">View this standard on Professional Record Standards Body's website</a></p>
+
+      <table class="nhsuk-table ">
+        <tbody class="nhsuk-table__body ">
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Category</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Content format</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16"><span class="taxonomy-tag blue">Active</span></td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Compliance</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Recommended for use on relevant services</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Unique identifier</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">PRSB9784</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Version</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2.1 (latest version)</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date published</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              14 April 2020
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Release notes
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p class=" nhsuk-u-font-size-16">The Mental health inpatient discharge has been updated to version 2.1 (Dec 17 2019). V2.1 includes an update to:</p>
+                  <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+                    <li>structured dose direction cluster</li>
+                    <li>structured dose amount</li>
+                    <li>structured dose timing and dose direction duration.</li>
+                  </ul>
+                </div>
+              </details>
+
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Endorsers</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                <li>Royal College of Nursing</li>
+                <li>Royal College of Psychiatrists</li>
+                <li>Association of Directors of Adult Social Services</li>
+                <li>Royal College of General Practitioners</li>
+                <li>Royal College of Occupational Therapists</li>
+                <li>Royal Pharmaceutical Society</li>
+                <li>British Psychological Society</li>
+                <li>RCoA</li>
+                <li>Institute of Health Records and Information Management</li>
+                <li>TechUK</li>
+              </ul>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Last review</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2 April 2020</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Next review</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2 April 2022</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Owner</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Professional Record Standards Body</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:support@prsb.co.uk">support@prsb.co.uk</a></td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                <li><a href="https://theprsb.org/wp-content/uploads/2021/02/Mental-health-inpatient-discharge-summary-v2.1-01.02.21.xlsx" >Mental health inpatient discharge standard</a></li>
+                <li><a href="https://theprsb.org/wp-content/uploads/2018/06/Mental-Health-Discharge-Summary-Maintenance-Release-Implementation-Guidance-Report-.pdf">Implementation guidance report -&nbsp;</a><a href="https://theprsb.org/wp-content/uploads/2018/06/Mental-Health-Discharge-Summary-Maintenance-Release-Implementation-Guidance-Report-.pdf" target="_blank">Mental health inpatient discharge</a></li>
+                <li><a href="https://theprsb.org/wp-content/uploads/2018/02/Final-Mental-Health-Discharge-Summary-Report-v1.3.pdf" target="_blank">Mental Health Discharge Summary Report</a></li>
+                <li><a href="https://theprsb.org/wp-content/uploads/2018/02/transfers-of-care-clinical-safety-casepdf-report-v21.0-eDischarge.pdf" target="_blank">Safety case report</a></li>
+                <li><a href="https://theprsb.org/wp-content/uploads/2018/02/transfers-of-care-hazard-logfinal-version-101.xlsx" target="_blank">Hazard log</a></li>
+              </ul>
+            </td>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Technical standard</td>
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                  <li><a href="standard-api-mental-health">ITK3 Mental Health eDischarge</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                Content
+                <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                  <li><a href="standard-snomed">SNOMED clinical terminologies</a></li>
+                  <li><a href="standard-snomed">Dictionary of Medicines and Devices</a></li>
+                </ul>
+                Services
+                <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                  <li><a href="standard-service">Patient Demographics service (PDS)</a></li>
+                  <li><a href="standard-service">Patient administration service (PAS)</a></li>
+                  <li><a href="standard-service">NHS data dictionary</a></li>
+                  <li><a href="standard-service">NHS Number</a></li>
+                  <li><a href="standard-service">Organisation data service (ODS)</a></li>
+                  <li><a href="standard-service">SPINE Directory service</a></li>
+                </ul>
+              </td>
+
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related use cases</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <ul class="nhsuk-list nhsuk-list--bullet">
+                    <li><a href="usecase-mental-health">Discharging someone from mental health services to another care setting</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related case studies</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <ul class="nhsuk-list nhsuk-list--bullet">
+                    <li><a href="case-study-bradford">Creating a single patient record: Bradford</a></li>
+                  </ul>
+                </td>
+              </tr>
+            </tr>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h2 class="nhsuk-heading-l">Previous versions</h2>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version – V2.0 (Published July 2018)
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          <dl>
+            <dt>Status</dt>
+            <dd>Implementation</dd>
+            <dt>Version</dt>
+            <dd>
+              2.0
+            </dd>
+            <dt>
+              Release notes
+            </dt>
+            <dd>
+              <p class="">The Mental health inpatient discharge has been updated to version 2.0 (Dec 17 2019). V2.1 includes an update to:</p>
+              <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                <li>structured dose direction cluster</li>
+                <li>structured dose amount</li>
+                <li>structured dose timing and dose direction duration.</li>
+              </ul>
+            </dd>
+            <dt>Compliance</dt>
+            <dd>
+              Recommended
+            </dd>
+              <dt>Endorsers</dt>
+            <dd>
+              <ul class="nhsuk-list-bullet ">
+                <li>Royal College of Nursing</li>
+                <li>Royal College of Psychiatrists</li>
+                <li>Association of Directors of Adult Social Services</li>
+                <li>Royal College of General Practitioners</li>
+                <li>Royal College of Occupational Therapists</li>
+                <li>Royal Pharmaceutical Society</li>
+                <li>British Psychological Society</li>
+                <li>RCoA</li>
+                <li>Institute of Health Records and Information Management</li>
+                <li>TechUK</li>
+              </ul>
+            </dd>
+            <dt>Date published</dt>
+            <dd>4 June 2018</dd>
+            <dt>Documentation</dt>
+            <dd><ul class="nhsuk-list-bullet ">
+              <li><a href="https://theprsb.org/wp-content/uploads/2021/02/Mental-health-inpatient-discharge-summary-v2.1-01.02.21.xlsx" >Mental health inpatient discharge standard</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/06/Mental-Health-Discharge-Summary-Maintenance-Release-Implementation-Guidance-Report-.pdf">Implementation guidance report -&nbsp;</a><a href="https://theprsb.org/wp-content/uploads/2018/06/Mental-Health-Discharge-Summary-Maintenance-Release-Implementation-Guidance-Report-.pdf" target="_blank">Mental health inpatient discharge</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/02/Final-Mental-Health-Discharge-Summary-Report-v1.3.pdf" target="_blank">Mental Health Discharge Summary Report</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/02/transfers-of-care-clinical-safety-casepdf-report-v21.0-eDischarge.pdf" target="_blank">Safety case report</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/02/transfers-of-care-hazard-logfinal-version-101.xlsx" target="_blank">Hazard log</a></li>
+            </ul></dd>
+          </dl>
+
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version – V1.0 (Published April 2018)
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <dl>
+            <dt>Status</dt>
+            <dd>Retired</dd>
+            <dt>Version</dt>
+            <dd>
+              1.0
+            </dd>
+            <dt>
+              Release notes
+            </dt>
+            <dd>
+              <p class="">Publishing the pilot version of the standard</p>
+            </dd>
+            <dt>Compliance</dt>
+            <dd>
+              Recommended
+            </dd>
+              <dt>Endorsers</dt>
+            <dd>
+              <ul class="nhsuk-list-bullet ">
+                <li>Royal College of Nursing</li>
+                <li>Royal College of Psychiatrists</li>
+                <li>Association of Directors of Adult Social Services</li>
+                <li>Royal College of General Practitioners</li>
+                <li>Royal College of Occupational Therapists</li>
+                <li>Royal Pharmaceutical Society</li>
+                <li>British Psychological Society</li>
+                <li>RCoA</li>
+                <li>Institute of Health Records and Information Management</li>
+                <li>TechUK</li>
+              </ul>
+            </dd>
+            <dt>Date published</dt>
+            <dd>1 April 2018</dd>
+            <dt>Documentation</dt>
+            <dd><ul class="nhsuk-list-bullet ">
+              <li><a href="https://theprsb.org/wp-content/uploads/2021/02/Mental-health-inpatient-discharge-summary-v2.1-01.02.21.xlsx" >Mental health inpatient discharge standard</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/06/Mental-Health-Discharge-Summary-Maintenance-Release-Implementation-Guidance-Report-.pdf">Implementation guidance report -&nbsp;</a><a href="https://theprsb.org/wp-content/uploads/2018/06/Mental-Health-Discharge-Summary-Maintenance-Release-Implementation-Guidance-Report-.pdf" target="_blank">Mental health inpatient discharge</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/02/Final-Mental-Health-Discharge-Summary-Report-v1.3.pdf" target="_blank">Mental Health Discharge Summary Report</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/02/transfers-of-care-clinical-safety-casepdf-report-v21.0-eDischarge.pdf" target="_blank">Safety case report</a></li>
+              <li><a href="https://theprsb.org/wp-content/uploads/2018/02/transfers-of-care-hazard-logfinal-version-101.xlsx" target="_blank">Hazard log</a></li>
+            </ul></dd>
+          </dl>
+        </div>
+      </details>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary ">
+          <span class="nhsuk-details__summary-text ">
+            Get email updates for this standard
+          </span>
+        </summary>
+        <div class="nhsuk-details__text " >
+          <p>Enter you email to get notified when this standard gets updated</p>
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="example">
+             <strong>Email address</strong>
+            </label>
+            <input class="nhsuk-input" id="example" name="example" type="text">
+          </div>
+          <button class="nhsuk-button">Submit</button>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <span class="nhsuk-u-font-size-16"><strong>Care settings</strong></span>
+      <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <li>GP practices</li>
+        <li>social care</li>
+        <li>hospital trust</li>
+        <li>mental health</li>
+      </ul>
+      <span class="nhsuk-u-font-size-16"><strong>Topic</strong></span>
+      <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <li>Continuity of care</li>
+        <li>Access to records</li>
+      </ul>
+
+
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+
+{% endblock %}

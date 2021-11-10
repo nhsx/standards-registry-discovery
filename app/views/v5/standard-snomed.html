@@ -1,0 +1,316 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+SNOMED clinical terminologies
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/browse-sections">Browse directory</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/browse-information">Content standards</a></li>
+      <li class="nhsuk-breadcrumb__item">SNOMED clinical terminologies</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <span class="nhsuk-caption-l">
+        <span class="taxonomy-tag blue">Active</span> Content format
+      </span>
+      <h1>
+        SNOMED clinical terminologies
+      </h1>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <p>The policy document, <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/384650/NIB_Report.pdf">Personalised Health and Care 2020: A Framework for Action</a>,&nbsp;published by the National Information Board (NIB) in November 2014, identified SNOMED CT as the required terminology to support direct management of care.</p>
+
+      <p><a href="https://termbrowser.nhs.uk/?" target="_blank">View this standard on NHS digital's website</a></p>
+
+      <table class="nhsuk-table ">
+        <tbody class="nhsuk-table__body ">
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Category</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Content format</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16"><span class="taxonomy-tag blue">Active</span></td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Compliance</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">Required for use on relevant services</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Unique identifier</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">SCCI0034</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Version</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">uk-edition v20210317</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date published</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              17 March 2021
+              <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Release notes
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <h3 class="nhsuk-heading-s">Uplift of key and supporting documentation</h3>
+                  <p>The requirement for all health and care systems to use SNOMED CT has not changed.</p>
+
+                  <p>The ability to flow patient data electronically and safely between health and care systems remains a high priority. Since December 2019, this objective has been achieved in General Practice. The requirement to enable SNOMED CT content in secondary, dentistry and optometry care systems in 2020 is still to be fully achieved; although it is known that many providers have SNOMED CT enabled EPR systems in place.</p>
+
+                  <p>Recognising this is the case, the Data Coordination Board has approved an application by NHS Digital, in conjunction with NHSX, to uplift the key and supporting documentation to enable further progress of SNOMED CT implementation across health and care systems.</p>
+
+                  <p>The information in the Requirements Specification, Change Specification, Implementation Guidance and User Guide has been refreshed to ensure links to current guidance and information are correct; clarifications have been made based on feedback from those systems that have adopted SNOMED CT; additional advice has been provided on the support available to help implementation. Note that there are no fundamental changes to the standard itself.</p>
+
+                  <p>The updated documents (marked as Version 2.0) are available in the Releases table on this page.</p>
+
+                  <p>It is expected that all secondary, dentistry and optometry service providers will have detailed plans in place with an associated implementation schedule for SNOMED CT by 31 December 2020.  These plans will be required by NHSX and NHS England and NHS Improvement as part of provider planning activity.</p>
+
+                  <p>If you have any queries about this, please contact NHS Digital at information.standards@nhs.net</p>
+                </div>
+              </details>
+
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Next review date</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                <li>14 September 2021</li>
+              </ul>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Assurers</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                <li>Data coordination board</li>
+              </ul>
+            </td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Last review</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2 April 2020</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Next review</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">2 October 2022</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Owner</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:support@prsb.co.uk">information.standards@nhs.net</a></td>
+          </tr>
+          <tr role="row" class="nhsuk-table__row">
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
+            <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/website-assets/isce/scci0034/0034352016spec-v2.pdf" >Requirements Specification (Amd 35/2016)&nbsp;Version 2.0</a></li>
+                <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/website-assets/isce/scci0034/0034352016change-spec-v2.pdf">Change Specification (Amd 35/2016)&nbsp;Version 2.0</a></li>
+                <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/website-assets/isce/scci0034/0034352016guidance-v2.pdf">Implementation Guidance (Amd 35/2016)&nbsp;Version 2.0</a></li>
+                <li><a href="//nhs-prod.global.ssl.fastly.net/binaries/content/assets/legacy/pdf/o/e/0034352016isn.pdf">Information Standards Notice (Amd 35/2016)</a></li>
+              </ul>
+            </td>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Technical standard</td>
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+                  Various
+                </ul>
+              </td>
+            </tr>
+            <tr role="row" class="nhsuk-table__row">
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
+              <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                No dependencies
+              </td>
+
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related use cases</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <ul class="nhsuk-list nhsuk-list--bullet">
+                    <li><a href="usecase-mental-health">Discharging someone from mental health services to another care setting</a></li>
+                    <a href="#" class="nhsuk-u-font-size-14">See 29 more use cases</a>
+                  </ul>
+                </td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related case studies</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <ul class="nhsuk-list nhsuk-list--bullet">
+                    <li><a href="case-study-bradford">Creating a single patient record: Bradford</a></li>
+                    <li><a href="case-study-bradford">Implementing an Electronic Patient Record: Rotherham</a></li>
+                    <li><a href="case-study-bradford">Accurately describing the needs of disabled children: Sunderland</a></li>
+                    <a href="#" class="nhsuk-u-font-size-14">See 19 more case studies</a>
+                  </ul>
+                </td>
+              </tr>
+            </tr>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <h2 class="nhsuk-heading-l">Previous versions</h2>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version – uk-edition v20200917 (Published 17 September 2020)
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <table class="nhsuk-table ">
+            <tbody class="nhsuk-table__body ">
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16"><span class="taxonomy-tag">Superseded</span></td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Compliance</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">No longer required</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Version</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">uk-edition v20200917</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date published</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  17 September 2020
+                </td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date superseded</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  17 March 2021
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Version – uk-edition v20200417 (Published 12 April 2020)
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <table class="nhsuk-table ">
+            <tbody class="nhsuk-table__body ">
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16"><span class="taxonomy-tag">Superseded</span></td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Compliance</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">No longer required</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Version</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">uk-edition v20200412</td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date published</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  12 April 2020
+                </td>
+              </tr>
+              <tr role="row" class="nhsuk-table__row">
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Date superseded</td>
+                <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  17 April 2020
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary ">
+          <span class="nhsuk-details__summary-text ">
+            Get email updates for this standard
+          </span>
+        </summary>
+        <div class="nhsuk-details__text " >
+          <p>Enter you email to get notified when this standard gets updated</p>
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="example">
+             <strong>Email address</strong>
+            </label>
+            <input class="nhsuk-input" id="example" name="example" type="text">
+          </div>
+          <button class="nhsuk-button">Submit</button>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <span class="nhsuk-u-font-size-16"><strong>Care settings</strong></span>
+      <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <li>All care settings</li>
+      </ul>
+      <span class="nhsuk-u-font-size-16"><strong>Topic</strong></span>
+      <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <li>All topics</li>
+      </ul>
+
+
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+
+{% endblock %}
