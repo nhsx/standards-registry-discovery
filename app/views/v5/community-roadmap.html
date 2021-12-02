@@ -5,9 +5,9 @@
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout-v5.html' %}
 <!--
-  In /views/layout.html you can:
-    - change the header and footer
-    - add custom CSS and JavaScript
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
 -->
 
 <!-- Set the page title -->
@@ -22,8 +22,7 @@ Roadmap
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/community-join">Join the community</a></li>
-      <li class="nhsuk-breadcrumb__item">Roadmap</li>
+      <li class="nhsuk-breadcrumb__item">Standards development roadmap</li>
     </ol>
   </div>
 </nav>
@@ -32,58 +31,173 @@ Roadmap
 <!-- For adding a back link -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
 {% block outerContent %}
-  {% include "includes/prototype-banner.html" %}
+{% include "includes/prototype-banner.html" %}
 {% endblock %}
 
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
 
-      <!-- Change the page title here -->
+    <!-- Change the page title here -->
+
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1>Standards development roadmap</h1>
+
+    <p>This roadmap is maintained by the Standards Directory team. To submit an entry to the roadmap or notify
+      the team of an issue, email <a href="mailto:standardsdirectory@nhsx.nhs.uk">standardsdirectory@nhsx.nhs.uk</a></p>
+
+      <p><a href="#">Subscribe to be notified by email</a> when changes are made to the roadmap.</p>
+
+      <!--  -->
+      <h2 id="what" class="nhsuk-heading-l">Commissioned standards</h2>
+      <p>These standards have been funded and commissioned for development by a nationally recognised standards owner.</p>
+
+      <table role="table" class="nhsuk-table-responsive">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Date commissioned
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Standard
+            </th>
+            <th role="columnheader" class="" scope="col">
+              For more information
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Date commissioned </span>14 October 2021
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Standard </span>Standard XYZ commissioned for development by the PRSB
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">For more information </span><a href="#">Documentation about the commissioning of Standard XYZ (opens in new window)</a>
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Date commissioned </span>22 November 2021
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Standard </span>Standard 123 commissioned for development by NHS Digital
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">For more information </span>No documentation currently available
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br><br>
+      <!--  -->
+      <h2 id="what" class="nhsuk-heading-l">Drafted standards</h2>
+      <p>The documentation for these standards has been drafted and published, but the standards have not yet been fully validated.</p>
+
+      <table role="table" class="nhsuk-table-responsive">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Date drafted
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Standard
+            </th>
+            <th role="columnheader" class="" scope="col">
+              For more information
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Date drafted </span>5 October 2021
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Standard </span>Draft of standard DEF published by the PRSB
+<br><br><a href="#">Public consultation</a> <br>
+Dates: 1 to 31 December 2021
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">For more information </span><a href="#">Draft of Standard DEF (opens in new window)</a>
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Date drafted </span>4 November 2021
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Standard </span>The NHS API Catalogue team moved 456 API into an Alpha phase
+<br>
+<a href="#">Feedback on GitHub</a>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">For more information </span><a href="#">Documentation about the Alpha phase of 456 API (opens in new window)</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br><br>
+      <!--  -->
+      <h2 id="what" class="nhsuk-heading-l">New active standards</h2>
+      <p>These standards were validated during the past 12 months and are now active.</p>
+
+      <table role="table" class="nhsuk-table-responsive">
+        <thead role="rowgroup" class="nhsuk-table__head">
+          <tr role="row">
+            <th role="columnheader" class="" scope="col">
+              Date commissioned
+            </th>
+            <th role="columnheader" class="" scope="col">
+              Standard
+            </th>
+            <th role="columnheader" class="" scope="col">
+              For more information
+            </th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Date commissioned </span>14 October 2021
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Standard </span>Standard XYZ commissioned for development by the PRSB
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">For more information </span><a href="#">Documentation about the commissioning of Standard XYZ (opens in new window)</a>
+            </td>
+          </tr>
+
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">Date commissioned </span>22 November 2021
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">Standard </span>Standard 123 commissioned for development by NHS Digital
+            </td>
+            <td role="cell" class="nhsuk-table__cell">
+              <span class="nhsuk-table-responsive__heading">For more information </span>No documentation currently available
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
 
     </div>
   </div>
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-      <ul class="nhsuk-list">
-        <li><a href="community-contribution">Contribution guidance </a></li>
-        <li><a href="community-share">Contribute to the directory</a></li>
-        <li><a href="community-roadmap">Roadmap</a></li>
-      </ul>
-    </div>
-    <div class="nhsuk-grid-column-two-thirds">
 
-      <h1>Roadmap</h1>
-
-      <p>This roadmap shows what we’re working on and planning to do.</p>
-
-      <p>Some things on the roadmap might change — the purpose is to tell you what’s coming up and help service teams prepare and plan their own work.</p>
-
-      <p>Last updated 5 November 2021</p>
-
-      <h2 id="what" class="nhsuk-heading-m">Recently published</h2>
-
-      <p>...</p>
-
-      <h2 id="what" class="nhsuk-heading-m">Working on now</h2>
-
-      <p>...</p>
-
-      <h2 id="what" class="nhsuk-heading-m">Coming up next</h2>
-
-      <p>...</p>
-
-      <h2 id="what" class="nhsuk-heading-m">Future plans</h2>
-
-      <p>...</p>
-
-
-
-
-
-    </div>
-  </div>
-
-{% endblock %}
+  {% endblock %}
