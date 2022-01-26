@@ -56,6 +56,8 @@
     {% endblock %}
 
     <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
+    <!-- also include govuk toolkit -->
+    <script src="/govuk-frontend/govuk/all.js"></script>
 
     {% block headIcons %}
     <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
@@ -71,7 +73,7 @@
     {% endblock %}
 
     {% block head %}{% endblock %}
-    
+
   </head>
 
   <body class="{{ bodyClasses }}">
