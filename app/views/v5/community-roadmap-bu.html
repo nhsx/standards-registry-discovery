@@ -1,0 +1,525 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Roadmap
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">View the standards development roadmap</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-three-quarters">
+    <h1>Standards development roadmap</h1>
+
+    <p>This roadmap is designed to help you stay up-to-date with planned changes to information standards, services and APIs.</p>
+</div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!--TABBED CONTENT  -->
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Standards
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#past-day">
+            Commissioned
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-week">
+            Drafted
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-month">
+            New active
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-year">
+            To be deprecated
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-year">
+            Deprecated
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#past-year">
+            Retired
+          </a>
+        </li>
+      </ul>
+      <div class="govuk-tabs__panel" id="past-day">
+        <h2 class="govuk-heading-l">Past day</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Case manager</th>
+              <th scope="col" class="govuk-table__header">Cases opened</th>
+              <th scope="col" class="govuk-table__header">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">3</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">1</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">2</td>
+              <td class="govuk-table__cell">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+        <h2 class="govuk-heading-l">Past week</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Case manager</th>
+              <th scope="col" class="govuk-table__header">Cases opened</th>
+              <th scope="col" class="govuk-table__header">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">24</td>
+              <td class="govuk-table__cell">18</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">16</td>
+              <td class="govuk-table__cell">20</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">24</td>
+              <td class="govuk-table__cell">27</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+        <h2 class="govuk-heading-l">Past month</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Case manager</th>
+              <th scope="col" class="govuk-table__header">Cases opened</th>
+              <th scope="col" class="govuk-table__header">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">98</td>
+              <td class="govuk-table__cell">95</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">122</td>
+              <td class="govuk-table__cell">131</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">126</td>
+              <td class="govuk-table__cell">142</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+        <h2 class="govuk-heading-l">Past year</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Case manager</th>
+              <th scope="col" class="govuk-table__header">Cases opened</th>
+              <th scope="col" class="govuk-table__header">Cases closed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">David Francis</td>
+              <td class="govuk-table__cell">1380</td>
+              <td class="govuk-table__cell">1472</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Paul Farmer</td>
+              <td class="govuk-table__cell">1129</td>
+              <td class="govuk-table__cell">1083</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Rita Patel</td>
+              <td class="govuk-table__cell">1539</td>
+              <td class="govuk-table__cell">1265</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <!--  -->
+  </div>
+</div>
+<!-- END TABBED CONTENT GRID ROW -->
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-three-quarters">
+    <h1>Standards development roadmap</h1>
+
+    <p>This roadmap is designed to help you stay up-to-date with planned changes to information standards, services and APIs.</p>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Subscribe to roadmap update notifications
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>Enter your email address to be notified each time this standards development roadmap is updated. You can unsubscribe at any time.</p>
+        <div class="nhsuk-form-group">
+          <h1 class="nhsuk-label-wrapper">
+            <label class="nhsuk-label nhsuk-label--s" for="input-width-20">
+              Email address
+            </label>
+          </h1>
+          <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="example-heading" type="text">
+        </div>
+        <button class="nhsuk-button" type="submit">
+          Subscribe
+        </button>
+      </div>
+    </details>
+  </div>
+
+
+
+</div>
+
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-three-quarters">
+
+
+
+
+    <!--  -->
+    <h2 id="what" class="nhsuk-heading-l">Commissioned standards</h2>
+    <p>These standards have been funded and commissioned for development by a nationally recognised standards owner.</p>
+
+    <table role="table" class="nhsuk-table-responsive">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Date
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Change notes
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Further information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>14 October 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes</span>Standard XYZ commissioned for development by the PRSB
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">Documentation about the commissioning of Standard XYZ (opens in new window)</a>
+          </td>
+        </tr>
+
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>22 November 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>Standard 123 commissioned for development by NHS Digital
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span>No documentation currently available
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <!--  -->
+    <h2 id="what" class="nhsuk-heading-l">Drafted standards</h2>
+    <p>The documentation for these standards has been drafted and published, but the standards have not yet been fully validated.</p>
+
+    <table role="table" class="nhsuk-table-responsive">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Date
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Change notes
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Further information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>5 October 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>Draft of standard DEF published by the PRSB
+            <br><br><a href="#">Public consultation</a> <br>
+            Dates: 1 to 31 December 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">Draft of Standard DEF (opens in new window)</a>
+          </td>
+        </tr>
+
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>4 November 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>The NHS API Catalogue team moved 456 API into an Alpha phase
+            <br><br>
+            <a href="#">Feedback on GitHub</a>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">Documentation about the Alpha phase of 456 API (opens in new window)</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <!--  -->
+    <h2 id="what" class="nhsuk-heading-l">New active standards</h2>
+    <p>These standards were validated during the past 12 months and are now active.</p>
+
+    <table role="table" class="nhsuk-table-responsive">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Date
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Change notes
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Further information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>9 July 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>FHIR profile GHJ published live by IOPs
+
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">View the listing for FHIR profile GHJ in the Standards Directory</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <!--  -->
+    <h2 id="what" class="nhsuk-heading-l">Standards to be deprecated</h2>
+    <p>These standards are active, but the standards owner plans to redevelop or replace these standards in the next 12 months.</p>
+
+    <table role="table" class="nhsuk-table-responsive">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Date
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Change notes
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Further information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>1 December 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>Standard KLM reviewed by NHS Digital, replacement planned by December 2022
+            <br><br><a href="#">Minutes from NHS Digital standards review meeting (opens in new window)</a>
+
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">View the listing for standard KLM in the Standards Directory</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <!--  -->
+    <h2 id="what" class="nhsuk-heading-l">Deprecated standards</h2>
+    <p>These standards can still be used within existing services, but should not be used in updates or new digital services.</p>
+
+    <table role="table" class="nhsuk-table-responsive">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Date
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Change notes
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Further information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>15 August 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>Standard NOP version 1.0 deprecated by PRSB
+
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">Documentation for replacement standard NOP version 2.0 (opens in new window)</a>
+          </td>
+        </tr>
+
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>8 September 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>789 API deprecated by the NHS API Catalogue
+
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span>No replacement <br><a href="#">API Catalogue listing for deprecated 789 API (opens in new window)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h2 id="what" class="nhsuk-heading-l">Retired standards</h2>
+    <p>These standards are no longer in use. Products or services using a retired standard need to be updated as soon as possible.
+    </p>
+
+    <table role="table" class="nhsuk-table-responsive">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">
+            Date
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Change notes
+          </th>
+          <th role="columnheader" class="" scope="col">
+            Further information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>15 June 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>Standard QRS retired by the PRSB
+
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">Documentation for replacement standard TUV (opens in new window)
+
+            </a>
+          </td>
+        </tr>
+
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Date </span>8 September 2021
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Change notes </span>1001 FHIR profile retired by IOPs
+
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Further information </span><a href="#">Documentation for replacement 2002 FHIR profile (opens in new window)</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <!--  -->
+    {% include "includes/feedback-footer.html" %}
+    <!--  -->
+
+
+  </div>
+</div>
+
+{% endblock %}

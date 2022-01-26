@@ -1,0 +1,108 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v6.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+ What are information standards
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">What are information standards</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+       What are information standards
+      </h1>
+
+      <h2>What are information standards and interoperability</h2>
+      <p>Information standards are standardised ways of collecting, recording, and exchanging data. They allow
+        digital technologies owned by different organisations to see and use one another’s data in real-time.
+        This is known as interoperability.</p>
+
+<p>Interoperability can transform whole industries. For example, we can transfer money quickly from one bank
+  account to another because the banking industry uses universal standards to exchange financial information.</p>
+
+  <p>In a health context, achieving interoperability allows hospital staff to see and add to someone’s GP or care records instantly, instead of relying on emails and GP staff re-entering data into systems.</p>
+
+<p>Interoperability is not the same as manually integrating systems that have been built to different specifications.
+  The benefit of interoperability is that the additional layer of work to integrate systems isn’t needed because everyone
+  uses the same underlying framework.</p>
+
+<h2>Types of information standards</h2>
+<p>An information standards can be categorised by what aspect of information processing it covers:</p>
+
+<ul class="nhsuk-list-bullet">
+  <li><strong>Information codes of practice and governance standards</strong> set out rules that organisations and their employees should use for the general handling of information. This includes issues such as how information should be managed and handled safely and securely, and also what information may be legally processed. For example, setting out how professionals should manage and handle information in patient records, data processing agreements, or cyber security standards.</li>
+  <li><strong>Record standards</strong> define the scope (who it applies to, what the purpose is), the required information content and how it should be formatted and structured to ensure consistency of meaning between people. They cover content, methods, processes and practises for how information is to be captured, recorded, validated and used.</li>
+  <li><strong>Data definitions and terminologies</strong> define the format and types of various data items that allow them to be consistently represented when stored or exchanged between systems. This category also includes vocabularies, reference sets and controlled lists.</li>
+<li><strong>Technical standards and specifications</strong> specify how information is to be made available technically, covering the construction and formatting of messages, documents and API payloads, the transport infrastructures, architecture and associated protocols, and how the information will be authorised and routed to the intended recipient and authenticated.</li>
+<li><strong>Interoperability standards</strong> bring together the four previous categories into a whole solution to a specific use case. For example, completing a booking, making a referral, or transferring a patient between care settings will require the complete set of information standards implemented together to achieve interoperability.</li>
+</ul>
+
+<p>You can <a href="browse-all">browse the different types of standards available</a> using this directory.</p>
+
+<h2>Why use standards</h2>
+
+<p>The use of standards is important for the safety of people receiving care. This is because:</p>
+<ul class="nhsuk-list-bullet">
+<li>it reduces the risk of dangerous errors - for example, if a staff member mistypes the name of someone’s medication it could be misinterpreted by a colleague in another system. Using standards mean that the medicine name can be validated against a list of approved medications and displayed consistently on different systems</li>
+<li>it gives staff instant access to someone’s records rather than needing to wait for emails or faxes - in an emergency situation this could save someone’s life</li>
+  </ul>
+<p>There are also major benefits for people who give and receive care.</p>
+
+<h3>Benefits to people who receive care</h3>
+<p>Benefits include:</p>
+<ul class="nhsuk-list-bullet">
+<li>reducing the burden on people needing to share details about their health or treatment every time they receive some form of care. This can be hard for everyone, but especially for people with conditions that affect their memory
+</li>
+<li>allowing people to be able to see their own health record, so they have more visibility and ownership of their data</li>
+  <li>giving people more effective care by ensuring healthcare professionals make informed decisions based on their full history</li>
+</ul>
+
+<h3>Benefits to health and social care professionals</h3>
+<p>Benefits include:</p>
+<ul class="nhsuk-list-bullet">
+<li>being able to call up someone’s health record or a snapshot of their record instantly without having to ask anyone to share it</li>
+<li>being able to see richer details about the health and wellbeing of the person they’re caring for to better tailor treatment or services</li>
+<li>less time filling in paperwork</li>
+</ul>
+
+<p>The recent Coronavirus (COVID-19) pandemic - where we had to quickly move patients to wherever there was space to treat them - showed us how important it is to join up IT systems to make care provision easier.</p>
+
+      {% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -56,9 +56,8 @@
     {% endblock %}
 
     <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
-    <!-- Hello Karwai and Ralph also include govuk toolkit -->
-    <script src="/js/gov-uk-all.js" defer></script>
-
+    <!-- also include govuk toolkit -->
+    <script src="/govuk-frontend/govuk/all.js"></script>
 
     {% block headIcons %}
     <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
@@ -96,6 +95,36 @@
       {% block beforeContent %}{% endblock %}
 
       {% block main %}
+      <style>
+        .nhsuk-hero {
+          background-color: #005eb8;
+          color: #fff;
+          position: relative;
+      }
+      </style>
+      <section class="nhsuk-hero">
+        <div class="nhsuk-width-container nhsuk-hero--border app-width-container">
+          {% include "includes/prototype-banner-homepage.html" %}
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <div class="nhsuk-hero__wrapper app-hero__wrapper">
+                <h1 class="nhsuk-u-margin-bottom-4">Join up IT systems in health and social care</h1>
+                <p class="nhsuk-body-l nhsuk-u-margin-bottom-1">Explore listings for information standards, services and APIs used in health and social care technology.</p>
+                <br>
+                <form action="search-results" method="POST">
+
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                      Search
+                    </label>
+                    <input class="nhsuk-input" id="search-term" name="search-term" type="text" placeholder=" For example, FHIR, allergies, GP">
+                    <button style="height: 40px; background-color: black;display: inline-block;position: absolute; border: solid 3px black; cursor: pointer;"><span class="hod-search side-space icon-small" style="color: white;">Search</span></button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </section>
         <div class="nhsuk-width-container {{ containerClasses }}">
           {% block outerContent %}{% endblock %}
           <main class="nhsuk-main-wrapper {{ mainClasses }}" id="maincontent" role="main">

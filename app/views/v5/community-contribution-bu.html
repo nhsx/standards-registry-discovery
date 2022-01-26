@@ -1,0 +1,107 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v5.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Contribution guidance
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v5/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">How you can improve standards</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>How you can improve standards</h1>
+
+      <p>Standards don’t exist for everything services are trying to do in health and social care.
+        In some cases content standards might exist but corresponding technical standards might not.</p>
+
+<p>What’s important is that where standards and APIs do exist and apply, they are used. </p>
+
+<p>The standards community is for everyone involved in using and developing standards for interoperable health and social care technology.</p>
+<p>Find out what people are:</p>
+<ul class="nhsuk-list-bullet">
+  <li>working on in the <a href="https://github.com/Marvell-Consulting/standards-community-platform-for-health-and-social-care/projects/1">standards community development backlog</a></li>
+  <li>talking about in the <a href="https://github.com/Marvell-Consulting/standards-community-platform-for-health-and-social-care/discussions">discussions forum</a></li>
+</ul>
+
+<p>Learn how to:</p>
+
+<ul class="nhsuk-list-bullet">
+  <li><a href="#">propose a new information standard</a></li>
+  <li><a href="#">propose a change or extension to an existing information standard</a></li>
+  <li><a href="#">post a new discussion to the forum</a></li>
+  <li><a href="#">propose a new information standard</a></li>
+  <li><a href="#">report a problem with the standards directory</a></li>
+</ul>
+
+<h2>Community principles</h2>
+
+<p>These principles are for the community of people that use and develop information standards for interoperability
+  in health and social care technology.</p>
+<h3>1. Start with what exists</h3>
+<p>Reuse as much as possible and iterate based on user needs.</p>
+<p>Start by checking what exists in the standards directory.</p>
+<p>If something is not in the <a href="#">standards directory</a>, check the standards community development backlog and discussions
+forum to see whether other community members have made proposals or started discussions on this gap.</p>
+<p>Reach out to the community to ask questions, gather examples and learn from others’ experiences.</p>
+
+<h3>2. Contribute back and help others</h3>
+<p>The standards community is for everyone. Anyone can contribute evidence-based proposals and start discussions.</p>
+<p>Think beyond your specific use case and aim to develop standards that are scalable, reusable and can evolve over time.</p>
+<p>Share research findings and examples with others. Be open to feedback on your work.</p>
+<p>Above all, be kind. Encourage others to contribute by being respectful when asking questions or giving feedback.</p>
+
+<h3>3. Prioritise openness and honesty</h3>
+<p>Prioritise sharing proposals in the <a href="https://github.com/Marvell-Consulting/standards-community-platform-for-health-and-social-care/projects/1">standards community development backlog</a> and use cases, implementation examples and
+  local specifications in the <a href="https://github.com/Marvell-Consulting/standards-community-platform-for-health-and-social-care/discussions">discussions forum</a>.</p>
+<p>Share work in progress as early as possible. Be honest about the amount and nature of your research and findings.
+Share what works and what does not.</p>
+<p>Promote awareness of existing work whenever possible.</p>
+
+
+
+
+{% include "includes/was-this-page-useful.html" %}
+
+    </div>
+  </div>
+
+{% endblock %}

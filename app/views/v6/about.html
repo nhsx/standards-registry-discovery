@@ -1,0 +1,99 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v6.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+About this service
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">About this service</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+    <h1>
+      About this service
+    </h1>
+    <p>This service lets users browse and search for different types of information standards relevant for enabling interoperability across health and social care. Standards relating to a particular use case are published in different areas and websites
+      depending on the type of standard and area of expertise of those developing them, so it can be hard for users to find all the
+      information they need to solve a whole problem in an interoperable way.</p>
+
+      <p>The Standards Directory aims to make it easier for users to find the standards that are relevant to the service they are building or
+        buying, without having to check all the sites that exist.</p>
+
+        <p>This service is currently in development and going through testing and iterations. To report a problem, suggest an enhancement or
+          propose a new feature, you can email the standards directory team at <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a></p>
+
+          <h2>Who this service is for</h2>
+          <p>Anyone building or buying digital technologies for the NHS or local authority-funded adult social care settings who need to find
+            what relevant information standards they should include in the system they are building or buying. That includes IT suppliers such
+            as developers and product managers, as well as care providers and buyers of systems ranging from procurement teams, clinical informatics
+            specialists and framework operators.</p>
+
+            <p>Others involved in the development of standards - such as assurance teams, regulators or standard owners and creators - can also benefit
+              from increased accessibility and discoverability of standards.</p>
+
+            <h2>What standards are covered</h2>
+
+            <p>This service contains entries for information standards drawn from:</p>
+            <ul class="nhsuk-list-bullet">
+              <li>all current approved national information standards published on the
+                <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections#approved-standards-and-collections">NHS Digital website</a>,
+                for which the Data Alliance Partnership Board (DAPB) has issued an Information Standard Notice (ISN) to announce new or changes to information standards that fall under
+                section 250 of the Health and Social Care Act 2012</li>
+              <li>API standards and specifications published on the <a href="https://digital.nhs.uk/developer/api-catalogue">NHS Digital API Catalogue</a></li>
+              <li>record standards published by the <a href="https://theprsb.org/">Professional Records Standards Body (PRSB)</a></li>
+            </ul>
+            <p>It currently excludes data collections, which may be included in the future.</p>
+
+<p>Learn more about the types of standards and what they are for in our guidance on <a href="what">what information standards are</a>.</p>
+
+
+
+            <h2>How this service works</h2>
+
+
+            <p>The Standards Directory works as a browsable index, bringing together the different types of standards needed for interoperability so that users can find all the content and standards relevant to their use case and service type.</p>
+
+            <p>This is a signposting service and doesn’t include the full documentation for each standard, which is managed and hosted by the organisations that develop them. You can find a link to the implementation guidance and specifications for all standards in the 'About this standard' section at the top of each listing.</p>
+
+
+
+
+
+            {% include "includes/was-this-page-useful.html" %}
+
+          </div>
+        </div>
+
+        {% endblock %}
