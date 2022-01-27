@@ -38,7 +38,8 @@ function compileStyles() {
 function compileScripts() {
   return gulp.src([
     'app/assets/javascript/**/*.js',
-    'docs/assets/javascript/**/*.js'
+    'docs/assets/javascript/**/*.js',
+    require.resolve('govuk-frontend')
   ])
   .pipe(babel())
   .pipe(gulp.dest('public/js'));

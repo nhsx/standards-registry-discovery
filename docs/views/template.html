@@ -57,7 +57,10 @@
 
     <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
     <!-- Hello Karwai and Ralph also include govuk toolkit -->
-    <script src="/js/gov-uk-all.js" defer></script>
+    <script src="/js/all.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => window.GOVUKFrontend.initAll());
+    </script>
 
 
     {% block headIcons %}
