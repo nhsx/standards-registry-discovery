@@ -59,3 +59,21 @@ We made a few final changes including:
 
 [Link to prototype 3](https://nhs-standards-registry.herokuapp.com/v4/home) (username: nhsx password: test)
 [Changelog for all prototypes](https://nhs-standards-registry.herokuapp.com/) (same username and password)
+
+## Prototype 4
+Our objective was to explore:
+* if the community contribution platform we set up in GitHub would be usable for technical and non-technical users
+* if the initial roadmap we put together was understood by users and helped them plan for their own standards development
+* if the layout of the detailed standard page we iterated helped user to scan and find what they needed
+
+[Link to prototype 4](https://nhs-standards-registry.herokuapp.com/v5/home) (username: nhsx password: test)
+[Changelog for all prototypes](https://nhs-standards-registry.herokuapp.com/) (same username and password)
+
+## Prototype 5
+We made a few changes including:
+* moving the community platform from a testing area to NHSx GitHub account
+* improving some of the community platform features
+* re-structuring the roadmap to make it more easier to navigate for users
+
+[Link to prototype 5](https://nhs-standards-registry.herokuapp.com/v6/home) (username: nhsx password: test)
+[Changelog for all prototypes](https://nhs-standards-registry.herokuapp.com/) (same username and password)
