@@ -1,0 +1,373 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v6.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Roadmap
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">View the roadmap</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>Standards development roadmap</h1>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <p>This roadmap is designed to help you stay up-to-date with planned changes to information standards, services and APIs.</p>
+
+    <!--  -->
+    <!-- <div class="nhsuk-details__text">
+
+      <p class="nhsuk-u-font-size-16">Enter your email address to be notified each time this standards development roadmap is updated. You can unsubscribe at any time.</p>
+      <div class="nhsuk-form-group">
+        <h1 class="nhsuk-label-wrapper">
+          <label class="nhsuk-label nhsuk-u-font-size-16" for="input-width-20">
+            <strong>Email address</strong>
+          </label>
+        </h1>
+        <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="example-heading" type="text">
+      </div>
+      <button class="nhsuk-button" type="submit">
+        Subscribe
+      </button>
+    </div> -->
+    <!--  -->
+
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+          Subscribe to roadmap updates
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p class="nhsuk-u-font-size-16">Enter your email address to be notified each time the roadmap gets updated. You can unsubscribe at any time.</p>
+        <div class="nhsuk-form-group">
+          <h1 class="nhsuk-label-wrapper">
+            <label class="nhsuk-label nhsuk-u-font-size-16" for="input-width-20">
+              <strong>Email address</strong>
+            </label>
+          </h1>
+          <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="example-heading" type="text">
+        </div>
+        <button class="nhsuk-button" type="submit">
+          Subscribe
+        </button>
+      </div>
+    </details>
+    <!-- <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible"> -->
+    <!--  -->
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+          Feedback on this page
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p class="nhsuk-u-font-size-16">To report a problem or propose a new feature or improvement, you can email the standards directory team on <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a>
+
+        </p>
+      </div>
+    </details>
+    <!--  -->
+  </div>
+
+</div>
+<br><br>
+<!-- <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible"> -->
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <!--TABBED CONTENT  -->
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Standards
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#commissioned">
+            Commissioned
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#drafted">
+            Drafted
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#new-active">
+            New active
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#to-deprecate">
+            To be deprecated
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#deprecated">
+            Deprecated
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#retired">
+            Retired
+          </a>
+        </li>
+      </ul>
+      <div class="govuk-tabs__panel" id="commissioned">
+        <h2 class="govuk-heading-l">Commissioned standards</h2>
+        <p>These standards have been funded and commissioned for development by a nationally recognised standards owner.</p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">Commissioned</th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="community-roadmap-commission-sort-name">Standard &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="community-roadmap-commission-sort-owner">Owner &#x25BC;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">22 Dec 2021</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">Ambulance Messaging - HL7 V3 API</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">No documentation currently available</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">14 Dec 2021</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">Care homes view of shared care records</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">View documentation for this standard on the PRSB website (opens in new window)</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">1 Feb 2022</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">Clinical referral information standard</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">No documentation currently available</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">12 Jan 2022</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">eDischarge summary</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">View documentation for this standard on the PRSB website (opens in new window)</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="drafted">
+        <h2 class="govuk-heading-l">Drafted standards</h2>
+        <p>The documentation for these standards has been drafted and published, but the standards have not yet been fully validated.</p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">Drafted</th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard listing &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">22 Jan 2022</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Crisis care standard</a></td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+                <li><a href="#">View draft standard (opens in new window)</a></li>
+                <li><a href="#">Attend public consultation</a><br>Dates: 1-28 Feb 2022</li>
+              </ul>
+              </td>
+
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">05 Jan 2022</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">About Me information standard</a></td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">View the listing in the Standards Directory</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">22 Dec 2021</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Care Connect FHIR API standards</a></td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">The NHS API Catalogue team moved this API into an Alpha phase
+                <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+
+                <li><a href="#">View documentation of the Alpha phase (opens in new window)</a></li>
+                <li><a href="#">Feedback on GitHub</a></li>
+              </ul>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">20 Dec 2021</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">GP Connect Appointment Management - FHIR API</a></td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">View the listing in the Standards Directory</a>
+                <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+                <li><a href="#">Feedback on GitHub</a></li>
+              </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="new-active">
+        <h2 class="govuk-heading-l">New active standards</h2>
+        <p>These standards were validated during the past 12 months and are now active.</p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Published</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard listing &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">14 Nov 2021</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">Child Protection - Information Sharing - HL7 V3 API</a></td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">View API Catalogue listing for new standard (opens in new window)</a><br>
+                <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+                <li><a href="#">Feedback on GitHub</a></li>
+
+              </ul></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="to-deprecate">
+        <h2 class="govuk-heading-l">Standards to be deprecated</h2>
+        <p>These standards are active, but the standards owner plans to redevelop or replace these standards in the next 12 months.</p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Date</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard listing &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <td class="govuk-table__cell nhsuk-u-font-size-16">14 Nov 2021</td>
+            <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">Transfer of Care Outpatient Clinic Letter - FHIR API</a></td>
+            <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
+            <td class="govuk-table__cell nhsuk-u-font-size-16">This standard reviewed by NHS Digital, replacement planned by Dec 2022.<br>
+              <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+              <li><a href="#">View minutes from NHS Digital standards review meeting (opens in new window)</a></li>
+
+            </ul></td>
+
+          </tbody>
+        </table>
+
+      </div>
+      <!--  -->
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="deprecated">
+        <h2 class="govuk-heading-l">Deprecated standards</h2>
+        <p>These standards can still be used within existing services, but should not be used in updates or new digital services.</p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Deprecated</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard listing &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <td class="govuk-table__cell nhsuk-u-font-size-16">14 Nov 2021</td>
+            <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">Personal Demographics Service Notifications - FHIR API</a></td>
+            <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
+            <td class="govuk-table__cell nhsuk-u-font-size-16">FHIR API deprecated by the NHS API Catalogue<br>
+              <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+              <li><a href="#">View API Catalogue listing for deprecated standard (opens in new window)</a></li>
+            </ul></td>
+
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="retired">
+        <h2 class="govuk-heading-l">Retired standards</h2>
+        <p>These standards are no longer in use. Products or services using a retired standard need to be updated as soon as possible.</p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Retired</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard listing &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
+              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell nhsuk-u-font-size-16">14 Dec 2021</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">Digital care and support plan</a></td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
+              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="#">View documentation for replacement standard on PRSB website <br> (opens in new window)</a></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+      <!--  -->
+    </div>
+
+    <!--  -->
+  </div>
+</div>
+<!-- END TABBED CONTENT GRID ROW -->
+
+
+
+<!--  -->
+<!-- {% include "includes/feedback-footer.html" %} -->
+<!--  -->
+
+
+</div>
+</div>
+
+{% endblock %}
