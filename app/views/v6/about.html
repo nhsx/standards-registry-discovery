@@ -12,7 +12,7 @@ In /views/layout.html you can:
 
 <!-- Set the page title -->
 {% block pageTitle %}
-About this service
+What are information standards
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -22,7 +22,7 @@ About this service
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
-      <li class="nhsuk-breadcrumb__item">About this service</li>
+      <li class="nhsuk-breadcrumb__item">What are information standards</li>
     </ol>
   </div>
 </nav>
@@ -41,37 +41,51 @@ About this service
   <div class="nhsuk-grid-column-two-thirds">
 
     <!-- Change the page title here -->
-    <h1>
+    <h1 id="top">
       About this service
     </h1>
-      <p>The standards directory allows you to find the information standards required for technologies in health and social care to be able to interoperate. Currently these standards are published across a number of government and external websites which can make it difficult to see what exists and is relevant to you.</p>
-<p><a href="what" id="what">Find out more about the different types of information standard and interoperability</a></p>
-<p>The standards directory is a signposting service only. It doesn’t include the full documentation for each standard which can be found on the standard owner’s website.</p>
 
-        <p>This service is currently in development and is being tested and improved based on feedback. To report a problem or make a suggestion you can email the standards directory team at <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a>.</p>
+</div>
+</div>
 
-          <h2>Who this service is for</h2>
-          <p>This service is for anyone building or buying digital technologies for the NHS or local authority-funded adult social care settings. That includes IT suppliers as well as healthcare providers and technology buyers ranging from procurement teams to clinical informatics specialists and framework operators.</p>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+    <h3 class="nhsuk-heading-s">Contents</h3>
+    <ul class="nhsuk-list-bullet">
+      <li><a href="#about">About this service</a></li>
+      <li><a href="#who">Who this service is for</a></li>
+      <li><a href="#covered">What standards are covered</a></li>
+    </ul>
+  </div>
+  <div class="nhsuk-grid-column-two-thirds">
 
+    <!-- <h2 id="about">About this service</h2> -->
+    <p>This service signposts visitors to information standards required for IT systems in health and social care to interoperate. These standards have been assured or endorsed by qualified bodies, or are widely in use and therefore nationally recognised.</p>
+<p>This service is owned and maintained by NHSX. It is currently in development and is being tested and improved based on feedback - <a href="https://github.com/nhsx/standards-community-platform-for-health-and-social-care/projects/1">see details in the standard directory backlog</a>.</p>
+<!-- <p><a href="#top">Back to the top</a></p> -->
 
+<!--  -->
+    <h2 id="who">Who this service is for</h2>
+    <p>This service is for anyone involved in building or buying technologies for the NHS or local authority-funded adult social care. It applies to England only.</p>
 
-            <h2>What standards are covered</h2>
+<p>It helps teams being assessed against the <a href="https://service-manual.nhs.uk/service-standard">NHS Service Standard</a> to meet <a href="https://service-manual.nhs.uk/service-standard/17-make-your-service-interoperable">point 17 of the standard - make your service interoperable</a>.
+</p>
+<p>It also helps teams not being assessed to align to healthcare settings around the country in how they collect, record and exchange data with other IT systems.</p>
+<p><a href="#top">Back to the top</a></p>
+      <!--  -->
+      <h2 id="covered">What standards are covered</h2>
+      <p>The following information standards are listed in the directory: </p>
+      <ul class="nhsuk-list-bullet">
+        <li>all current approved national information standards published on the <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections#approved-standards-and-collections">NHS Digital website</a>.
+          </li>
+        <li>API standards and specifications published in the <a href="https://digital.nhs.uk/developer/api-catalogue">NHS Digital API Catalogue</a></li>
+        <li>record standards published by the <a href="https://theprsb.org/">Professional Records Standards Body (PRSB)</a></li>
+      </ul>
+      <p>In the future more standards are likely to be added to the directory from other sources.</p>
 
-            <p>The following information standards are listed in the directory: </p>
-            <ul class="nhsuk-list-bullet">
-              <li>all current approved national information standards published on the <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections#approved-standards-and-collections">NHS Digital website</a>. These have been assured by the <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/data-alliance-partnership-board">Data Alliance Partnership Board (DAPB)</a> and issued with an Information Standard Notice (ISN) which requires all health and adult social care providers to implement the standard
-                </li>
-              <li>API standards and specifications published in the <a href="https://digital.nhs.uk/developer/api-catalogue">NHS Digital API Catalogue</a></li>
-              <li>record standards published by the <a href="https://theprsb.org/">Professional Records Standards Body (PRSB)</a></li>
-            </ul>
-            <p>In the future more standards are likely to be added to the directory from other sources. <a href="https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections">Data collections</a> are currently excluded although these may also be added in future.</p>
-
-<p>You can <a href="what">find out more about interoperability standards and interoperability</a> or <a href="browse-all">browse the directory</a>.</p>
-
-
-
-
-
+<p>You can <a href="what">find out more about information standards and interoperability</a> or <a href="browse-all">browse the directory</a>.</p>
+<p><a href="#top">Back to the top</a></p>
+<!--  -->
 
 
 
