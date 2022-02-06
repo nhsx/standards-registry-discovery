@@ -12,7 +12,7 @@ In /views/layout.html you can:
 
 <!-- Set the page title -->
 {% block pageTitle %}
-Join up IT systems in health and social care
+Find standard formats to exchange health information digitally
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
@@ -46,7 +46,7 @@ Join up IT systems in health and social care
       Record standard
     </span>
     <h1>
-      Mental health inpatient discharge
+      Mental health inpatient discharge - Standards directory
     </h1>
   </div>
 </div>
@@ -243,7 +243,7 @@ Alliance and Protection Board</a></td>
       </span>
     </summary>
     <div class="nhsuk-details__text">
-    <p class="nhsuk-u-font-size-16">The standard has been quality assured by the <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/data-alliance-partnership-board">Data Alliance Partnership Board</a>, England’s national body overseeing standards development. 
+    <p class="nhsuk-u-font-size-16">The standard has been quality assured by the <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/data-alliance-partnership-board">Data Alliance Partnership Board</a>, England’s national body overseeing standards development.
 </p>
 
   </div>
@@ -281,6 +281,29 @@ Alliance and Protection Board</a></td>
 <!--  -->
 
 </div>
+<!--  -->
+<div class="nhsuk-grid-column-one-third">
+  <p class="nhsuk-u-font-size-16"><a href="community-roadmap">Check the standards roadmap</a></p>
+  <details class="nhsuk-details">
+    <summary class="nhsuk-details__summary ">
+      <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+        Get updates for this standard
+      </span>
+    </summary>
+    <div class="nhsuk-details__text  nhsuk-u-font-size-16" >
+      <p class="nhsuk-u-font-size-16">Enter you email to get notified when this standard gets updated</p>
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label nhsuk-u-font-size-16" for="example">
+         <strong>Email address</strong>
+        </label>
+        <input class="nhsuk-input" id="example" name="example" type="text">
+      </div>
+      <button class="nhsuk-button">Submit</button>
+    </div>
+  </details>
+  {% include "includes/was-this-page-useful.html" %}
+</div>
+<!--  -->
 </div>
 
 
