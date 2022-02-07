@@ -12,12 +12,12 @@
 
 <!-- Set the page title -->
 {% block pageTitle %}
-  Join up IT systems in health and social care
+  Search results - Standards directory
 {% endblock %}
 
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
-{% block beforeContent %}
+{% block beforecontent %}
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
@@ -30,7 +30,7 @@
 
 <!-- For adding a back link -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
-{% block outerContent %}
+{% block outercontent %}
   {% include "includes/prototype-banner.html" %}
 {% endblock %}
 
@@ -49,9 +49,10 @@
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-one-quarter">
     {% include "includes/filters.html" %}
-    {% include "includes/filters-resource.html" %}
+    {% include "includes/filters-business-use.html" %}
     {% include "includes/filters-setting.html" %}
-    {% include "includes/filters-topic.html" %}
+    {% include "includes/filters-type.html" %}
+    {% include "includes/filters-status.html" %}
   </div>
   <div class="nhsuk-grid-column-three-quarters">
     <h3 class="nhsuk-heading-s">
@@ -60,42 +61,42 @@
     </h3>
     <ul class="nhsuk-list table-list">
       <li class="table-list-item">
-        <a href="usecase-mental-health">Mental health inpatient discharge</a>
+        <a href="standard-mental-health">Mental health inpatient discharge</a>
         <br>
-        <span class="nhsuk-caption-m">Content standard</span>
+        <span class="nhsuk-caption-m">Record standard</span>
         <br>
         <strong>{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}</strong> lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consequuntur inventore recusandae obcaecati adipisci fugiat a hic.
       </li>
       <li class="table-list-item">
-        <a href="usecase-mental-health">SNOMED clinical terminologies</a>
+        <a href="standard-mental-health">SNOMED clinical terminologies</a>
         <br>
-        <span class="nhsuk-caption-m">Content standard</span>
+        <span class="nhsuk-caption-m">Data definitions or terminology standard</span>
         <br>
         Lorem ipsum dolor sit, amet <strong>{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}</strong> adipisicing elit. Suscipit consequuntur inventore recusandae obcaecati adipisci fugiat a hic.
       </li>
       <li class="table-list-item">
-        <a href="usecase-mental-health"><strong>{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}</strong> FHIR API</a>
+        <a href="standard-mental-health"><strong>{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}</strong> FHIR API</a>
         <br>
-        <span class="nhsuk-caption-m">Technology standard</span>
+        <span class="nhsuk-caption-m">Technology standard or API</span>
         <br>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consequuntur inventore recusandae obcaecati adipisci fugiat a hic.
       </li>
       <li class="table-list-item">
-        <a href="usecase-mental-health">NHS number</a>
+        <a href="standard-mental-health">NHS number</a>
         <br>
-        <span class="nhsuk-caption-m">Service</span>
+        <span class="nhsuk-caption-m">Technical standard or API</span>
         <br>
         Lorem ipsum dolor sit, amet consectetur <strong>{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}</strong> elit. Suscipit consequuntur inventore recusandae obcaecati adipisci fugiat a hic.
       </li>
       <li class="table-list-item">
-        <a href="usecase-mental-health">Discharging someone from hospital to another care setting</a>
+        <a href="standard-mental-health">Discharging someone from hospital to another care setting</a>
         <br>
-        <span class="nhsuk-caption-m">Use case</span>
+        <span class="nhsuk-caption-m">Record standard</span>
         <br>
         Lorem ipsum dolor sit, amet <strong>{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}</strong> adipisicing elit. Suscipit consequuntur inventore recusandae obcaecati adipisci fugiat a hic.
       </li>
       <li class="table-list-item">
-        <a href="usecase-mental-health">Why join up services</a>
+        <a href="what">Information standards in health</a>
         <br>
         <span class="nhsuk-caption-m">Guidance</span>
         <br>
