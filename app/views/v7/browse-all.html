@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-v6.html' %}
+{% extends 'layout-v7.html' %}
 <!--
   In /views/layout.html you can:
     - change the header and footer
@@ -18,14 +18,14 @@
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
       <li class="nhsuk-breadcrumb__item">Browse the directory</li>
     </ol>
   </div>
-</nav>
+</nav> -->
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -43,18 +43,17 @@
       <h1>
         Browse the standards directory
       </h1>
-      <p>Find standards, services and APIs to build interoperable technology in health and social care.</p>
+      <p>Find standards and APIs to build interoperable technology in health and social care.</p>
 
-      <p>To view, share and discuss standards use cases and local specifications, go to the <a href="https://github.com/nhsx/standards-community-platform-for-health-and-social-care">standards community platform on GitHub</a>.</p>
     </div>
   </div>
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-one-quarter">
       {% include "includes/filters.html" %}
-      {% include "includes/filters-business-use.html" %}
+      {% include "includes/filters-topic.html" %}
       {% include "includes/filters-setting.html" %}
       {% include "includes/filters-type.html" %}
-      {% include "includes/filters-status.html" %}
+
     </div>
     <div class="nhsuk-grid-column-three-quarters">
       <h3 class="nhsuk-heading-xs">Showing 74 results</h3>

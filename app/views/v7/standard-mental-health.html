@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-v6.html' %}
+{% extends 'layout-v7.html' %}
 <!--
 In /views/layout.html you can:
 - change the header and footer
@@ -18,15 +18,15 @@ Mental health inpatient discharge - Standards directory
 <!-- For adding a backlink -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
 {% block beforeContent %}
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/home">Home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v6/browse-all">Browse the directory</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/browse-all">Browse the directory</a></li>
       <li class="nhsuk-breadcrumb__item">Mental health inpatient discharge</li>
     </ol>
   </div>
-</nav>
+</nav> -->
 {% endblock %}
 
 <!-- For adding a back link -->
@@ -42,9 +42,6 @@ Mental health inpatient discharge - Standards directory
   <div class="nhsuk-grid-column-two-thirds">
 
     <!-- Change the page title here -->
-    <span class="nhsuk-caption-l">
-      Record standard
-    </span>
     <h1>
       Mental health inpatient discharge
     </h1>
@@ -66,29 +63,6 @@ Mental health inpatient discharge - Standards directory
           <td class="nhsuk-table__cell nhsuk-u-font-size-16">Professional Record Standards Body
           </td>
         </tr>
-
-        <!-- <tr role="row" class="nhsuk-table__row">
-          <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Reference code</td>
-          <td class="nhsuk-table__cell nhsuk-u-font-size-16">Not applicable
-<br>
-
-
-            <details class="nhsuk-details">
-            <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
-            Show explanation of a reference code
-          </span>
-        </summary>
-        <div class="nhsuk-details__text">
-        <p class="nhsuk-u-font-size-16">A <strong>reference code</strong> is a unique identifier for approved or
-        accepted’ ISCEs (Information Standards, Collections and Extractions) for national use across health and adult
-        social care, as approved by the Data Alliance Partnership and its Board (DAPB) or previous legacy boards.</p>
-
-      </div>
-    </details>
-
-  </td>
-</tr> -->
 <tr role="row" class="nhsuk-table__row">
   <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
   <td class="nhsuk-table__cell nhsuk-u-font-size-16"><strong class="nhsuk-tag nhsuk-tag--blue">Active</strong>
@@ -101,11 +75,7 @@ Mental health inpatient discharge - Standards directory
   </span>
 </summary>
 <div class="nhsuk-details__text">
-<p class="nhsuk-u-font-size-16"><strong>Active standards</strong> are stable, maintained and have been assured or endorsed for use by qualified bodies.<br><br>
-<strong>Draft standards</strong> are still being developed or are waiting for assurance or endorsement by qualified bodies.<br><br>
-<strong>Deprecated standards</strong> are older versions of a standard which are being phased out.<br><br>
-<strong>Retired standards</strong> are not being maintained and should not be used.<br>
-</p>
+<p class="nhsuk-u-font-size-16"><strong>Active standards</strong> are stable, maintained and have been assured or endorsed for use by qualified bodies.</p>
 
 </div>
 </details>
@@ -138,13 +108,13 @@ Mental health inpatient discharge - Standards directory
 
 <!--  -->
 
-<h2 class="nhsuk-heading-m">Business and care setting usage</h2>
+<h2 class="nhsuk-heading-m">Topic and care setting usage</h2>
 <table class="nhsuk-table ">
   <tbody class="nhsuk-table__body ">
 
 
     <tr role="row" class="nhsuk-table__row">
-      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Business use</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Topic</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
         <li>Continuity of Care (ToC)</li>
 
@@ -208,7 +178,7 @@ Alliance and Protection Board</a></td>
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
-      <td class="nhsuk-table__cell nhsuk-u-font-size-16">This standard requires access to:<br><br>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">This standard requires:<br><br>
         <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
           <li><a href="#">NHS Number</a></li>
           <li><a href="#">Organisation Data Service</a></li>
@@ -289,7 +259,6 @@ Alliance and Protection Board</a></td>
 </div>
 <!--  -->
 <div class="nhsuk-grid-column-one-third">
-  <p class="nhsuk-u-font-size-16"><a href="community-roadmap">Check the standards roadmap</a></p>
   <details class="nhsuk-details">
     <summary class="nhsuk-details__summary ">
       <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">

@@ -1,0 +1,127 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-home-v7.html' %}
+{% extends 'template-home-v7.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Home - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-half">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Standards directory and roadmap</h2>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="browse-all">Browse the directory</a></span>
+          <p class="nhsuk-u-font-size-16">Explore information standards and APIs used in health and social care technology.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="community-roadmap">Check the standards roadmap</a></span>
+          <p class="nhsuk-u-font-size-16">View standards that are new, in progress or are being phased out.
+</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="nhsuk-grid-column-one-third"> -->
+      <!-- <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="browse-use-cases">Common use cases</a></span>
+          <p class="nhsuk-u-font-size-16">Find resources for common needs</p>
+        </div>
+      </div> -->
+    <!-- </div> -->
+  </div>
+
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-half">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Discussion forum and backlog</h2>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="community-contribution">Join the discussion forum</a></span>
+          <p class="nhsuk-u-font-size-16">Ask a question, make a comment or see what the standards community is discussing.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="community-contribution-backlog">View the directory backlog
+</a></span>
+          <p class="nhsuk-u-font-size-16">View fixes and improvements the standards directory team have planned or are working on.
+</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--  -->
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <h2 class="nhsuk-u-font-size-24 nhsuk-u-font-weight-bold">Guidance</h2>
+    </div>
+  </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="what">Information standards in health</a></span>
+          <p class="nhsuk-u-font-size-16">An introduction to information standards and interoperability in health and social care.
+      </p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-card nhsuk-card--clickable">
+        <div class="nhsuk-card__content">
+          <span class="nhsuk-u-font-size-19 nhsuk-u-font-weight-bold"><a href="about">About this service</a></span>
+          <p class="nhsuk-u-font-size-16">An overview of what the standards directory does, who it's for and what is covered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
