@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-v7.html' %}
+{% extends 'layout-v7a.html' %}
 <!--
 In /views/layout.html you can:
 - change the header and footer
@@ -19,12 +19,12 @@ Standards development roadmap - Standards directory
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
 <!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
-      <li class="nhsuk-breadcrumb__item">Check the roadmap</li>
-    </ol>
-  </div>
+<div class="nhsuk-width-container">
+<ol class="nhsuk-breadcrumb__list">
+<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+<li class="nhsuk-breadcrumb__item">Check the roadmap</li>
+</ol>
+</div>
 </nav> -->
 {% endblock %}
 
@@ -42,29 +42,18 @@ Standards development roadmap - Standards directory
     <h1>Standards development roadmap</h1>
   </div>
 </div>
+
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
-    <p>Stay up to date with standards that are being proposed, drafted, recently active or phased out by standard development bodies.</p>
+    <p>Stay up to date with upcoming standards that are being proposed or drafted by standard development bodies.</p>
 
-    <!--  -->
-    <!-- <div class="nhsuk-details__text">
-
-      <p class="nhsuk-u-font-size-16">Enter your email address to be notified each time this standards development roadmap is updated. You can unsubscribe at any time.</p>
-      <div class="nhsuk-form-group">
-        <h1 class="nhsuk-label-wrapper">
-          <label class="nhsuk-label nhsuk-u-font-size-16" for="input-width-20">
-            <strong>Email address</strong>
-          </label>
-        </h1>
-        <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="example-heading" type="text">
-      </div>
-      <button class="nhsuk-button" type="submit">
-        Subscribe
-      </button>
-    </div> -->
-    <!--  -->
-
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden"></span>
+      <p>If you'd like to propose a new standard contact <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a>.</p>
+    </div>
+    {% include "includes/filters-care-setting-roadmap.html" %}
   </div>
+  <!-- end of two-thirds div -->
   <div class="nhsuk-grid-column-one-third">
 
     <details class="nhsuk-details">
@@ -89,306 +78,266 @@ Standards development roadmap - Standards directory
         </button>
       </div>
     </details>
+    {% include "includes/was-this-page-useful.html" %}
     <!-- <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible"> -->
-    <!--  -->
-    <details class="nhsuk-details">
-      <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
-          Feedback on this page
-        </span>
-      </summary>
-      <div class="nhsuk-details__text">
 
-        <p class="nhsuk-u-font-size-16">To report a problem or suggest an improvement, email <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a>
-
-        </p>
-      </div>
-    </details>
-    <!--  -->
   </div>
 
 </div>
 <br><br>
-<!-- <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible"> -->
 
+
+
+
+<!-- test -->
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
-    <!--TABBED CONTENT  -->
-    <div class="govuk-tabs" data-module="govuk-tabs">
-      <h2 class="govuk-tabs__title">
-        Standards
-      </h2>
-      <ul class="govuk-tabs__list">
-        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#commissioned">
-            Proposed
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#drafted">
-            In draft
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#new-active">
-            Recently active
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#to-deprecate">
-            Planned for deprecation
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#deprecated">
-            Deprecated
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#retired">
-            Retired
-          </a>
-        </li>
-      </ul>
-      <div class="govuk-tabs__panel" id="commissioned">
-        <h2 class="govuk-heading-l">Proposed standards</h2>
-        <p>These are standards that have been commissioned for development by standard development bodies.</p>
 
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Type &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Record standard</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Care homes view of shared care records</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="https://theprsb.org/projects-2/carehomereport/" target="_blank">View documentation for this standard on the PRSB website</a> <br> (opens in new window)</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Ambulance Messaging - HL7 V3 API</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">No documentation currently available</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Record standard</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">eDischarge summary</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="https://theprsb.org/standards/edischargesummary/" target="_blank">View documentation for this standard on the PRSB website</a><br> (opens in new window)</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Clinical referral information standard</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">No documentation currently available</td>
-            </tr>
-          </tbody>
-        </table>
+    <table role="table" class="nhsuk-table-responsive">
+      <!-- <caption class="nhsuk-table__caption">Ibuprofen tablet dosages for children</caption> -->
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            <a href="#">Name &#x25B2;</a>
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            <a href="#">Type &#x25B2;</a>
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            <a href="#">Status &#x25B2;</a>
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            More information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
 
-      </div>
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="drafted">
-        <h2 class="govuk-heading-l">Draft standards</h2>
-        <p>These are standards that have been published and drafted but are still being validated.</p>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Type &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Record standard</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Crisis care standard</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-                <li><a href="https://theprsb.org/wp-content/uploads/2018/02/Crisis-care-documentation-final-report-2.2.pdf" target="_blank">View draft standard</a><br>(opens in new window)</li>
-                <li><a href="#">Attend public consultation</a><br>1 to 28 Feb 2022</li>
-              </ul>
-              </td>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Patient Level Information and Costing Systems (PLICS) Data Sets</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>Updates for the PLICS data sets: inclusion of Community services in the Integrated Data Set, a part costs indicator, updates to the Reconciliation, alignment to relevant MHSDS, IAPT and CSDS, ECDS versions, updates to reference data and updates for the relevant financial year.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> Apr 2022 <br>
+            <strong>Implementation:</strong> Jul 2022 <br>
+            <strong>Compliance:</strong>Sep 2022
+          </td>
+        </tr>
 
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Record standard</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">About Me information standard</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">
-                <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-                <li><a href="https://theprsb.org/wp-content/uploads/2021/07/About-me-V1.2-Release-Notes.pdf" target="_blank">View draft standard</a><br>(opens in new window)</li>
-                <li><a href="#">Attend public consultation</a><br>11 to 20 Mar 2022</li>
-              </ul>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Care Connect FHIR API standards</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">
-                <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Personalised Care and Support Plan - FHIR Profile</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>The messaging standard to support the sharing of care plans across all health and care settings.  Linked to DAPB4022.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> 3rd quarter 2022. <br>
+            <strong>Implementation:</strong> Not available <br>
+            <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by 2nd quarter 2023.
+          </td>
+        </tr>
 
-                <li><a href="https://digital.nhs.uk/developer/api-catalogue/care-connect-fhir-standards" target="_blank">View draft standard</a><br>(opens in new window)</li>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Patient Level Information and Costing Systems (PLICS) Data Sets</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>Updates for the PLICS data sets: inclusion of Community services in the Integrated Data Set, a part costs indicator, updates to the Reconciliation, alignment to relevant MHSDS, IAPT and CSDS, ECDS versions, updates to reference data and updates for the relevant financial year.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> Apr 2022 <br>
+            <strong>Implementation:</strong> Jul 2022 <br>
+            <strong>Compliance:</strong>Sep 2022
+          </td>
+        </tr>
 
-              </ul>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">GP Connect Appointment Management - FHIR API</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-                <li><a href="https://digital.nhs.uk/developer/api-catalogue/gp-connect-appointment-management-fhir" target="_blank">View draft standard</a><br>(opens in new window)</li>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Personalised Care and Support Plan - FHIR Profile</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>The messaging standard to support the sharing of care plans across all health and care settings.  Linked to DAPB4022.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> 3rd quarter 2022. <br>
+            <strong>Implementation:</strong> Not available <br>
+            <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by 2nd quarter 2023.
+          </td>
+        </tr>
 
-              </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Patient Level Information and Costing Systems (PLICS) Data Sets</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>Updates for the PLICS data sets: inclusion of Community services in the Integrated Data Set, a part costs indicator, updates to the Reconciliation, alignment to relevant MHSDS, IAPT and CSDS, ECDS versions, updates to reference data and updates for the relevant financial year.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> Apr 2022 <br>
+            <strong>Implementation:</strong> Jul 2022 <br>
+            <strong>Compliance:</strong>Sep 2022
+          </td>
+        </tr>
 
-      </div>
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="new-active">
-        <h2 class="govuk-heading-l">Recently active standards</h2>
-        <p>These are standards that have been published and active in the last 12 months.</p>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Type &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Child Protection - Information Sharing - HL7 V3 API</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Published on: 1 Feb 2022</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Data definitions and terminologies</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Overseas Visitor Charging Category</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Published on: 23 Jan 2022</td>
-            </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Personalised Care and Support Plan - FHIR Profile</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>The messaging standard to support the sharing of care plans across all health and care settings.  Linked to DAPB4022.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> 3rd quarter 2022. <br>
+            <strong>Implementation:</strong> Not available <br>
+            <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by 2nd quarter 2023.
+          </td>
+        </tr>
 
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Record standard</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Hospital referral for assessment for community care and support</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Published on: 1 Dec 2021</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Vaccination Adverse Reactions COVID-19 API</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Published on: 13 Jan 2022</td>
-            </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Patient Level Information and Costing Systems (PLICS) Data Sets</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>Updates for the PLICS data sets: inclusion of Community services in the Integrated Data Set, a part costs indicator, updates to the Reconciliation, alignment to relevant MHSDS, IAPT and CSDS, ECDS versions, updates to reference data and updates for the relevant financial year.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> Apr 2022 <br>
+            <strong>Implementation:</strong> Jul 2022 <br>
+            <strong>Compliance:</strong>Sep 2022
+          </td>
+        </tr>
 
-          </tbody>
-        </table>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Personalised Care and Support Plan - FHIR Profile</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>The messaging standard to support the sharing of care plans across all health and care settings.  Linked to DAPB4022.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> 3rd quarter 2022. <br>
+            <strong>Implementation:</strong> Not available <br>
+            <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by 2nd quarter 2023.
+          </td>
+        </tr>
 
-      </div>
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="to-deprecate">
-        <h2 class="govuk-heading-l">Standards planned for deprecation</h2>
-        <p>These are standards that are planned for replacement or redevelopment within the next 12 months.</p>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Type &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-            <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Transfer of Care Outpatient Clinic Letter - FHIR API</a></td>
-            <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-            <td class="govuk-table__cell nhsuk-u-font-size-16">This standard reviewed by NHS Digital, replacement planned by Dec 2022.<br>
-              <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-              <li><a href="#">View minutes from NHS Digital standards review meeting</a><br> (opens in new window)</li>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Patient Level Information and Costing Systems (PLICS) Data Sets</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>Updates for the PLICS data sets: inclusion of Community services in the Integrated Data Set, a part costs indicator, updates to the Reconciliation, alignment to relevant MHSDS, IAPT and CSDS, ECDS versions, updates to reference data and updates for the relevant financial year.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> Apr 2022 <br>
+            <strong>Implementation:</strong> Jul 2022 <br>
+            <strong>Compliance:</strong>Sep 2022
+          </td>
+        </tr>
 
-            </ul></td>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Personalised Care and Support Plan - FHIR Profile</a>
+            <br><br>
+            <p class="nhsuk-u-font-size-16"><strong>Description:</strong><br>The messaging standard to support the sharing of care plans across all health and care settings.  Linked to DAPB4022.</p>
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Status </span>Draft
+          </td>
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">More information </span>
+            <strong>Owner:</strong> NHS Digital <br>
+            <strong>Submit feedback:</strong> <br><a href="#">standards.assurance@nhs.net</a> <br>
+            <strong>Publication:</strong> 3rd quarter 2022. <br>
+            <strong>Implementation:</strong> Not available <br>
+            <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by 2nd quarter 2023.
+          </td>
+        </tr>
 
-          </tbody>
-        </table>
+      </tbody>
+    </table>
 
-      </div>
-      <!--  -->
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="deprecated">
-        <h2 class="govuk-heading-l">Deprecated standards</h2>
-        <p>These are standards that have been replaced by newer versions. They can remain in existing services but should not be used in updates or new digital services.</p>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Type &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <td class="govuk-table__cell nhsuk-u-font-size-16">Technical standard and specifications</td>
-            <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Personal Demographics Service Notifications - FHIR API</a></td>
-            <td class="govuk-table__cell nhsuk-u-font-size-16">NHS Digital</td>
-            <td class="govuk-table__cell nhsuk-u-font-size-16">FHIR API deprecated by the NHS API Catalogue<br>
-              <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-              <li><a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir" target="_blank">View API Catalogue listing for deprecated standard</a><br> (opens in new window)</li>
-            </ul></td>
 
-          </tbody>
-        </table>
-
-      </div>
-
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="retired">
-        <h2 class="govuk-heading-l">Retired standards</h2>
-        <p>These are standards that are no longer in use and should be updated to a more current version or replaced as soon as possible. Contact the relevant standard owner to find out more information.</p>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Type &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Standard &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16"><a href="#">Owner &#x25B2;</a></th>
-              <th scope="col" class="govuk-table__header nhsuk-u-font-size-16">More information</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell nhsuk-u-font-size-16">Record standard</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="standard-mental-health">Crisis care</a></td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16">PRSB</td>
-              <td class="govuk-table__cell nhsuk-u-font-size-16"><a href="https://theprsb.org/standards/crisiscare/" target="_blank">View documentation for replacement standard on PRSB website</a> <br> (opens in new window)</td>
-            </tr>
-
-          </tbody>
-        </table>
-
-      </div>
-      <!--  -->
-    </div>
-
-    <!--  -->
   </div>
-</div>
-<!-- END TABBED CONTENT GRID ROW -->
-
-
-
-<!--  -->
-<!-- {% include "includes/feedback-footer.html" %} -->
-<!--  -->
-
-
-</div>
 </div>
 
 {% endblock %}

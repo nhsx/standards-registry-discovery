@@ -37,26 +37,31 @@
 <!-- For adding page content -->
 <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
+
+
+
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-three-quarters">
       <!-- Change the page title here -->
       <h1>
         Browse the standards directory
       </h1>
-      <p>Find standards and APIs to build interoperable technology in health and social care.</p>
-
+      <p>Find active standards and APIs to build interoperable technology in health and social care.</p>
+      {% include "includes/search.html" %}
     </div>
   </div>
+
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-one-quarter">
-      {% include "includes/filters.html" %}
-      {% include "includes/filters-topic.html" %}
-      {% include "includes/filters-setting.html" %}
-      {% include "includes/filters-type.html" %}
-
+      {% include "includes/expander.html" %}
     </div>
     <div class="nhsuk-grid-column-three-quarters">
       <h3 class="nhsuk-heading-xs">Showing 74 results</h3>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select.html" %}</div>
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+        </div>
+
       <ul class="nhsuk-list table-list">
         <li class="table-list-item">
           <a href="standard-mental-health">About Me information standard</a>
@@ -130,7 +135,7 @@
         </li>
       </ul>
 {% include "includes/pagination.html" %}
-    {% include "includes/feedback-footer.html" %}
+
     </div>
   </div>
 

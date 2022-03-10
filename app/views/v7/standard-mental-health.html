@@ -3,7 +3,7 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-v7.html' %}
+{% extends 'layout-v7a.html' %}
 <!--
 In /views/layout.html you can:
 - change the header and footer
@@ -43,14 +43,14 @@ Mental health inpatient discharge - Standards directory
 
     <!-- Change the page title here -->
     <h1>
-      Mental health inpatient discharge
+      Hospital referral for assessment for community care and support
     </h1>
   </div>
 </div>
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
-    <p>Standard format for collecting information about an adult leaving mental health services.</p>
+    <p>This standard includes the information required when a person is referred for ongoing care and support in the community after a hospital stay. Part of a suite of record standards created by PRSB for sharing information between health and social care.</p>
 
 
     <h2 class="nhsuk-heading-m">About this standard</h2>
@@ -86,8 +86,23 @@ Mental health inpatient discharge - Standards directory
 <tr role="row" class="nhsuk-table__row">
   <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Type</td>
   <td class="nhsuk-table__cell nhsuk-u-font-size-16">
-    Record standard
-
+    Clinical and care record standard
+<!--  -->
+<br><br>
+<details class="nhsuk-details nhsuk-u-font-size-16">
+<summary class="nhsuk-details__summary">
+<span class="nhsuk-details__summary-text">
+What this type means
+</span>
+</summary>
+<div class="nhsuk-details__text">
+<p class="nhsuk-u-font-size-16"><strong>Technical specifications and APIs:</strong> Explain how you can make the information available technically.</p>
+<p class="nhsuk-u-font-size-16"><strong>Clinical and care record standards:</strong> Define what information to collect, its purpose and how to format it for consistency of meaning.</p>
+<p class="nhsuk-u-font-size-16"><strong>Medical and data dictionaries:</strong> Define the format of specific data items so they can be consistently represented.</p>
+<p class="nhsuk-u-font-size-16"><strong>Data protection and governance:</strong> Confirm what information can be legally processed and securely handling the information.</p>
+</div>
+</details>
+<!--  -->
 </td>
 </tr>
 
@@ -95,7 +110,7 @@ Mental health inpatient discharge - Standards directory
   <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
   <td class="nhsuk-table__cell nhsuk-u-font-size-16">
 
-    <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="https://theprsb.org/wp-content/uploads/2021/10/Mental-Health-Inpatient-Discharge-Summary-Implementation-Guidance-v3.2.pdf" target="_blank">View documentation for this standard</a>
+    <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="https://theprsb.org/standards/hospitalrefferalforassessmenforcommunitycare/" target="_blank">View documentation for this standard</a>
       <br>(opens in new window)</p>
     </td>
   </tr>
@@ -116,17 +131,23 @@ Mental health inpatient discharge - Standards directory
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Topic</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-        <li>Continuity of Care (ToC)</li>
-
-
+        <li>Referrals</li>
+<li>Demographics</li>
+<li>Key care information</li>
+<li>Prescribing</li>
+<li>Patient communication</li>
+<li>Information governance</li>
+<li>Tests and diagnostics</li>
       </ul></td>
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Care setting</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16">
         <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-          <li>Mental health</li>
+          <li>Community health</li>
+          <li>Hospital</li>
           <li>GP / Primary care</li>
+          <li>Social care</li>
 
         </ul>
       </td>
@@ -135,65 +156,20 @@ Mental health inpatient discharge - Standards directory
   </tbody>
 </table>
 
-<!--  -->
-
-<!-- <h2 class="nhsuk-heading-m">Requirements for this standard</h2>
-<table class="nhsuk-table ">
-<tbody class="nhsuk-table__body "> -->
-
-
-<!-- <tr role="row" class="nhsuk-table__row">
-<td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Legal requirement</td>
-<td class="nhsuk-table__cell nhsuk-u-font-size-16">No - under consideration by the <a href="#">Data
-Alliance and Protection Board</a></td>
-</tr> -->
-<!-- <tr role="row" class="nhsuk-table__row">
-<td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Commercial requirement</td>
-<td class="nhsuk-table__cell nhsuk-u-font-size-16">Yes - required to sell via:
-<ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-<li><a href="#">GP IT Futures Framework</a></li>
-<li><a href="#">Digital Social Care Dynamic Purchasing System</a></li>
-
-</ul>
-</td>
-</tr>
-
-</tbody>
-</table>
-
-<!--  -->
 <h2 class="nhsuk-heading-m">Relationships to other standards</h2>
 <table class="nhsuk-table ">
   <tbody class="nhsuk-table__body ">
-
-
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">This standard needs to be reviewed and implemented alongside <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/scci0034-snomed-ct">SNOMED</a>, FHIR and electronic systems on both ends.
+      </td>
+    </tr>
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related standards</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16">
-        <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-          <li><a href="#">Mental health inpatient discharge - FHIR</a></li>
-          <li><a href="#">Mental health inpatient discharge - HL7</a></li>
-        </ul>
+        This standard relates to <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/scci2075-assessment-discharge-and-withdrawal-notices-between-hospitals-and-social-services">SCCI2075: Assessment, Discharge and Withdrawal Notices between Hospitals and Social Services (ADW)</a>
       </td>
     </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
-      <td class="nhsuk-table__cell nhsuk-u-font-size-16">This standard requires:<br><br>
-        <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-          <li><a href="#">NHS Number</a></li>
-          <li><a href="#">Organisation Data Service</a></li>
-          <li><a href="#">SPINE Directory Service</a></li>
-        </ul>
-
-        It is also recommended to use:<br><br>
-        <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-          <li><a href="#">Patient Demographics Service</a></li>
-          <li><a href="#">Patient Administration Service</a></li>
-          <li><a href="#">NHS Data Dictionary</a></li>
-        </ul>
-      </td>
-    </tr>
-
 
   </tbody>
 </table>
@@ -202,11 +178,23 @@ Alliance and Protection Board</a></td>
 <h2 class="nhsuk-heading-m">Assurance and endorsements</h2>
 <table class="nhsuk-table ">
   <tbody class="nhsuk-table__body ">
-
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Legally mandated</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">Yes <br>
+        Required under: Section 250 Health and Social Care Act
+      </td>
+      </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dates</td>
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16">Estimated publication: April 2022<br>
+            Estimated implementation: July 2022 <br>
+            Estimated compliance: September 2022
+          </td>
+          </tr>
 
     <tr role="row" class="nhsuk-table__row">
-      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Assured by the Data Alliance Partnership Board:</td>
-      <td class="nhsuk-table__cell nhsuk-u-font-size-16">Yes<br>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Quality assured by:</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">Data Alliance Partnership Board<br>
         <p class="nhsuk-u-font-size-16">Reference code: DCB1234</p>
 
         <details class="nhsuk-details">
@@ -252,7 +240,7 @@ Alliance and Protection Board</a></td>
 
 <!--  -->
 
-{% include "includes/feedback-footer.html" %}
+
 
 <!--  -->
 
@@ -276,7 +264,7 @@ Alliance and Protection Board</a></td>
       <button class="nhsuk-button">Submit</button>
     </div>
   </details>
-  {% include "includes/was-this-page-useful.html" %}
+{% include "includes/was-this-page-useful.html" %}
 </div>
 <!--  -->
 </div>
