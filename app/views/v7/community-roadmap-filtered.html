@@ -53,7 +53,7 @@ Standards development roadmap - Standards directory
     </div> -->
 <h2 class="nhsuk-heading-m">Filter the roadmap by care setting</h2>
     {% include "includes/filters-care-setting-roadmap.html" %}
-    <button class="nhsuk-button" type="submit">
+    <button class="nhsuk-button" type="submit" href="community-roadmap-filtered">
       Filter the roadmap
     </button>
   </div>
@@ -90,9 +90,20 @@ Standards development roadmap - Standards directory
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
-    <h2 class="nhsuk-heading-m">Upcoming standards</h2>
-    <h4 class="nhsuk-heading-xs">Showing 24 results</h4>
-    <hr style="border: 1px solid black" class="nhsuk-section-break nhsuk-section-break--visible nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-3">
+<h2 class="nhsuk-heading-m">Upcoming standards</h2>
+<!--  -->
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-half">
+    <h4 class="nhsuk-heading-xs">Showing 7 results for [selected care settings]</h4>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <p class="nhsuk-u-font-size-16" style="text-align:right"><a href="community-roadmap">Show all upcoming standards</a></p>
+      </div>
+    </div>
+<!--  -->
+      <!-- <h4 class="nhsuk-heading-xs">Showing 7 results for [selected care settings]</h4>
+      <p class="nhsuk-u-font-size-16"><a href="community-roadmap">Show all upcoming standards</a></p> -->
+    <hr style="border: 1px solid black" class="nhsuk-section-break nhsuk-section-break--visible nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-3">
 <!--TEST FILTERS TO SORT BY STANDARD OWNER AND NATIONALLY MANDATED  -->
 <!--
 <div class="nhsuk-grid-row">
@@ -105,13 +116,13 @@ Standards development roadmap - Standards directory
       <thead role="rowgroup" class="nhsuk-table__head">
         <tr role="row">
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
-            <a href="#">Name &#x25B2;</a>
+            <a href="community-roadmap-name">Name &#x25B2;</a>
           </th>
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
-            <a href="#">Type &#x25B2;</a>
+            <a href="community-roadmap-type">Type &#x25B2;</a>
           </th>
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
-            <a href="#">Status &#x25B2;</a>
+            <a href="community-roadmap-status">Status &#x25B2;</a>
           </th>
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
             More information
@@ -121,7 +132,7 @@ Standards development roadmap - Standards directory
       <tbody class="nhsuk-table__body">
 
 
-        <!-- 2 -->
+        <!-- 1 -->
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
             <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Pathology Messaging - HL7 V3 API</a>
@@ -145,7 +156,7 @@ Standards development roadmap - Standards directory
               <strong>Compliance:</strong> Provisionally 2nd quarter 2023
             </td>
           </tr>
-          <!-- 3 -->
+          <!-- 2 -->
           <tr role="row" class="nhsuk-table__row">
             <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
               <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Dose Syntax API standards</a>
@@ -169,7 +180,7 @@ Standards development roadmap - Standards directory
                 <strong>Compliance:</strong> Sep 2022
               </td>
             </tr>
-            <!-- 4 -->
+            <!-- 3 -->
             <tr role="row" class="nhsuk-table__row">
               <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                 <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Personalised Care and Support Plan</a>
@@ -193,7 +204,7 @@ Standards development roadmap - Standards directory
                   <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by Aug 2023
                 </td>
               </tr>
-              <!-- 5 -->
+              <!-- 4 -->
               <tr role="row" class="nhsuk-table__row">
                 <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                   <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Ambulance Handover to Emergency Care</a>
@@ -217,7 +228,7 @@ Standards development roadmap - Standards directory
                     <strong>Compliance:</strong> Oct 2022
                   </td>
                 </tr>
-                <!-- 6 -->
+                <!-- 5-->
                 <tr role="row" class="nhsuk-table__row">
                   <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                     <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Community Pharmacy Standard</a>
@@ -241,7 +252,7 @@ Standards development roadmap - Standards directory
                       <strong>Compliance:</strong>  Nov 2022
                     </td>
                   </tr>
-                  <!-- 7 -->
+                  <!-- 6 -->
                   <tr role="row" class="nhsuk-table__row">
                     <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                       <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Digital Social Care Standards</a>
@@ -265,7 +276,7 @@ Standards development roadmap - Standards directory
                         <strong>Compliance:</strong>  Dec 2023
                       </td>
                     </tr>
-                    <!-- 1 -->
+                    <!-- 7 -->
                     <tr role="row" class="nhsuk-table__row">
                       <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                         <span class="nhsuk-table-responsive__heading">Name </span><a href="#">NHS Booking & Referrals Standard</a>
@@ -296,5 +307,5 @@ Standards development roadmap - Standards directory
 
                 </div>
               </div>
-{% include "includes/pagination-24.html" %}
+
               {% endblock %}

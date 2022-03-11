@@ -53,7 +53,7 @@ Standards development roadmap - Standards directory
     </div> -->
 <h2 class="nhsuk-heading-m">Filter the roadmap by care setting</h2>
     {% include "includes/filters-care-setting-roadmap.html" %}
-    <button class="nhsuk-button" type="submit">
+    <button class="nhsuk-button" type="submit" href="community-roadmap-filtered">
       Filter the roadmap
     </button>
   </div>
@@ -91,8 +91,17 @@ Standards development roadmap - Standards directory
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
     <h2 class="nhsuk-heading-m">Upcoming standards</h2>
-    <h4 class="nhsuk-heading-xs">Showing 24 results</h4>
-    <hr style="border: 1px solid black" class="nhsuk-section-break nhsuk-section-break--visible nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-3">
+    <!--  -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-half">
+        <h4 class="nhsuk-heading-xs">Showing 7 results for [selected care settings]</h4>
+        </div>
+        <div class="nhsuk-grid-column-one-half">
+          <p class="nhsuk-u-font-size-16" style="text-align:right"><a href="community-roadmap">Show all upcoming standards</a></p>
+          </div>
+        </div>
+    <!--  -->
+    <hr style="border: 1px solid black" class="nhsuk-section-break nhsuk-section-break--visible nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-3">
 <!--TEST FILTERS TO SORT BY STANDARD OWNER AND NATIONALLY MANDATED  -->
 <!--
 <div class="nhsuk-grid-row">
@@ -105,13 +114,13 @@ Standards development roadmap - Standards directory
       <thead role="rowgroup" class="nhsuk-table__head">
         <tr role="row">
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
-            <a href="#">Name &#x25B2;</a>
+            <a href="community-roadmap-name">Name &#x25B2;</a>
           </th>
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
-            <a href="#">Type &#x25B2;</a>
+            <a href="community-roadmap-type">Type &#x25B2;</a>
           </th>
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
-            <a href="#">Status &#x25B2;</a>
+            <a href="community-roadmap-status">Status &#x25BC;</a>
           </th>
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
             More information
@@ -121,55 +130,8 @@ Standards development roadmap - Standards directory
       <tbody class="nhsuk-table__body">
 
 
-        <!-- 2 -->
-        <tr role="row" class="nhsuk-table__row">
-          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Pathology Messaging - HL7 V3 API</a>
-            <br>
-            <p class="nhsuk-u-font-size-16">
-              Request laboratory tests and send the results back to the requester, usually the patient's GP or consultant.</p>
-            </td>
-            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-              <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
-            </td>
-            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-              <span class="nhsuk-table-responsive__heading">Status </span>Proposed
-            </td>
-            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-              <span class="nhsuk-table-responsive__heading">More information </span>
-              <strong>Owner:</strong> NHS Digital <br>
-              <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a> <br>
-              <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/pathology-messaging-hl7-v3">View documentation</a><br>
-              <strong>Publication:</strong> Apr 2022 <br>
-              <strong>Implementation:</strong> Not available <br>
-              <strong>Compliance:</strong> Provisionally 2nd quarter 2023
-            </td>
-          </tr>
-          <!-- 3 -->
-          <tr role="row" class="nhsuk-table__row">
-            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-              <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Dose Syntax API standards</a>
-              <br>
-              <p class="nhsuk-u-font-size-16">
-                API standards to provide a structured way to record dosage instructions between primary and secondary care settings.</p>
-              </td>
-              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
-              </td>
-              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                <span class="nhsuk-table-responsive__heading">Status </span>Proposed
-              </td>
-              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                <span class="nhsuk-table-responsive__heading">More information </span>
-                <strong>Owner:</strong> NHS Digital <br>
-                <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a><br>
-                <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/dose-syntax-standards">View documentation</a><br>
-                <strong>Publication:</strong> Jun 2022 <br>
-                <strong>Implementation:</strong> Jul 2022<br>
-                <strong>Compliance:</strong> Sep 2022
-              </td>
-            </tr>
-            <!-- 4 -->
+
+            <!-- 3 -->
             <tr role="row" class="nhsuk-table__row">
               <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                 <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Personalised Care and Support Plan</a>
@@ -181,7 +143,7 @@ Standards development roadmap - Standards directory
                   <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
                 </td>
                 <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                  <span class="nhsuk-table-responsive__heading">Status </span>Draft
+                  <span class="nhsuk-table-responsive__heading">Status </span><strong>Draft</strong>
                 </td>
                 <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                   <span class="nhsuk-table-responsive__heading">More information </span>
@@ -193,31 +155,8 @@ Standards development roadmap - Standards directory
                   <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by Aug 2023
                 </td>
               </tr>
-              <!-- 5 -->
-              <tr role="row" class="nhsuk-table__row">
-                <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                  <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Ambulance Handover to Emergency Care</a>
-                  <br>
-                  <p class="nhsuk-u-font-size-16">
-                    A standard for the information that is shared when care is transferred from ambulances to emergency departments.</p>
-                  </td>
-                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                    <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
-                  </td>
-                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                    <span class="nhsuk-table-responsive__heading">Status </span>Proposed
-                  </td>
-                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                    <span class="nhsuk-table-responsive__heading">More information </span>
-                    <strong>Owner:</strong> Professional Record Standards Body <br>
-                    <strong>Submit feedback:</strong> <br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
-                    <strong>Documentation:</strong> <a href="https://theprsb.org/standards/ambulancehandover/">View documentation</a><br>
-                    <strong>Publication:</strong> Aug 2022 <br>
-                    <strong>Implementation:</strong> Sep 2022 <br>
-                    <strong>Compliance:</strong> Oct 2022
-                  </td>
-                </tr>
-                <!-- 6 -->
+
+                <!-- 5-->
                 <tr role="row" class="nhsuk-table__row">
                   <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                     <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Community Pharmacy Standard</a>
@@ -229,7 +168,7 @@ Standards development roadmap - Standards directory
                       <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
                     </td>
                     <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                      <span class="nhsuk-table-responsive__heading">Status </span>Draft
+                      <span class="nhsuk-table-responsive__heading">Status </span><strong>Draft</strong>
                     </td>
                     <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                       <span class="nhsuk-table-responsive__heading">More information </span>
@@ -241,7 +180,7 @@ Standards development roadmap - Standards directory
                       <strong>Compliance:</strong>  Nov 2022
                     </td>
                   </tr>
-                  <!-- 7 -->
+                  <!-- 6 -->
                   <tr role="row" class="nhsuk-table__row">
                     <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                       <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Digital Social Care Standards</a>
@@ -253,7 +192,7 @@ Standards development roadmap - Standards directory
                         <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
                       </td>
                       <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                        <span class="nhsuk-table-responsive__heading">Status </span>Draft
+                        <span class="nhsuk-table-responsive__heading">Status </span><strong>Draft</strong>
                       </td>
                       <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                         <span class="nhsuk-table-responsive__heading">More information </span>
@@ -265,7 +204,7 @@ Standards development roadmap - Standards directory
                         <strong>Compliance:</strong>  Dec 2023
                       </td>
                     </tr>
-                    <!-- 1 -->
+                    <!-- 7 -->
                     <tr role="row" class="nhsuk-table__row">
                       <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                         <span class="nhsuk-table-responsive__heading">Name </span><a href="#">NHS Booking & Referrals Standard</a>
@@ -277,7 +216,7 @@ Standards development roadmap - Standards directory
                           <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
                         </td>
                         <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
-                          <span class="nhsuk-table-responsive__heading">Status </span>Draft
+                          <span class="nhsuk-table-responsive__heading">Status </span><strong>Draft</strong>
                         </td>
                         <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                           <span class="nhsuk-table-responsive__heading">More information </span>
@@ -289,6 +228,78 @@ Standards development roadmap - Standards directory
                           <strong>Compliance:</strong> Mar 2023
                         </td>
                       </tr>
+                      <!-- 1 -->
+                      <tr role="row" class="nhsuk-table__row">
+                        <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                          <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Pathology Messaging - HL7 V3 API</a>
+                          <br>
+                          <p class="nhsuk-u-font-size-16">
+                            Request laboratory tests and send the results back to the requester, usually the patient's GP or consultant.</p>
+                          </td>
+                          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                            <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+                          </td>
+                          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                            <span class="nhsuk-table-responsive__heading">Status </span><strong>Proposed</strong>
+                          </td>
+                          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                            <span class="nhsuk-table-responsive__heading">More information </span>
+                            <strong>Owner:</strong> NHS Digital <br>
+                            <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a> <br>
+                            <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/pathology-messaging-hl7-v3">View documentation</a><br>
+                            <strong>Publication:</strong> Apr 2022 <br>
+                            <strong>Implementation:</strong> Not available <br>
+                            <strong>Compliance:</strong> Provisionally 2nd quarter 2023
+                          </td>
+                        </tr>
+                        <!-- 2 -->
+                        <tr role="row" class="nhsuk-table__row">
+                          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                            <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Dose Syntax API standards</a>
+                            <br>
+                            <p class="nhsuk-u-font-size-16">
+                              API standards to provide a structured way to record dosage instructions between primary and secondary care settings.</p>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                              <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                              <span class="nhsuk-table-responsive__heading">Status </span><strong>Proposed</strong>
+                            </td>
+                            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                              <span class="nhsuk-table-responsive__heading">More information </span>
+                              <strong>Owner:</strong> NHS Digital <br>
+                              <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a><br>
+                              <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/dose-syntax-standards">View documentation</a><br>
+                              <strong>Publication:</strong> Jun 2022 <br>
+                              <strong>Implementation:</strong> Jul 2022<br>
+                              <strong>Compliance:</strong> Sep 2022
+                            </td>
+                          </tr>
+                          <!-- 4 -->
+                          <tr role="row" class="nhsuk-table__row">
+                            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                              <span class="nhsuk-table-responsive__heading">Name </span><a href="#">Ambulance Handover to Emergency Care</a>
+                              <br>
+                              <p class="nhsuk-u-font-size-16">
+                                A standard for the information that is shared when care is transferred from ambulances to emergency departments.</p>
+                              </td>
+                              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                                <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+                              </td>
+                              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                                <span class="nhsuk-table-responsive__heading">Status </span><strong>Proposed</strong>
+                              </td>
+                              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                                <span class="nhsuk-table-responsive__heading">More information </span>
+                                <strong>Owner:</strong> Professional Record Standards Body <br>
+                                <strong>Submit feedback:</strong> <br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
+                                <strong>Documentation:</strong> <a href="https://theprsb.org/standards/ambulancehandover/">View documentation</a><br>
+                                <strong>Publication:</strong> Aug 2022 <br>
+                                <strong>Implementation:</strong> Sep 2022 <br>
+                                <strong>Compliance:</strong> Oct 2022
+                              </td>
+                            </tr>
 
                     </tbody>
                   </table>
@@ -296,5 +307,5 @@ Standards development roadmap - Standards directory
 
                 </div>
               </div>
-{% include "includes/pagination-24.html" %}
+
               {% endblock %}
