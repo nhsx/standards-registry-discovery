@@ -23,7 +23,7 @@ Mental health inpatient discharge - Standards directory
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/browse-all">Browse the directory</a></li>
-      <li class="nhsuk-breadcrumb__item">Transfer of Care Mental Health Discharge - FHIR API</li>
+      <li class="nhsuk-breadcrumb__item">SNOMED CT</li>
     </ol>
   </div>
 </nav>
@@ -43,14 +43,14 @@ Mental health inpatient discharge - Standards directory
 
     <!-- Change the page title here -->
     <h1>
-      Transfer of Care Mental Health Discharge - FHIR API
+      SNOMED CT
     </h1>
   </div>
 </div>
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
-    <p class="nhsuk-u-font-size-16">Create and transmit documents containing Transfer of Care information supporting a mental health discharge.</p>
+    <p class="nhsuk-u-font-size-16">SNOMED CT is the information standard for clinical terminology; it is an international standard published by SNOMED International providing a global common language for health terms.</p>
 
 
     <h2 class="nhsuk-heading-m">About this standard</h2>
@@ -86,7 +86,7 @@ Mental health inpatient discharge - Standards directory
 <tr role="row" class="nhsuk-table__row">
   <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Type</td>
   <td class="nhsuk-table__cell nhsuk-u-font-size-16">
-    <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>
+    <strong class="nhsuk-tag nhsuk-tag--green">Medical and data dictionaries</strong>
 <!--  -->
 <br><br>
 <details class="nhsuk-details nhsuk-u-font-size-16">
@@ -110,13 +110,13 @@ What this type means
   <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
   <td class="nhsuk-table__cell nhsuk-u-font-size-16">
 
-    <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="https://digital.nhs.uk/developer/api-catalogue/transfer-of-care-mental-health-discharge-fhir" target="_blank">View documentation for this standard</a>
+    <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/scci0034-snomed-ct" target="_blank">View documentation for this standard</a>
       <br>(opens in new window)</p>
     </td>
   </tr>
   <tr role="row" class="nhsuk-table__row">
     <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact details</td>
-    <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:api.management@nhs.net">	api.management@nhs.net</a></td>
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:standards.assurance@nhs.net">standards.assurance@nhs.net</a></td>
   </tr>
 </tbody>
 </table>
@@ -131,17 +131,28 @@ What this type means
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Topic</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-        <li>Continuity of care (ToC)</li>
-
+        <li>Clinical decision support</li>
+<li>Key care information</li>
+<li>Prescribing</li>
+<li>Vaccination</li>
+<li>Messaging</li>
+<li>Reference data</li>
+<li>Tests and diagnostics</li>
       </ul></td>
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Care setting</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16">
         <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
-          <li>Hospital</li>
-          <li>Mental health</li>
-          <li>GP / Primary care</li>
+          <li>Community health</li>
+<li>Dentistry</li>
+<li>Hospital</li>
+<li>Maternity</li>
+<li>Mental health</li>
+<li>Pharmacy</li>
+<li>GP / Primary care</li>
+<li>Urgent and Emergency Care</li>
+
         </ul>
       </td>
     </tr>
@@ -155,15 +166,15 @@ What this type means
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16">
-        For a full list of interactions for this API, see <a href="https://developer.nhs.uk/apis/itk3tocmentalhealthedischarge-2-8-0/index.html">Introduction to ITK3 Mental Health eDischarge</a>.<br><br>
-        For details on the general structure of the interactions, see <a href="https://digital.nhs.uk/developer/guides-and-documentation/api-technologies-at-nhs-digital#fhir">FHIR</a>.
+         No known dependencies
       </td>
 
     </tr>
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related standards</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16">
-        No known related standards.
+        This standard relates to <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/scci0052-dictionary-of-medicines-and-devices-dm-d">SCCI0052 The
+          dictionary of medicines and devices (dm+d)</a>
       </td>
     </tr>
 
@@ -177,17 +188,16 @@ What this type means
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Legally mandated</td>
       <td class="nhsuk-table__cell nhsuk-u-font-size-16">Yes <br>
-        Required under: <a href="https://www.england.nhs.uk/nhs-standard-contract/previous-nhs-standard-contracts/21-22/">NHS Standard Contract 2021/22</a>
+        Required under: <a href="https://www.legislation.gov.uk/ukpga/2012/7/section/250">Section 250 Health and Social Care Act</a>
       </td>
       </tr>
 
     <tr role="row" class="nhsuk-table__row">
       <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Quality assured by:</td>
-      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
-        The NHS Digital API Catalogue uses a development process based on <a href="https://www.gov.uk/service-manual/agile-delivery">GDS agile delivery</a>. You can find out more about how they develop APIs, technical standards and specifications in their <a href="https://digital.nhs.uk/developer/guides-and-documentation/reference-guide">reference guide</a>.
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">Data Alliance Partnership Board<br>
+        <p class="nhsuk-u-font-size-16">Reference code: SCC10034</p>
 
-
-        <!-- <details class="nhsuk-details">
+        <details class="nhsuk-details">
         <summary class="nhsuk-details__summary">
         <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
         About the Data Alliance Partnership Board
@@ -201,7 +211,7 @@ What this type means
 </p>
 
   </div>
-</details> -->
+</details>
 
       </td>
       </tr>
