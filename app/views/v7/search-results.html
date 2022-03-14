@@ -43,22 +43,23 @@
     <h1>
       Search results
     </h1>
+    {% include "includes/search.html" %}
     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum, assumenda temporibus, autem aperiam suscipit non, eum voluptatum reiciendis sequi libero sint unde exercitationem delectus esse eligendi maxime asperiores accusamus.</p> -->
   </div>
 </div>
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-one-quarter">
     {% include "includes/filters.html" %}
-    {% include "includes/filters-business-use.html" %}
-    {% include "includes/filters-setting.html" %}
-    {% include "includes/filters-type.html" %}
-    {% include "includes/filters-status.html" %}
+    {% include "includes/expander.html" %}
   </div>
   <div class="nhsuk-grid-column-three-quarters">
-    <h3 class="nhsuk-heading-s">
+    <h3 class="nhsuk-heading-xs">
       21 items related to:  "{% if data["search-term"] == undefined %}Mental health{% endif %}{{data["search-term"]}}"
-
     </h3>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-half">  {% include "includes/select.html" %}</div>
+      <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+      </div>
     <ul class="nhsuk-list table-list">
       <li class="table-list-item">
         <a href="standard-mental-health">Mental health inpatient discharge</a>
