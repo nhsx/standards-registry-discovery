@@ -53,9 +53,11 @@ Standards development roadmap - Standards directory
     </div> -->
 <h2 class="nhsuk-heading-m">Filter the roadmap by care setting</h2>
     {% include "includes/filters-care-setting-roadmap.html" %}
+    <form action="community-roadmap-filtered" method="POST">
     <button class="nhsuk-button" type="submit">
       Filter the roadmap
     </button>
+    </form>
   </div>
   <!-- end of two-thirds div -->
   <div class="nhsuk-grid-column-one-third">
@@ -114,6 +116,9 @@ Standards development roadmap - Standards directory
             <a href="community-roadmap-status">Status &#x25B2;</a>
           </th>
           <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            Dates
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
             More information
           </th>
         </tr>
@@ -136,13 +141,17 @@ Standards development roadmap - Standards directory
               <span class="nhsuk-table-responsive__heading">Status </span>Proposed
             </td>
             <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Date </span>
+              <strong>Publication:</strong> Apr 2022 <br>
+              <strong>Implementation:</strong> Not known <br>
+              <strong>Compliance:</strong> Provisionally 2nd quarter 2023
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
               <span class="nhsuk-table-responsive__heading">More information </span>
               <strong>Owner:</strong> NHS Digital <br>
               <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a> <br>
               <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/pathology-messaging-hl7-v3">View documentation</a><br>
-              <strong>Publication:</strong> Apr 2022 <br>
-              <strong>Implementation:</strong> Not available <br>
-              <strong>Compliance:</strong> Provisionally 2nd quarter 2023
+
             </td>
           </tr>
           <!-- 3 -->
@@ -160,13 +169,17 @@ Standards development roadmap - Standards directory
                 <span class="nhsuk-table-responsive__heading">Status </span>Proposed
               </td>
               <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <span class="nhsuk-table-responsive__heading">Date </span>
+                <strong>Publication:</strong> Jun 2022 <br>
+                <strong>Implementation:</strong> Jul 2022<br>
+                <strong>Compliance:</strong> Sep 2022
+              </td>
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                 <span class="nhsuk-table-responsive__heading">More information </span>
                 <strong>Owner:</strong> NHS Digital <br>
                 <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a><br>
                 <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/dose-syntax-standards">View documentation</a><br>
-                <strong>Publication:</strong> Jun 2022 <br>
-                <strong>Implementation:</strong> Jul 2022<br>
-                <strong>Compliance:</strong> Sep 2022
+
               </td>
             </tr>
             <!-- 4 -->
@@ -184,13 +197,17 @@ Standards development roadmap - Standards directory
                   <span class="nhsuk-table-responsive__heading">Status </span>Draft
                 </td>
                 <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <span class="nhsuk-table-responsive__heading">Date </span>
+                  <strong>Publication:</strong> Jul 2022 <br>
+                  <strong>Implementation:</strong> Jul 2023 <br>
+                  <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by Aug 2023
+                </td>
+                <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                   <span class="nhsuk-table-responsive__heading">More information </span>
                   <strong>Owner:</strong> Professional Record Standards Body<br>
                   <strong>Submit feedback:</strong><br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
                   <strong>Documentation:</strong> <a href="https://theprsb.org/standards/personalisedcareandsupportplan/">View documentation</a><br>
-                  <strong>Publication:</strong> Jul 2022 <br>
-                  <strong>Implementation:</strong> Jul 2023 <br>
-                  <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by Aug 2023
+
                 </td>
               </tr>
               <!-- 5 -->
@@ -208,13 +225,17 @@ Standards development roadmap - Standards directory
                     <span class="nhsuk-table-responsive__heading">Status </span>Proposed
                   </td>
                   <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                    <span class="nhsuk-table-responsive__heading">Date </span>
+                    <strong>Publication:</strong> Aug 2022 <br>
+                    <strong>Implementation:</strong> Sep 2022 <br>
+                    <strong>Compliance:</strong> Oct 2022
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                     <span class="nhsuk-table-responsive__heading">More information </span>
                     <strong>Owner:</strong> Professional Record Standards Body <br>
                     <strong>Submit feedback:</strong> <br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
                     <strong>Documentation:</strong> <a href="https://theprsb.org/standards/ambulancehandover/">View documentation</a><br>
-                    <strong>Publication:</strong> Aug 2022 <br>
-                    <strong>Implementation:</strong> Sep 2022 <br>
-                    <strong>Compliance:</strong> Oct 2022
+
                   </td>
                 </tr>
                 <!-- 6 -->
@@ -232,13 +253,17 @@ Standards development roadmap - Standards directory
                       <span class="nhsuk-table-responsive__heading">Status </span>Draft
                     </td>
                     <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                      <span class="nhsuk-table-responsive__heading">Date </span>
+                      <strong>Publication:</strong> Aug 2022<br>
+                      <strong>Implementation:</strong> Not known <br>
+                      <strong>Compliance:</strong>  Nov 2022
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                       <span class="nhsuk-table-responsive__heading">More information </span>
                       <strong>Owner:</strong> Professional Record Standards Body <br>
                       <strong>Submit feedback:</strong> <br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
                       <strong>Documentation:</strong> <a href="https://theprsb.org/standards/communitypharmacystandardstage2/">View documentation</a><br>
-                      <strong>Publication:</strong> Aug 2022<br>
-                      <strong>Implementation:</strong> Not available <br>
-                      <strong>Compliance:</strong>  Nov 2022
+
                     </td>
                   </tr>
                   <!-- 7 -->
@@ -256,13 +281,17 @@ Standards development roadmap - Standards directory
                         <span class="nhsuk-table-responsive__heading">Status </span>Draft
                       </td>
                       <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                        <span class="nhsuk-table-responsive__heading">Date </span>
+                        <strong>Publication:</strong> Sep 2022<br>
+                        <strong>Implementation:</strong> Nov 2023 <br>
+                        <strong>Compliance:</strong>  Dec 2023
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                         <span class="nhsuk-table-responsive__heading">More information </span>
                         <strong>Owner:</strong> NHS Digital <br>
                         <strong>Submit feedback:</strong> <br><a href="mailto:standards.assurance@nhs.net">standards.assurance@nhs.net</a> <br>
                         <strong>Documentation:</strong> No documentation available<br>
-                        <strong>Publication:</strong> Sep 2022<br>
-                        <strong>Implementation:</strong> Nov 2023 <br>
-                        <strong>Compliance:</strong>  Dec 2023
+
                       </td>
                     </tr>
                     <!-- 1 -->
@@ -280,13 +309,17 @@ Standards development roadmap - Standards directory
                           <span class="nhsuk-table-responsive__heading">Status </span>Draft
                         </td>
                         <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                          <span class="nhsuk-table-responsive__heading">Date </span>
+                          <strong>Publication:</strong> Nov 2022 <br>
+                          <strong>Implementation:</strong> Dec 2022 <br>
+                          <strong>Compliance:</strong> Mar 2023
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
                           <span class="nhsuk-table-responsive__heading">More information </span>
                           <strong>Owner:</strong> NHS Digital <br>
                           <strong>Submit feedback:</strong> <br><a href="mailto:standards.assurance@nhs.net">standards.assurance@nhs.net</a> <br>
                           <strong>Documentation:</strong> <a href="https://digital.nhs.uk/services/booking-and-referral-standard#top">View documentation</a><br>
-                          <strong>Publication:</strong> Nov 2022 <br>
-                          <strong>Implementation:</strong> Dec 2022 <br>
-                          <strong>Compliance:</strong> Mar 2023
+
                         </td>
                       </tr>
 
