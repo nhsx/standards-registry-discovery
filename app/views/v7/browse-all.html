@@ -54,11 +54,14 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-one-quarter">
       {% include "includes/filters.html" %}
-      {% include "includes/expander.html" %}
+      <p class="nhsuk-u-font-size-16" style="text-align: right"><a href="#">Open all</a></p>
+      {% include "includes/expander-care-setting.html" %}
+      {% include "includes/expander-topic.html" %}
+      {% include "includes/expander-type.html" %}
     </div>
 
     <div class="nhsuk-grid-column-three-quarters">
-      <h3 class="nhsuk-heading-xs">Showing 74 results</h3>
+      <h3 class="nhsuk-heading-xs">Showing 86 results</h3>
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-one-half">  {% include "includes/select-abc.html" %}</div>
         <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
