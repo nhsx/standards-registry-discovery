@@ -1,0 +1,156 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v7.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse the standards directory - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Browse the directory</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+      <!-- Change the page title here -->
+      <h1>
+        Browse the standards directory
+      </h1>
+      <p>Find active standards and APIs to build interoperable technology in health and social care.</p>
+      {% include "includes/search.html" %}
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      <p class="nhsuk-u-font-size-16" style="text-align: right"><a href="#">Open all</a></p>
+      {% include "includes/expander-care-setting.html" %}
+      {% include "includes/expander-topic.html" %}
+      <img class="nhsuk-image__img" src="/images/f-clinical.png" alt="">
+    </div>
+    <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">Showing 24 results</h3>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select.html" %}</div>
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+        </div>
+        <!-- <a href="browse-all">submit </a> -->
+
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="standard-mental-health">Mental health inpatient discharge</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Standardising information shared so professionals can provide continuity of care when an adult is discharged from mental health services.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Hospital referral for assessment for community care and support</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This standard includes the information required when a person is referred for ongoing care and support in the community after a hospital stay. Part of a suite of record standards created by PRSB for sharing information between health and social care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Digital Maternity Record Standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">An information standard for maternity services, to ensure that maternity record information is consistently captured and as a result can be shared more easily across health care systems.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Core Information Standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">The standard defines a set of information that can potentially be shared between systems in different sites and settings, with professionals and people using services. What information is accessed will differ depending on who is accessing it, for what reason and the wishes of the person the information is about.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 11 Nov 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Assessment, Discharge and Withdrawal Notices between Hospitals and Social Services</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This information standard defines a set of Assessment, Discharge and Withdrawal (ADW) Notices to support compliance with the Care Act 2014.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 16 Jun 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Care homes view of shared care records</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Part of a suite of social care standards, the Care homes view is the ‘read-only’ information that care home staff can see in a shared care record.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 3 Feb 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">eDischarge summary</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">The eDischarge summary standard enables hospitals to safely transfer standardised clinical information - which can be extracted directly into GP IT systems - when a patient is discharged from hospital care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 4 Jul 2020</span>
+          </p>
+        </li>
+
+        <li class="table-list-item">
+          <a href="standard-mental-health">Palliative Care Co-ordination: Core Content</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This information standard specifies the core content to be held in electronic palliative care co-ordination systems (EPaCCS) and supports NHS England's objective to increase the use of technology to help people manage their health and care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 6 May 2020</span>
+          </p>
+        </li>
+
+
+        <li class="table-list-item">
+          <a href="standard-mental-health">Information Sharing to Tackle Violence</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">A small de-identified dataset collected by Accident and Emergency (A&E) departments and shared with local Community Safety Partnerships (CSP), covering all A&E attendances resulting from violent incidents.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 12 Apr 2020</span>
+          </p>
+        </li>
+
+      </ul>
+{% include "includes/pagination.html" %}
+
+    </div>
+  </div>
+
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3;
+    }
+  </style>
+
+
+
+{% endblock %}

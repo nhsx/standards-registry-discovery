@@ -1,0 +1,341 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v7a.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Standards development roadmap - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+<div class="nhsuk-width-container">
+<ol class="nhsuk-breadcrumb__list">
+<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+<li class="nhsuk-breadcrumb__item">Check the roadmap</li>
+</ol>
+</div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>Standards development roadmap</h1>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <p>Stay up to date with upcoming standards that are being proposed or drafted by standard development bodies.</p>
+
+    <!-- <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden"></span>
+      <p>If you'd like to propose a new standard contact <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a>.</p>
+    </div> -->
+<h2 class="nhsuk-heading-m">Filter the roadmap by care setting</h2>
+    {% include "includes/filters-care-setting-roadmap.html" %}
+    <button class="nhsuk-button" type="submit">
+      Filter the roadmap
+    </button>
+  </div>
+  <!-- end of two-thirds div -->
+  <div class="nhsuk-grid-column-one-third">
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+          Subscribe to roadmap updates
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p class="nhsuk-u-font-size-16">Enter your email to get notified when this roadmap gets updated.</p>
+        <div class="nhsuk-form-group">
+          <h1 class="nhsuk-label-wrapper">
+            <label class="nhsuk-label nhsuk-u-font-size-16" for="input-width-20">
+              <strong>Email address</strong>
+            </label>
+          </h1>
+          <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="example-heading" type="text">
+        </div>
+        <button class="nhsuk-button" type="submit">
+          Subscribe
+        </button>
+      </div>
+    </details>
+    <p class="nhsuk-u-font-size-16">To propose a new standard contact <a href="mailto:standards.directory@nhsx.nhs.uk">standards.directory@nhsx.nhs.uk</a>.</p>
+    {% include "includes/was-this-page-useful.html" %}
+  </div>
+</div>
+<br>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+<h2 class="nhsuk-heading-m">Upcoming standards</h2>
+<!--  -->
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-half">
+    <h4 class="nhsuk-heading-xs">Showing 7 results for [selected care settings]</h4>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <p class="nhsuk-u-font-size-16" style="text-align:right"><a href="community-roadmap">Show all standards on the roadmap</a></p>
+      </div>
+    </div>
+<!--  -->
+      <!-- <h4 class="nhsuk-heading-xs">Showing 7 results for [selected care settings]</h4>
+      <p class="nhsuk-u-font-size-16"><a href="community-roadmap">Show all upcoming standards</a></p> -->
+    <hr style="border: 1px solid black" class="nhsuk-section-break nhsuk-section-break--visible nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-3">
+<!--TEST FILTERS TO SORT BY STANDARD OWNER AND NATIONALLY MANDATED  -->
+<!--
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-half">  {% include "includes/select-standard-owner.html" %}</div>
+  <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+  </div> -->
+<!--  -->
+    <table role="table" class="nhsuk-table-responsive">
+      <!-- <caption class="nhsuk-table__caption">Ibuprofen tablet dosages for children</caption> -->
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            <a href="community-roadmap-name">Name &#x25B2;</a>
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            <a href="community-roadmap-type">Type &#x25B2;</a>
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            <a href="community-roadmap-status">Status &#x25B2;</a>
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            Estimated dates
+          </th>
+          <th role="columnheader" class="nhsuk-u-font-size-16" scope="col">
+            More information
+          </th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+
+
+        <!-- 1 -->
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+            <span class="nhsuk-table-responsive__heading">Name </span><a href="standard-api-mental-health">Pathology Messaging - HL7 V3 API</a>
+            <br>
+            <p class="nhsuk-u-font-size-16">
+              Request laboratory tests and send the results back to the requester, usually the patient's GP or consultant.</p>
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Status </span>Under consultation
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Date </span>
+              <strong>Publication:</strong> Apr 2022 <br>
+              <strong>Implementation:</strong> Not available <br>
+              <strong>Compliance:</strong> Provisionally 2nd quarter 2023
+            </td>
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">More information </span>
+              <strong>Owner:</strong> NHS Digital <br>
+              <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a> <br>
+              <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/pathology-messaging-hl7-v3">View documentation</a><br>
+
+            </td>
+          </tr>
+          <!-- 2 -->
+          <tr role="row" class="nhsuk-table__row">
+            <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+              <span class="nhsuk-table-responsive__heading">Name </span><a href="standard-api-mental-health">Dose Syntax API standards</a>
+              <br>
+              <p class="nhsuk-u-font-size-16">
+                API standards to provide a structured way to record dosage instructions between primary and secondary care settings.</p>
+              </td>
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+              </td>
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <span class="nhsuk-table-responsive__heading">Status </span>Being endorsed
+              </td>
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <span class="nhsuk-table-responsive__heading">Date </span>
+                <strong>Publication:</strong> Apr 2022 <br>
+                <strong>Implementation:</strong> Not known <br>
+                <strong>Compliance:</strong> Provisionally 2nd quarter 2023
+              </td>
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <span class="nhsuk-table-responsive__heading">More information </span>
+                <strong>Owner:</strong> NHS Digital <br>
+                <strong>Submit feedback:</strong> <br><a href="mailto:api.management@nhs.net">api.management@nhs.net</a><br>
+                <strong>Documentation:</strong> <a href="https://digital.nhs.uk/developer/api-catalogue/dose-syntax-standards">View documentation</a><br>
+              </td>
+            </tr>
+            <!-- 3 -->
+            <tr role="row" class="nhsuk-table__row">
+              <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                <span class="nhsuk-table-responsive__heading">Name </span><a href="standard-mental-health">Personalised Care and Support Plan</a>
+                <br>
+                <p class="nhsuk-u-font-size-16">
+                  A standard to allow the sharing of care plans between patients, carers and all the health and care professionals involved in that person's care.</p>
+                </td>
+                <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+                </td>
+                <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <span class="nhsuk-table-responsive__heading">Status </span>Commissioned
+                </td>
+                <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <span class="nhsuk-table-responsive__heading">Date </span>
+                  <strong>Publication:</strong> Jul 2022 <br>
+                  <strong>Implementation:</strong> Jul 2023 <br>
+                  <strong>Compliance:</strong> Provisionally looking at compliance with the FHIR profile by Aug 2023
+                </td>
+                <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <span class="nhsuk-table-responsive__heading">More information </span>
+                  <strong>Owner:</strong> Professional Record Standards Body<br>
+                  <strong>Submit feedback:</strong><br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
+                  <strong>Documentation:</strong> <a href="https://theprsb.org/standards/personalisedcareandsupportplan/">View documentation</a><br>
+
+                </td>
+              </tr>
+              <!-- 4 -->
+              <tr role="row" class="nhsuk-table__row">
+                <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                  <span class="nhsuk-table-responsive__heading">Name </span><a href="standard-mental-health">Ambulance Handover to Emergency Care</a>
+                  <br>
+                  <p class="nhsuk-u-font-size-16">
+                    A standard for the information that is shared when care is transferred from ambulances to emergency departments.</p>
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                    <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                    <span class="nhsuk-table-responsive__heading">Status </span>Being endorsed
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                    <span class="nhsuk-table-responsive__heading">Date </span>
+                    <strong>Publication:</strong> Aug 2022 <br>
+                    <strong>Implementation:</strong> Sep 2022 <br>
+                    <strong>Compliance:</strong> Oct 2022
+                  </td>
+                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                    <span class="nhsuk-table-responsive__heading">More information </span>
+                    <strong>Owner:</strong> Professional Record Standards Body <br>
+                    <strong>Submit feedback:</strong> <br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
+                    <strong>Documentation:</strong> <a href="https://theprsb.org/standards/ambulancehandover/">View documentation</a><br>
+
+                  </td>
+                </tr>
+                <!-- 5-->
+                <tr role="row" class="nhsuk-table__row">
+                  <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                    <span class="nhsuk-table-responsive__heading">Name </span><a href="standard-mental-health">Community Pharmacy Standard</a>
+                    <br>
+                    <p class="nhsuk-u-font-size-16">
+                      The community pharmacy standard supports information sharing between community pharmacists and GP practices.</p>
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                      <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                      <span class="nhsuk-table-responsive__heading">Status </span>Drafted
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                      <span class="nhsuk-table-responsive__heading">Date </span>
+                      <strong>Publication:</strong> Aug 2022<br>
+                      <strong>Implementation:</strong> Not available <br>
+                      <strong>Compliance:</strong>  Nov 2022
+                    </td>
+                    <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                      <span class="nhsuk-table-responsive__heading">More information </span>
+                      <strong>Owner:</strong> Professional Record Standards Body <br>
+                      <strong>Submit feedback:</strong> <br><a href="mailto:support@theprsb.org">support@theprsb.org</a> <br>
+                      <strong>Documentation:</strong> <a href="https://theprsb.org/standards/communitypharmacystandardstage2/">View documentation</a><br>
+
+                    </td>
+                  </tr>
+                  <!-- 6 -->
+                  <tr role="row" class="nhsuk-table__row">
+                    <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                      <span class="nhsuk-table-responsive__heading">Name </span><a href="standard-mental-health">Digital Social Care Standards</a>
+                      <br>
+                      <p class="nhsuk-u-font-size-16">
+                        A core set of information relevant for people using adult social care services about the direct care they receive (across various settings).</p>
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                        <span class="nhsuk-table-responsive__heading">Type </span>Clinical and care record standards
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                        <span class="nhsuk-table-responsive__heading">Status </span>Drafted
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                        <span class="nhsuk-table-responsive__heading">Date </span>
+                        <strong>Publication:</strong> Sep 2022<br>
+                        <strong>Implementation:</strong> Nov 2023 <br>
+                        <strong>Compliance:</strong>  Dec 2023
+                      </td>
+                      <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                        <span class="nhsuk-table-responsive__heading">More information </span>
+                        <strong>Owner:</strong> NHS Digital <br>
+                        <strong>Submit feedback:</strong> <br><a href="mailto:standards.assurance@nhs.net">standards.assurance@nhs.net</a> <br>
+                        <strong>Documentation:</strong> No documentation available<br>
+
+                      </td>
+                    </tr>
+                    <!-- 7 -->
+                    <tr role="row" class="nhsuk-table__row">
+                      <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                        <span class="nhsuk-table-responsive__heading">Name </span><a href="standard-mental-health">NHS Booking & Referrals Standard</a>
+                        <br>
+                        <p class="nhsuk-u-font-size-16">
+                          The standard supports the requirement to direct patients (refer) to the appropriate clinical care setting to best meet their clinical needs</p>
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                          <span class="nhsuk-table-responsive__heading">Type </span>Technical specifications and APIs
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                          <span class="nhsuk-table-responsive__heading">Status </span>Submitted for assurance
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                          <span class="nhsuk-table-responsive__heading">Date </span>
+                          <strong>Publication:</strong> Nov 2022 <br>
+                          <strong>Implementation:</strong> Dec 2022 <br>
+                          <strong>Compliance:</strong> Mar 2023
+                        </td>
+                        <td role="cell" class="nhsuk-table__cell nhsuk-u-font-size-16">
+                          <span class="nhsuk-table-responsive__heading">More information </span>
+                          <strong>Owner:</strong> NHS Digital <br>
+                          <strong>Submit feedback:</strong> <br><a href="mailto:standards.assurance@nhs.net">standards.assurance@nhs.net</a> <br>
+                          <strong>Documentation:</strong> <a href="https://digital.nhs.uk/services/booking-and-referral-standard#top">View documentation</a><br>
+
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+                </div>
+              </div>
+
+              {% endblock %}

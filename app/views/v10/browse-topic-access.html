@@ -1,0 +1,156 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v7.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse the standards directory - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Browse the directory</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+      <!-- Change the page title here -->
+      <h1>
+        Browse the standards directory
+      </h1>
+      <p>Find active standards and APIs to build interoperable technology in health and social care.</p>
+      {% include "includes/search.html" %}
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      <p class="nhsuk-u-font-size-16" style="text-align: right"><a href="#">Open all</a></p>
+      {% include "includes/expander-care-setting.html" %}
+      <img class="nhsuk-image__img" src="/images/f-access.png" alt=""><br>
+      {% include "includes/expander-type.html" %}
+    </div>
+    <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">Showing 13 results</h3>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select.html" %}</div>
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+        </div>
+        <!-- <a href="browse-all">submit </a> -->
+
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Access Record: Structured - FHIR API</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Retrieve structured information from a patient’s GP practice record.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Record Locator - FHIR API</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Locate and access patient information shared by other healthcare organisations using the National Record Locator (NRL) FHIR API.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">National Early Warning Score 2 API standards</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">API standards to enable sharing of patients' vital signs and NEWS2 scores between systems and across care boundaries, for example, between two hospitals.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-snomed">NHS Number for Secondary Care</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This information standard sets out the scope and use of the NHS Number, which is the unique identifier for a patient within the NHS in England and Wales. There is an overarching standard, supplemented by two use cases for how the standard should be used in general practice and secondary care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--green">Medical and data dictionaries</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 11 Nov 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-snomed">NHS Number for General Practice</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This information standard sets out the scope and use of the NHS Number, which is the unique identifier for a patient within the NHS in England and Wales. There is an overarching standard, supplemented by two use cases for how the standard should be used in general practice and secondary care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--green">Medical and data dictionaries</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 16 Jun 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-snomed">NHS Number</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This information standard sets out the scope and use of the NHS Number, which is the unique identifier for a patient within the NHS in England and Wales. There is an overarching standard, supplemented by two use cases for how the standard should be used in general practice and secondary care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--green">Medical and data dictionaries</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 3 Feb 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-snomed">Identity Verification and Authentication Standard for Digital Health and Care Services</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This standard provides for a consistent approach to identity management across digital health and care services, covering: verification, authentication and clinical authorisation.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--grey">Data protection and governance</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 4 Jul 2020</span>
+          </p>
+        </li>
+
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Access Record: HTML - FHIR API</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">View a patient's GP practice record, with read-only access.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 6 May 2020</span>
+          </p>
+        </li>
+
+
+        <li class="table-list-item">
+          <a href="standard-mental-health">FGM-Information Sharing (FGM-IS) - Local System Integration</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">The FGM-IS is a national IT system that supports the ongoing safeguarding of patients, under the age of 18, who have a family history of Female Genital Mutilation (FGM). This information standard specifies the requirements for fully integrated local query and response access to national FGM-IS data.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 12 Apr 2020</span>
+          </p>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </div>
+
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3;
+    }
+  </style>
+
+
+
+{% endblock %}

@@ -1,0 +1,156 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v7.html' %}
+{% extends 'layout-home-v7.html' %}
+{% extends 'template-home-v7.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Home - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-half">
+    <h2 class="nhsuk-heading-l">Browse by care setting</h2>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-care-hospital">Hospital</a></h4>
+    <p>Patient services, maternity, assessments, discharge, accident and emergency care.
+</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-care-gp">GP / Primary care</a></h4>
+    <p>Physical and mental health, GP care records, diagnostics, clinical referrals, treatments.
+</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-care-social">Social care</a></h4>
+    <p>Adult social care, social services, shared care records, community care and support.
+</p>
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <p><a href="browse-all">Browse all care settings</a></p>
+  </div>
+</div>
+<hr style="border: solid #d8dde0" class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+<!--  -->
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-half">
+    <h2 class="nhsuk-heading-l">Browse by topic</h2>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-topic-appointment">Appointment / Scheduling</a></h4>
+    <p>Appointment booking and management, clinical referrals, key care information.
+</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-topic-access">Access to records</a></h4>
+    <p>Retrieve structured information from a patient's GP and shared care records.
+</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-topic-vax">Vaccination</a></h4>
+    <p>Coronavirus (COVID-19), seasonal flu, immunisation, treatment and prevention protocols.</p>
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <p><a href="browse-all">Browse all topics</a></p>
+  </div>
+</div>
+<hr style="border: solid #d8dde0" class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible">
+<!--  -->
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-half">
+    <h2 class="nhsuk-heading-l">Browse by type</h2>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-type-technical">Technical specifications and APIs</a></h4>
+    <p>Find technical standards to exchange information with other technology products and services.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-type-clinical">Clinical and care record standards</a></h4>
+    <p>Explore clinical codes and data formats to collect,
+      process and share information consistently.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h4 class="nhsuk-heading-xs"><a href="browse-type-medical">Medical and data dictionaries</a></h4>
+    <p>Use approved medical terminologies and definitions to support information systems.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <p><a href="browse-all">Browse all standard types</a></p>
+  </div>
+</div>
+
+<!-- <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible"> -->
+<!--  -->
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+    <hr style="border: 4px solid #4c6272">
+    <h2 class="nhsuk-heading-l">Roadmap</h2>
+    <p>Stay up to date with standards and APIs that are being proposed or drafted by standard development bodies.</p>
+    <p><a href="community-roadmap">Search the roadmap</a></p>
+  </div>
+
+  <div class="nhsuk-grid-column-one-third">
+    <hr style="border: 4px solid #4c6272">
+    <h2 class="nhsuk-heading-l">Guidance</h2>
+    <p>Find out what information standards are and what interoperability means in health and social care.</p>
+    <p><a href="what">Learn more</a></p>
+  </div>
+
+  <div class="nhsuk-grid-column-one-third">
+    <hr style="border: 4px solid #4c6272">
+    <h2 class="nhsuk-heading-l">Community</h2>
+    <p>Connect with other health and social care professionals and share knowledge and best practice.</p>
+    <p><a href="community">Join the community</a></p>
+  </div>
+
+
+</div>
+<!--  -->
+
+{% endblock %}

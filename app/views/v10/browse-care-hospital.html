@@ -1,0 +1,153 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v7.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse the standards directory - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">Browse the directory</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+  {% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+      <!-- Change the page title here -->
+      <h1>
+        Browse the standards directory
+      </h1>
+      <p>Find active standards and APIs to build interoperable technology in health and social care.</p>
+      {% include "includes/search.html" %}
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-quarter">
+      {% include "includes/filters.html" %}
+      <p class="nhsuk-u-font-size-16" style="text-align: right"><a href="#">Open all</a></p>
+      <img class="nhsuk-image__img" src="/images/f-hospital.png" alt=""><br>
+      {% include "includes/expander-topic.html" %}
+      {% include "includes/expander-type.html" %}
+    </div>
+
+    <div class="nhsuk-grid-column-three-quarters">
+      <h3 class="nhsuk-heading-xs">Showing 66 results</h3>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select.html" %}</div>
+        <div class="nhsuk-grid-column-one-half">  {% include "includes/select-recommended.html" %}</div>
+        </div>
+<!-- <a href="browse-recent">submit</a> -->
+      <ul class="nhsuk-list table-list">
+        <li class="table-list-item">
+          <a href="standard-mental-health">Hospital referral for assessment for community care and support</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This standard includes the information required when a person is referred for ongoing care and support in the community after a hospital stay. Part of a suite of record standards created by PRSB for sharing information between health and social care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Digital Maternity Record Standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">An information standard for maternity services, to ensure that maternity record information is consistently captured and as a result can be shared more easily across health care systems.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 12 Feb 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">GP Connect Access Record: Structured - FHIR API</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Retrieve structured information from a patient’s GP practice record.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 1 Mar 2022</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Core information standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">The core information standard defines a set of information that can potentially be shared between systems in different sites and settings, among professionals and people using services.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 16 Dec 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Vaccination Events - FHIR API</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Create and transmit documents containing Transfer of Care information supporting a mental health discharge.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 21 Nov 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-mental-health">Assessment, Discharge and Withdrawal Notices between Hospitals and Social Services</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This information standard defines a set of Assessment, Discharge and Withdrawal (ADW) Notices to support compliance with the Care Act 2014.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 16 Oct 2021</span>
+          </p>
+        </li>
+
+        <li class="table-list-item">
+          <a href="standard-mental-health">eDischarge summary</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">The eDischarge summary standard enables hospitals to safely transfer standardised clinical information - which can be extracted directly into GP IT systems - when a patient is discharged from hospital care.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standards</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 25 Aug 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-snomed">Treatment Function and Main Specialty Standard</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">This information standard defines the Treatment Function and Main Specialty classifications used to support the national reporting and analysis of clinical workforce activity throughout the NHS.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--green">Medical data and dictionaries</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 23 Feb 2021</span>
+          </p>
+        </li>
+        <li class="table-list-item">
+          <a href="standard-api-mental-health">Transfer of Care Outpatient Clinic Letter - FHIR API</a>
+          <p>
+          <span class="nhsuk-u-font-size-19">Create and transmit documents containing Transfer of Care information following an outpatient consultation in a clinic.</span><br><br>
+          <span class="nhsuk-body-s" style="color:#4c6272;">Type: <strong class="nhsuk-tag nhsuk-tag--blue">Technical specifications and APIs</strong>&emsp;&emsp;Status: Active&emsp;&emsp;Date added: 11 Jan 2021</span>
+          </p>
+        </li>
+      </ul>
+{% include "includes/pagination.html" %}
+
+    </div>
+  </div>
+
+  <style>
+    .table-list-item {
+      padding: 10px 20px 10px 0;
+      border-bottom: 1px solid #bfc1c3;
+    }
+    .table-list-item:first-child {
+      border-top: 1px solid #bfc1c3;
+    }
+  </style>
+
+
+
+{% endblock %}

@@ -1,0 +1,285 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v7a.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Mental health inpatient discharge - Standards directory
+{% endblock %}
+
+<!-- For adding a backlink -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/browse-all">Browse the directory</a></li>
+      <li class="nhsuk-breadcrumb__item">Mental health inpatient discharge</li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+    <h1>
+      Mental health inpatient discharge
+    </h1>
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <p class="nhsuk-u-font-size-16">Standardising information shared so professionals can provide continuity of care when an adult is discharged from mental health services. Includes information on patient history, medications, as well as current and previous diagnoses.</p>
+
+
+    <h2 class="nhsuk-heading-m">About this standard</h2>
+    <table class="nhsuk-table ">
+      <tbody class="nhsuk-table__body ">
+
+
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Owner</td>
+          <td class="nhsuk-table__cell nhsuk-u-font-size-16">Professional Record Standards Body
+          </td>
+        </tr>
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Status</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">Active
+    <!--  -->
+    <br><br>
+    <details class="nhsuk-details nhsuk-u-font-size-16">
+    <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+    What this status means
+  </span>
+</summary>
+<div class="nhsuk-details__text">
+<p class="nhsuk-u-font-size-16"><strong>Active standards</strong> are stable, maintained and have been assured or endorsed for use by qualified bodies.</p>
+
+</div>
+</details>
+<!--  -->
+</td>
+</tr>
+
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Type</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+    <strong class="nhsuk-tag nhsuk-tag--orange">Clinical and care record standard</strong>
+<!--  -->
+<br><br>
+<details class="nhsuk-details nhsuk-u-font-size-16">
+<summary class="nhsuk-details__summary">
+<span class="nhsuk-details__summary-text">
+What this type means
+</span>
+</summary>
+<div class="nhsuk-details__text">
+
+<p class="nhsuk-u-font-size-16"><strong>Clinical and care record standards:</strong> Define what information to collect, its purpose and how to format it for consistency of meaning.</p>
+
+</div>
+</details>
+<!--  -->
+</td>
+</tr>
+
+<tr role="row" class="nhsuk-table__row">
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Documentation</td>
+  <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+
+    <p class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="https://theprsb.org/standards/mentalhealth/" target="_blank">View documentation for this standard</a>
+      <br>(opens in new window)</p>
+    </td>
+  </tr>
+  <tr role="row" class="nhsuk-table__row">
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Contact details</td>
+    <td class="nhsuk-table__cell nhsuk-u-font-size-16"><a href="mailto:support@theprsb.org">support@theprsb.org</a></td>
+  </tr>
+</tbody>
+</table>
+
+<!--  -->
+
+<h2 class="nhsuk-heading-m">Topic and care setting usage</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Topic</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16"><ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+        <li>Referrals</li>
+<li>Demographics</li>
+<li>Key care information</li>
+<li>Prescribing</li>
+<li>Patient communication</li>
+<li>Information governance</li>
+<li>Tests and diagnostics</li>
+      </ul></td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Care setting</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        <ul class="nhsuk-list-bullet nhsuk-u-font-size-16">
+          <li>Community health</li>
+          <li>Hospital</li>
+          <li>Mental health</li>
+          <li>GP / Primary care</li>
+          <li>Social care</li>
+
+        </ul>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2 class="nhsuk-heading-m">Relationships to other standards</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Dependencies</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        This standard needs to be reviewed and implemented alongside <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/scci0034-snomed-ct">SNOMED</a>, FHIR and electronic systems on both ends.
+      </td>
+
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Related standards</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+        This standard belongs to the group of transfers of care record standards, including
+        <a href="https://theprsb.org/standards/edischargesummary/">eDischarge</a> and <a href="https://theprsb.org/standards/emergencycaredischarge/">Emergency care discharge</a> summaries, <a href="https://theprsb.org/standards/outpatientletterstandard/">Outpatient letters</a>, <a href="https://theprsb.org/standards/personalisedcareandsupportplan/">Personalised care and support plan</a> and <a href="https://theprsb.org/core-information-standard-v2-0/">Core information standard</a>.
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!--  -->
+<h2 class="nhsuk-heading-m">Assurance and endorsements</h2>
+<table class="nhsuk-table ">
+  <tbody class="nhsuk-table__body ">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Legally mandated</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">Yes <br>
+        Required under: Section 250 Health and Social Care Act
+        <!--  -->
+                <br><br>
+                <details class="nhsuk-details nhsuk-u-font-size-16">
+                <summary class="nhsuk-details__summary">
+                <span class="nhsuk-details__summary-text">
+                What this requirement means
+                </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                <p class="nhsuk-u-font-size-16">The Health and Social Care Act 2012 is an act of the Parliament of the United Kingdom. It provides for the most extensive reorganisation of the structure of the National Health Service in England to date.</p>
+                </div>
+                </details>
+                <!--  -->
+      </td>
+      </tr>
+
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Quality assured by:</td>
+      <td class="nhsuk-table__cell nhsuk-u-font-size-16">Data Alliance Partnership Board<br>
+        <p class="nhsuk-u-font-size-16">Reference code: DCB1234</p>
+
+        <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+        About the Data Alliance Partnership Board
+      </span>
+    </summary>
+    <div class="nhsuk-details__text">
+    <p class="nhsuk-u-font-size-16">The <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/data-alliance-partnership-board">Data Alliance Partnership Board (DAPB)</a> is England's national body overseeing
+      standards development in health and adult social care. Standards assured by the DAPB have been assessed against strict
+      criteria to ensure they're appropriate for use across England's care settings.
+
+</p>
+
+  </div>
+</details>
+
+      </td>
+      </tr>
+      <tr role="row" class="nhsuk-table__row">
+        <td class="nhsuk-table__cell nhsuk-u-font-size-16 font-bold">Endorsements</td>
+        <td class="nhsuk-table__cell nhsuk-u-font-size-16">
+          <ul class="nhsuk-list-bullet  nhsuk-u-font-size-16">
+            <li>Royal College of Nursing</li>
+            <li>Royal College of Psychiatrists</li>
+            <li>Association of Directors of Adult Social Services</li>
+            <li>Royal College of General Practitioners</li>
+            <li>Royal College of Occupational Therapists</li>
+            <li>Royal Pharmaceutical Society</li>
+            <li>British Psychological Society</li>
+            <li>RCoA</li>
+            <li>Institute of Health Records and Information Management</li>
+            <li>TechUK</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+<!--  -->
+
+
+
+<!--  -->
+
+</div>
+<!--  -->
+<div class="nhsuk-grid-column-one-third">
+  <details class="nhsuk-details">
+    <summary class="nhsuk-details__summary ">
+      <span class="nhsuk-details__summary-text nhsuk-u-font-size-16">
+        Get updates for this standard
+      </span>
+    </summary>
+    <div class="nhsuk-details__text  nhsuk-u-font-size-16" >
+      <p class="nhsuk-u-font-size-16">Enter your email to get notified when this standard gets updated</p>
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label nhsuk-u-font-size-16" for="example">
+         <strong>Email address</strong>
+        </label>
+        <input class="nhsuk-input" id="example" name="example" type="text">
+      </div>
+      <button class="nhsuk-button">Submit</button>
+    </div>
+  </details>
+{% include "includes/was-this-page-useful.html" %}
+</div>
+<!--  -->
+</div>
+
+
+
+
+
+{% endblock %}

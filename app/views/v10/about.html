@@ -1,0 +1,91 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-v7a.html' %}
+<!--
+In /views/layout.html you can:
+- change the header and footer
+- add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+About this service - Standards directory
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<!-- <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/v7/home">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">About this service</li>
+    </ol>
+  </div>
+</nav> -->
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% include "includes/prototype-banner.html" %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- Change the page title here -->
+    <h1>
+      About this service
+    </h1>
+
+</div>
+</div>
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- <h2 id="about">About this service</h2> -->
+    <h2 id="about">Overview of this service</h2>
+    <p>This service signposts visitors to information standards required for IT systems in health and social care to interoperate. These standards have been assured or endorsed by qualified bodies, or are widely in use and therefore nationally recognised.</p>
+<p>This service is owned and maintained by NHSX. It is currently in development and is being tested and improved based on feedback - contact the <a href="mailto:standards.directory@nhsx.nhs.uk">standards directory team</a>.</p>
+<!-- <p><a href="#top">Back to the top</a></p> -->
+
+<!--  -->
+    <h2 id="who">Who this service is for</h2>
+    <p>This service is for anyone involved in building or buying technologies for the NHS or local authority-funded adult social care. It applies to England only.</p>
+
+<p>It helps teams being assessed against the <a href="https://service-manual.nhs.uk/service-standard">NHS Service Standard</a> to meet <a href="https://service-manual.nhs.uk/service-standard/17-make-your-service-interoperable">point 17 of the standard - make your service interoperable</a>.
+</p>
+<p>It also helps teams not being assessed to align to healthcare settings around the country in how they collect, record and exchange data with other IT systems.</p>
+
+      <!--  -->
+      <h2 id="covered">What standards are covered</h2>
+      <p>The following information standards are listed in the directory: </p>
+      <ul class="nhsuk-list-bullet">
+        <li>all current approved national information standards published on the <a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections#approved-standards-and-collections">NHS Digital website</a>.
+          </li>
+        <li>API standards and specifications published in the <a href="https://digital.nhs.uk/developer/api-catalogue">NHS Digital API Catalogue</a></li>
+        <li>record standards published by the <a href="https://theprsb.org/">Professional Records Standards Body (PRSB)</a></li>
+      </ul>
+      <p>In the future more standards are likely to be added to the directory from other sources.</p>
+
+<p>You can <a href="what">find out more about information standards and interoperability</a> or <a href="browse-all">browse the directory</a>.</p>
+
+<!--  -->
+
+
+
+            {% include "includes/was-this-page-useful.html" %}
+
+          </div>
+        </div>
+
+        {% endblock %}
